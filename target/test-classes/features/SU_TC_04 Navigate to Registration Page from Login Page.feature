@@ -1,4 +1,4 @@
-   @fulltest
+ @SingleUser @fulltest
    Feature: User Registration
     
   @SU_TC04_Navigate_to_Registration_Page_from_Login_Page   

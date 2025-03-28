@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.thinktimetechno.runners.FullTestTestRunner">
+      <class name="com.thinktimetechno.runners.SingleUserTestRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="afterSuite"/>
+          <include name="runScenario" invocation-numbers="0 3"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="0 1 2 3 4 5 6 7 8 9"/>
+          <include name="afterSuite"/>
         </methods>
-      </class> <!-- com.thinktimetechno.runners.FullTestTestRunner -->
+      </class> <!-- com.thinktimetechno.runners.SingleUserTestRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -5,31 +5,46 @@
 
 package com.thinktimetechno.keywords;
 
-import com.thinktimetechno.constants.FrameworkConstants;
-import com.thinktimetechno.driver.DriverManager;
-import com.thinktimetechno.enums.FailureHandling;
-import com.thinktimetechno.helpers.Helpers;
-import com.thinktimetechno.report.AllureManager;
-import com.thinktimetechno.report.ExtentReportManager;
-import com.thinktimetechno.report.ExtentTestManager;
-import com.thinktimetechno.utils.BrowserInfoUtils;
-import com.thinktimetechno.utils.DateUtils;
-import com.thinktimetechno.utils.LogUtils;
-import com.google.common.util.concurrent.Uninterruptibles;
-import com.google.zxing.BinaryBitmap;
-import com.google.zxing.LuminanceSource;
-import com.google.zxing.MultiFormatReader;
-import com.google.zxing.Result;
-import com.google.zxing.client.j2se.BufferedImageLuminanceSource;
-import com.google.zxing.common.HybridBinarizer;
-import io.qameta.allure.Step;
+import static com.thinktimetechno.constants.FrameworkConstants.ACTIVE_PAGE_LOADED;
+import static com.thinktimetechno.constants.FrameworkConstants.SCREENSHOT_ALL_STEPS;
+import static com.thinktimetechno.constants.FrameworkConstants.WAIT_EXPLICIT;
+import static com.thinktimetechno.constants.FrameworkConstants.WAIT_PAGE_LOADED;
+import static com.thinktimetechno.constants.FrameworkConstants.WAIT_SLEEP_STEP;
+import static com.thinktimetechno.constants.FrameworkConstants.YES;
+
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.InputEvent;
+import java.awt.event.KeyEvent;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.time.Duration;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import javax.annotation.Nullable;
+import javax.imageio.ImageIO;
+
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.Pdf;
 import org.openqa.selenium.Point;
-import org.openqa.selenium.*;
+import org.openqa.selenium.PrintsPage;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.devtools.DevTools;
-import org.openqa.selenium.devtools.HasDevTools;
 //import org.openqa.selenium.devtools.v120.network.Network;
 //import org.openqa.selenium.devtools.v120.network.model.Headers;
 //import org.openqa.selenium.devtools.v121.network.Network;
@@ -43,22 +58,24 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
-import javax.annotation.Nullable;
-import javax.imageio.ImageIO;
-import java.awt.*;
-import java.awt.datatransfer.StringSelection;
-import java.awt.event.InputEvent;
-import java.awt.event.KeyEvent;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.time.Duration;
-import java.util.List;
-import java.util.*;
+import com.google.zxing.BinaryBitmap;
+import com.google.zxing.LuminanceSource;
+import com.google.zxing.MultiFormatReader;
+import com.google.zxing.Result;
+import com.google.zxing.client.j2se.BufferedImageLuminanceSource;
+import com.google.zxing.common.HybridBinarizer;
+import com.thinktimetechno.constants.FrameworkConstants;
+import com.thinktimetechno.driver.DriverManager;
+import com.thinktimetechno.enums.FailureHandling;
+import com.thinktimetechno.helpers.Helpers;
+import com.thinktimetechno.report.AllureManager;
+import com.thinktimetechno.report.ExtentReportManager;
+import com.thinktimetechno.report.ExtentTestManager;
+import com.thinktimetechno.utils.BrowserInfoUtils;
+import com.thinktimetechno.utils.DateUtils;
+import com.thinktimetechno.utils.LogUtils;
 
-import static com.thinktimetechno.constants.FrameworkConstants.*;
+import io.qameta.allure.Step;
 
 /**
  * Keyword WebUI là class chung làm thư viện xử lý sẵn với nhiều hàm custom từ Selenium và Java.
@@ -2226,6 +2243,7 @@ public class WebUI {
      */
     @Step("Right click on element {0}")
     public static void rightClickElement(By by) {
+    	
         Actions action = new Actions(DriverManager.getDriver());
         action.contextClick(waitForElementVisible(by)).build().perform();
         LogUtils.info("Right click on element " + by);
@@ -2634,6 +2652,27 @@ public class WebUI {
         }
     }
 
+    @Step("Verify that the page title contains: {0}")
+    public static boolean verifyPageTitleContains(String expectedTitle) {
+        smartWait(); // Add if needed based on project
+
+        try {
+            WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(WAIT_EXPLICIT), Duration.ofMillis(500));
+            
+            // Wait until title contains expected value
+            boolean titleIsCorrect = wait.until(ExpectedConditions.titleContains(expectedTitle));
+
+            // Assertion for validation
+            Assert.assertTrue(titleIsCorrect, "Page title does not contain expected value: " + expectedTitle + ". Actual title is: " + getPageTitle());
+            return true;
+
+        } catch (Throwable error) {
+            LogUtils.error("Page title does not contain expected value: " + expectedTitle + ". Actual title is: " + getPageTitle());
+            Assert.fail("Page title does not contain expected value: " + expectedTitle + ". Actual title is: " + getPageTitle());
+            return false;
+        }
+    }
+    
     /**
      * Chờ đợi JQuery tải xong với thời gian mặc định từ config
      */

@@ -1,4 +1,4 @@
-   @fulltest
+@SingleUser @fulltest
    Feature: User Registration
 
   @SU_TC02_Register_with_leaving_one_mandatory_field_blank 

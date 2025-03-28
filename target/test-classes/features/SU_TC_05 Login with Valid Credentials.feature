@@ -1,12 +1,9 @@
-   @fulltest
+ @SingleUser @fulltest
 Feature: User Login
-
-Background: Navigate to Login Page
-  Given User navigates to the login page "https://app.cpraedcourse.com/user/login?version=v2"
 
 @SU_TC05_login_valid_credentials  
 Scenario: TC_05 Login with Valid Credentials
-  Given User is on the login page
+  Given User navigates to the login page "https://app.cpraedcourse.com/user/login?version=v2"
   When User enters valid login credentials:
     | Field    | Value              |
     | Username | JohnDoeShankar     |

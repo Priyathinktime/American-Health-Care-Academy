@@ -1,5 +1,5 @@
-@fulltest
-   Feature: Group Registration
+@GroupUser @fulltest @SingleUser
+Feature: Group Registration
 
   @C_TC_01_Corporate_Registration_with_Valid_Details 
   Scenario: C_TC_01 Corporate Registration with Valid Details

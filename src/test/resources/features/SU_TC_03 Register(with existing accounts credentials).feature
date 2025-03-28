@@ -1,4 +1,4 @@
-   @fulltest
+ @SingleUser @fulltest
    Feature: User Registration
 
   @SU_TC03_Register_with_existing_accounts_credentials

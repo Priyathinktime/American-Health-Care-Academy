@@ -20,31 +20,34 @@ public class Corporate_StepDefinitions {
 	private CorporateDashboardPage corporatedashboardPage;
 	private CorporateLoginPage corporateloginPage;
 	private CorporateRegistrationPage corporateregistrationPage;
+
 	public Corporate_StepDefinitions(TestContext testContext) {
-		corporatedashboardPage=testContext.getCorporateDashboardPage();
-		corporateloginPage=testContext.getCorporateLoginPage();
-		corporateregistrationPage=testContext.getCorporateRegistrationPage();
+		corporatedashboardPage = testContext.getCorporateDashboardPage();
+		corporateloginPage = testContext.getCorporateLoginPage();
+		corporateregistrationPage = testContext.getCorporateRegistrationPage();
 	}
-	
+
 	@Given("User navigate to {string} for Group registration")
 	public void user_navigate_to_for_group_registration(String url) {
-	  WebUI.getURL(url);
+		WebUI.getURL(url);
 	}
+
 	@When("User enters the Corporate registration details:")
 	public void user_enters_the_corporate_registration_details(io.cucumber.datatable.DataTable dataTable) {
-	    Map<String, String> data = dataTable.asMap(String.class, String.class);
+		Map<String, String> data = dataTable.asMap(String.class, String.class);
 
-	    String firstName = data.get("First Name");
-	    String lastName = data.get("Last Name");
-	    String companyName = data.get("Company Name");
-	    String phoneNumber = data.get("Phone Number");
-	    String emailAddress = data.get("Email Address");
-	    String createPassword = data.get("Create Password");
-	    String confirmPassword = data.get("Confirm Password");
-	    corporateregistrationPage.enter_registration_details(firstName,lastName,companyName,phoneNumber,emailAddress,createPassword,confirmPassword  ); 
-		
-		
+		String firstName = data.get("First Name");
+		String lastName = data.get("Last Name");
+		String companyName = data.get("Company Name");
+		String phoneNumber = data.get("Phone Number");
+		String emailAddress = data.get("Email Address");
+		String createPassword = data.get("Create Password");
+		String confirmPassword = data.get("Confirm Password");
+		corporateregistrationPage.enter_registration_details(firstName, lastName, companyName, phoneNumber,
+				emailAddress, createPassword, confirmPassword);
+
 	}
+
 	@When("User clicks on the Register button")
 	public void user_clicks_on_the_register_button() throws InterruptedException {
 		corporateregistrationPage.click_register();

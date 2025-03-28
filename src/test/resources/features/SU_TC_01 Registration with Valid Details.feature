@@ -1,4 +1,4 @@
-   @fulltest
+@SingleUser @fulltest
    Feature: User Registration
 
   @SU_TC01_Register_with_valid_credentials
