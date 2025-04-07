@@ -7,14 +7,11 @@ import org.testng.Assert;
 import com.thinktimetechno.keywords.WebUI;
 
 public class LoginPage {
-	private By inputEmail = By.xpath("//input[@id='username']");
-	private By inputPassword = By.xpath("//input[@id='password']");
-	private By buttonLogin = By.xpath("//input[@value='Login']");
 
 	public DashboardPage loginsingle(String email, String password) {
-		WebUI.setText(inputEmail, email);
-		WebUI.setText(inputPassword, password);
-		WebUI.clickElement(buttonLogin);
+		WebUI.setText(By.xpath("//input[@id='username']"), email);
+		WebUI.setText(By.xpath("//input[@id='password']"), password);
+		WebUI.clickElement(By.xpath("//input[@value='Login']"));
 		return new DashboardPage();
 	}
 

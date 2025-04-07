@@ -10,10 +10,12 @@ com\thinktimetechno\driver\BrowserFactory$4.class
 com\thinktimetechno\report\AllureManager.class
 com\thinktimetechno\report\ExtentTestManager.class
 com\thinktimetechno\utils\ObjectUtils.class
+.cucumber\cucumber.stepDefinitions.tmp
 com\thinktimetechno\helpers\CaptureHelpers.class
 com\thinktimetechno\utils\LocalStorageUtils.class
 com\thinktimetechno\exceptions\InvalidPathForExcelException.class
 com\thinktimetechno\driver\BrowserFactory$1.class
+.cucumber\cucumber.glue.tmp
 com\thinktimetechno\driver\BrowserFactory.class
 com\thinktimetechno\helpers\ScreenRecoderHelpers.class
 com\thinktimetechno\helpers\ExcelHelpers$1.class

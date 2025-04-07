@@ -7,16 +7,6 @@ import org.testng.Assert;
 import com.thinktimetechno.keywords.WebUI;
 
 public class CorporateLoginPage {
-	private By inputEmail = By.xpath("//input[@id='email']");
-	private By inputPassword = By.xpath("//input[@id='password']");
-	private By buttonLogin = By.xpath("//input[@value='Login']");
-
-	public CorporateDashboardPage loginMulti(String email, String password) {
-		WebUI.setText(inputEmail, email);
-		WebUI.setText(inputPassword, password);
-		WebUI.clickElement(buttonLogin);
-		return new CorporateDashboardPage();
-	}
 
 	public void goupuser_login_page_validation() {
 		String PageTitle = WebUI.getPageTitle();
@@ -25,16 +15,14 @@ public class CorporateLoginPage {
 
 	public void success_message_validation(String success) {
 
-		WebElement sucessElement = WebUI
-				.waitForElementVisible(By.xpath("//form[@id='Resetform']//div[@class='redText']"));
-		String success1 = sucessElement.getText();
+		String success1 = WebUI.getTextElement(By.xpath("//form[@id='Resetform']//div[@class='redText']"));
 
 		Assert.assertEquals(success1, success);
 	}
 
 	public void Corporate_login_details(String email, String password) {
-		WebUI.setText(inputEmail, email);
-		WebUI.setText(inputPassword, password);
+		WebUI.setText(By.xpath("//input[@id='email']"), email);
+		WebUI.setText(By.xpath("//input[@id='password']"), password);
 
 	}
 
@@ -49,10 +37,17 @@ public class CorporateLoginPage {
 
 	}
 
+	public void send_instruction() {
+
+		WebUI.clickElement(By.xpath("(//input[@id='select_course'])[1]"));
+
+	}
+
 	public void error_message_validation(String error) {
-		WebElement errorElement = WebUI.waitForElementVisible(By.xpath(
+
+		String error1 = WebUI.getTextElement(By.xpath(
 				"//div[@id='register_box']//p[contains(text(),'Your email / password combination is invalid.')]"));
-		String error1 = errorElement.getText();
+
 		Assert.assertEquals(error1, error);
 	}
 
@@ -63,7 +58,13 @@ public class CorporateLoginPage {
 	public void Group_Resetpassword_page_validation() {
 		WebUI.waitForPageLoaded();
 		String PageTitle = WebUI.getTextElement(By.xpath("//h2[@class='title-corporate-login']"));
+
 		Assert.assertEquals(PageTitle, "Corporate Forgot Password");
+	}
+
+	public void enter_groupuser_email(String username) {
+
+		WebUI.setText(By.xpath("(//input[@id='email'])[2]"), username);
 	}
 
 }

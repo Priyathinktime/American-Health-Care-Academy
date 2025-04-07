@@ -1,15 +1,31 @@
 package com.thinktimetechno.projects.website.Multipages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
+import com.thinktimetechno.driver.DriverManager;
 import com.thinktimetechno.keywords.WebUI;
 
 public class CorporateRegistrationPage {
 
 	public void Group_Registration_page_validation() {
 
+		WebUI.verifyPageTitleContains("Groupdiscount - American Health Care Academy");
+
+	}
+	public void not_group_dashboard_page_validation() {
+
+		
+		Assert.assertNotEquals(WebUI.getPageTitle(), "Dashboard - American Health Care Academy");
+
+	}
+
+	public void Group_dashboard_page_validation() {
+
 		WebUI.verifyPageTitleContains("Dashboard | Groupadmin - American Health Care Academy");
+
 	}
 
 	public void error_validation(String error) {
@@ -19,7 +35,7 @@ public class CorporateRegistrationPage {
 						By.xpath("//form[@id='form_groupdiscount']/descendant::div[@id='error_message_dv2']"))
 				.getText();
 		Assert.assertEquals(error_message, error);
-		System.out.println(error_message);
+
 	}
 
 	public void exiting_account_validation(String error) {
@@ -29,7 +45,7 @@ public class CorporateRegistrationPage {
 						By.xpath("(//form[@id='form_groupdiscount']/descendant::div[@class='error_msg'])[2]"))
 				.getText();
 		Assert.assertEquals(error_message, error);
-		System.out.println(error_message);
+
 	}
 
 	public void click_register() throws InterruptedException {
@@ -59,6 +75,23 @@ public class CorporateRegistrationPage {
 
 	}
 
+	public void enter_registration_details_BLANK(String firstName, String lastname, String companyname,
+			String phonenumber, String emailaddress, String createpassword, String confirmpassword) {
+		String dateTime = new java.text.SimpleDateFormat("yyyyMMddHHmmss").format(new java.util.Date());
+		String emailAddress = emailaddress.replace("john.doe", "john.doe" + dateTime);
+
+		String Companyname = companyname.replace("Thinktime", "Thinktime" + dateTime);
+
+		WebUI.setText(By.xpath("//input[@id='first_name']"), firstName);
+		WebUI.setText(By.xpath("//input[@id='last_name']"), lastname);
+		WebUI.setText(By.xpath("//input[@id='company']"), Companyname);
+		WebUI.setText(By.xpath("//input[@id='phone_number']"), phonenumber);
+		WebUI.setText(By.xpath("//input[@id='email_address']"), emailAddress);
+		WebUI.setText(By.xpath("//input[@id='password-cop']"), createpassword);
+		WebUI.setText(By.xpath("//input[@id='password2-cop']"), confirmpassword);
+
+	}
+
 	public void enter_existing_registration_detail(String firstName, String lastname, String companyname,
 			String phonenumber, String emailaddress, String createpassword, String confirmpassword) {
 
@@ -70,6 +103,62 @@ public class CorporateRegistrationPage {
 		WebUI.setText(By.xpath("//input[@id='password-cop']"), createpassword);
 		WebUI.setText(By.xpath("//input[@id='password2-cop']"), confirmpassword);
 
+	}
+
+	public void Registration_page_validation() {
+		String PageTitle = WebUI.getPageTitle();
+		Assert.assertEquals(PageTitle, "Register - American Health Care Academy");
+	}
+
+	public void Groupdiscount_page_validation() {
+		String PageTitle = WebUI.getPageTitle();
+		Assert.assertEquals(PageTitle, "Groupdiscount - American Health Care Academy");
+	}
+
+	public void error_validation() throws InterruptedException {
+		WebElement firstNameField = WebUI.getWebElement(By.name("first_name"));
+
+		String fieldValue = firstNameField.getAttribute("value");
+
+		if (fieldValue == null || fieldValue.trim().isEmpty()) {
+			System.out.println("=== The First Name field is empty ===");
+		} else {
+			System.out.println("=== The First Name field contains: === " + fieldValue);
+		}
+	}
+
+//	public void click_register_now() throws InterruptedException {
+//		
+//		WebElement registerButton = WebUI.getWebElement(By.id("register-button"));
+//
+//	
+//		JavascriptExecutor js = (JavascriptExecutor) DriverManager.getDriver();
+//		
+//
+//		}
+
+	public void error_validation_existing_account() {
+		String PageTitle = WebUI.getPageTitle();
+		Assert.assertEquals(PageTitle, "Register - American Health Care Academy");
+	}
+
+	public void enter_registration_detail(String firstName, String lastname, String phonenumber, String emailaddress,
+			String username, String password, String confirmpassword) {
+		String dateTime = new java.text.SimpleDateFormat("yyyyMMddHHmmss").format(new java.util.Date());
+		String emailAddress = emailaddress.replace("john.doe", "john.doe" + dateTime);
+
+		String Username = username.replace("johndoe", "johndoe" + dateTime);
+
+		WebUI.setText(By.xpath("//input[@id='first_name']"), firstName);
+
+		WebUI.setText(By.xpath("//input[@id='last_name']"), lastname);
+		WebUI.setText(By.xpath("//input[@id='phone_number']"), phonenumber);
+
+		WebUI.setText(By.xpath("//input[@id='email_address']"), emailAddress);
+
+		WebUI.setText(By.xpath("//input[@id='username']"), Username);
+		WebUI.setText(By.xpath("//input[@id='password']"), password);
+		WebUI.setText(By.xpath("//input[@id='confirm_password']"), confirmpassword);
 	}
 
 }

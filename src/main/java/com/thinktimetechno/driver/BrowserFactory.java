@@ -45,6 +45,21 @@ public enum BrowserFactory {
             options.addArguments("--disable-infobars");
             options.addArguments("--disable-notifications");
             options.addArguments("--remote-allow-origins=*");
+            
+            
+            
+            options.addArguments("--disable-blink-features=AutomationControlled"); // Bypass automation detection
+            options.addArguments("--disable-popup-blocking"); // Disable pop-ups
+   
+          
+            options.addArguments("--disable-geolocation");
+         // Add this to ChromeOptions to avoid automatic sign-in prompts
+            options.addArguments("--disable-autofill-keyboard-accessory-view");
+            options.addArguments("--disable-single-click-autofill");
+            options.addArguments("--disable-save-password-bubble");
+            options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
+            options.setExperimentalOption("useAutomationExtension", false);
+            
             if (Boolean.valueOf(FrameworkConstants.HEADLESS) == true) {
                 options.addArguments("--headless=new");
                 options.addArguments("window-size=1800,900");

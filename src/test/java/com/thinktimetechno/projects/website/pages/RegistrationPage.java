@@ -60,10 +60,8 @@ public class RegistrationPage {
 		String Username = username.replace("johndoe", "johndoe" + dateTime);
 
 		WebUI.setText(By.xpath("//input[@id='first_name']"), firstName);
-	
-		WebUI.getJsExecutor().executeScript("document.getElementById('first_name').blur();");
 
-		Thread.sleep(8000);
+		WebUI.getJsExecutor().executeScript("document.getElementById('first_name').blur();");
 
 		WebUI.setText(By.xpath("//input[@id='last_name']"), lastname);
 
