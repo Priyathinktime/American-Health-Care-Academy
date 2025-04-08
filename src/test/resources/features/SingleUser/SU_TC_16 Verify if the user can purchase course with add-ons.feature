@@ -15,10 +15,10 @@ Feature: User Registration and Course Enrollment
     | Confirm Password | Secure@123        |
   And User agrees to the Terms and Privacy Policy
   And User clicks on the Register Now button
-    Then User is on the "Are you a Healthcare Provider? " page
+    Then User is on the Are you a Healthcare Provider? page
 
     When User selects "Yes, I am a healthcare provider"
-   Then User should be navigated to the "Please choose your profession" page
+   Then User should be navigated to the Please choose your profession page
 
     When User selects the profession as "Doctor / Physicians"
     Then User should be navigated to the Course Selection page

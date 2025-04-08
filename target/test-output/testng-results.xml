@@ -1,27 +1,171 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+<testng-results ignored="0" total="20" passed="20" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-04T17:02:05 IST" name="Suite Cucumber All Feature" finished-at="2025-04-04T17:14:37 IST" duration-ms="752143">
+  <suite started-at="2025-04-07T17:12:53 IST" name="Suite Cucumber All Feature" finished-at="2025-04-07T17:31:02 IST" duration-ms="1088349">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5099c59b]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-04-04T17:02:05 IST" name="Test Cucumber All Feature" finished-at="2025-04-04T17:14:37 IST" duration-ms="752143">
+    <test started-at="2025-04-07T17:12:53 IST" name="Test Cucumber All Feature" finished-at="2025-04-07T17:31:02 IST" duration-ms="1088349">
       <class name="com.thinktimetechno.runners.FullTest.FullTestTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5099c59b]" started-at="2025-04-04T17:02:05 IST" name="setUpClass" finished-at="2025-04-04T17:02:08 IST" duration-ms="3044" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:12:53 IST" name="setUpClass" finished-at="2025-04-07T17:12:56 IST" duration-ms="2808" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@4431e54b]]>
+                <![CDATA[org.testng.TestRunner@3994c5fa]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5099c59b]" started-at="2025-04-04T17:02:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-04T17:03:06 IST" duration-ms="57968" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:12:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:13:28 IST" duration-ms="31737" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC_01 Corporate Registration with Valid Details"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Group Registration"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:13:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:13:50 IST" duration-ms="21921" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC_02 Corporate Register(leaving one mandatory field blank)"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Group Registration"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:13:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:14:17 IST" duration-ms="26793" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC_03 Corporate Register(with existing accounts credentials)"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Group Registration"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:14:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:14:36 IST" duration-ms="19667" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC_04 Login with Valid Credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Group Login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:14:36 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:14:53 IST" duration-ms="16503" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC_05 Login with Valid Username Invalid  Password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Group Login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:14:53 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:15:08 IST" duration-ms="15568" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC_06 Login with Invalid Username valid  Password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Group Login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:15:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:15:25 IST" duration-ms="17025" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC_07 Login with Invalid Username Invalid  Password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Group Login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:15:25 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:15:45 IST" duration-ms="19732" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC_08 Verify Forgot Password Functionality Using a Valid Registered Email Address"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Group Login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:15:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:16:04 IST" duration-ms="18664" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC_09 Verify Forgot Password Functionality Using a Non-Registered/Invalid Email Address"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Group Login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:16:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:17:26 IST" duration-ms="82452" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +181,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5099c59b]" started-at="2025-04-04T17:03:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-04T17:03:55 IST" duration-ms="48957" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:17:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:18:42 IST" duration-ms="75297" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,7 +197,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5099c59b]" started-at="2025-04-04T17:03:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-04T17:04:36 IST" duration-ms="41001" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:18:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:20:00 IST" duration-ms="78133" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -69,7 +213,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5099c59b]" started-at="2025-04-04T17:04:36 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-04T17:05:38 IST" duration-ms="62142" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:20:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:21:31 IST" duration-ms="90752" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -85,7 +229,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5099c59b]" started-at="2025-04-04T17:05:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-04T17:06:02 IST" duration-ms="23656" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:21:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:22:41 IST" duration-ms="70272" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -101,7 +245,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5099c59b]" started-at="2025-04-04T17:06:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-04T17:06:30 IST" duration-ms="28576" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:22:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:23:13 IST" duration-ms="32508" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -117,7 +261,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5099c59b]" started-at="2025-04-04T17:06:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-04T17:07:01 IST" duration-ms="30777" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:23:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:23:47 IST" duration-ms="33960" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -133,7 +277,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5099c59b]" started-at="2025-04-04T17:07:01 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-04T17:07:30 IST" duration-ms="29263" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:23:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:24:20 IST" duration-ms="32413" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -149,7 +293,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5099c59b]" started-at="2025-04-04T17:07:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-04T17:08:03 IST" duration-ms="32703" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:24:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:24:57 IST" duration-ms="37664" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -165,7 +309,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5099c59b]" started-at="2025-04-04T17:08:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-04T17:10:41 IST" duration-ms="158457" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:24:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:27:48 IST" duration-ms="170303" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -181,7 +325,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5099c59b]" started-at="2025-04-04T17:10:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-04T17:14:36 IST" duration-ms="234898" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:27:48 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:31:01 IST" duration-ms="193070" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -197,11 +341,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5099c59b]" started-at="2025-04-04T17:14:36 IST" name="tearDownClass" finished-at="2025-04-04T17:14:37 IST" duration-ms="575" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:31:01 IST" name="tearDownClass" finished-at="2025-04-07T17:31:02 IST" duration-ms="966" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5099c59b]" started-at="2025-04-04T17:14:37 IST" name="afterSuite" finished-at="2025-04-04T17:14:37 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:31:02 IST" name="afterSuite" finished-at="2025-04-07T17:31:02 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

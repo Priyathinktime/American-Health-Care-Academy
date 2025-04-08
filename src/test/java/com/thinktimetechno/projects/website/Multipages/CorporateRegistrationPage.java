@@ -1,11 +1,8 @@
 package com.thinktimetechno.projects.website.Multipages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-
-import com.thinktimetechno.driver.DriverManager;
 import com.thinktimetechno.keywords.WebUI;
 
 public class CorporateRegistrationPage {
@@ -15,16 +12,10 @@ public class CorporateRegistrationPage {
 		WebUI.verifyPageTitleContains("Groupdiscount - American Health Care Academy");
 
 	}
+
 	public void not_group_dashboard_page_validation() {
 
-		
 		Assert.assertNotEquals(WebUI.getPageTitle(), "Dashboard - American Health Care Academy");
-
-	}
-
-	public void Group_dashboard_page_validation() {
-
-		WebUI.verifyPageTitleContains("Dashboard | Groupadmin - American Health Care Academy");
 
 	}
 
@@ -127,15 +118,7 @@ public class CorporateRegistrationPage {
 		}
 	}
 
-//	public void click_register_now() throws InterruptedException {
-//		
-//		WebElement registerButton = WebUI.getWebElement(By.id("register-button"));
-//
-//	
-//		JavascriptExecutor js = (JavascriptExecutor) DriverManager.getDriver();
-//		
-//
-//		}
+
 
 	public void error_validation_existing_account() {
 		String PageTitle = WebUI.getPageTitle();

@@ -8,6 +8,8 @@ C:\Users\rithi\Downloads\01-FredPerry-master\01-FredPerry-master\src\test\java\c
 C:\Users\rithi\Downloads\01-FredPerry-master\01-FredPerry-master\src\test\java\com\thinktimetechno\common\BaseTest.java
 C:\Users\rithi\Downloads\01-FredPerry-master\01-FredPerry-master\src\test\java\com\thinktimetechno\hooks\CucumberListener.java
 C:\Users\rithi\Downloads\01-FredPerry-master\01-FredPerry-master\src\test\java\com\thinktimetechno\projects\website\pages\LoginPage.java
+C:\Users\rithi\Downloads\01-FredPerry-master\01-FredPerry-master\src\test\java\com\thinktimetechno\projects\website\pages\CourseSelectionPage.java
+C:\Users\rithi\Downloads\01-FredPerry-master\01-FredPerry-master\src\test\java\com\thinktimetechno\projects\website\pages\TypeOfProfessionPage.java
 C:\Users\rithi\Downloads\01-FredPerry-master\01-FredPerry-master\src\test\java\com\thinktimetechno\runners\GroupUser\C_TC_03_Register_with_existing_accounts_credentials_TestRunner.java
 C:\Users\rithi\Downloads\01-FredPerry-master\01-FredPerry-master\src\test\java\com\thinktimetechno\listeners\TestListener.java
 C:\Users\rithi\Downloads\01-FredPerry-master\01-FredPerry-master\src\test\java\com\thinktimetechno\runners\SingleUser\SU_TC_01_Registration_with_Valid_Details_TestRunner.java
@@ -19,6 +21,9 @@ C:\Users\rithi\Downloads\01-FredPerry-master\01-FredPerry-master\src\test\java\c
 C:\Users\rithi\Downloads\01-FredPerry-master\01-FredPerry-master\src\test\java\com\thinktimetechno\projects\website\pages\DashboardPage.java
 C:\Users\rithi\Downloads\01-FredPerry-master\01-FredPerry-master\src\test\java\com\thinktimetechno\runners\GroupUser\C_TC_06_Login_invalid_username_and_valid_password_TestRunner.java
 C:\Users\rithi\Downloads\01-FredPerry-master\01-FredPerry-master\src\test\java\com\thinktimetechno\common\CommonSteps.java
+C:\Users\rithi\Downloads\01-FredPerry-master\01-FredPerry-master\src\test\java\com\thinktimetechno\runners\FullTest\GroupUserTestRunner.java
+C:\Users\rithi\Downloads\01-FredPerry-master\01-FredPerry-master\src\test\java\com\thinktimetechno\projects\website\pages\QuizPage.java
+C:\Users\rithi\Downloads\01-FredPerry-master\01-FredPerry-master\src\test\java\com\thinktimetechno\projects\website\Multipages\CorporateResetPasswordPage.java
 C:\Users\rithi\Downloads\01-FredPerry-master\01-FredPerry-master\src\test\java\com\thinktimetechno\runners\GroupUser\C_TC_01_Registration_with_Valid_Details_TestRunner.java
 C:\Users\rithi\Downloads\01-FredPerry-master\01-FredPerry-master\src\test\java\com\thinktimetechno\runners\SingleUser\SU_TC_03_Register_with_existing_accounts_credentials_TestRunner.java
 C:\Users\rithi\Downloads\01-FredPerry-master\01-FredPerry-master\src\test\java\com\thinktimetechno\hooks\Hooks.java
@@ -28,10 +33,15 @@ C:\Users\rithi\Downloads\01-FredPerry-master\01-FredPerry-master\src\test\java\c
 C:\Users\rithi\Downloads\01-FredPerry-master\01-FredPerry-master\src\test\java\com\thinktimetechno\listeners\AllureListener.java
 C:\Users\rithi\Downloads\01-FredPerry-master\01-FredPerry-master\src\test\java\com\thinktimetechno\runners\GroupUser\C_TC_02_Register_leaving_one_mandatory_field_blank_TestRunner.java
 C:\Users\rithi\Downloads\01-FredPerry-master\01-FredPerry-master\src\test\java\com\thinktimetechno\runners\SingleUser\SU_TC_06_Login_with_Valid_Username_Invalid_Password_TestRunner.java
+C:\Users\rithi\Downloads\01-FredPerry-master\01-FredPerry-master\src\test\java\com\thinktimetechno\runners\FullTest\SingleUserTestRunner.java
 C:\Users\rithi\Downloads\01-FredPerry-master\01-FredPerry-master\src\test\java\com\thinktimetechno\projects\website\Multipages\CorporateLoginPage.java
+C:\Users\rithi\Downloads\01-FredPerry-master\01-FredPerry-master\src\test\java\com\thinktimetechno\projects\website\pages\PaymentPage.java
+C:\Users\rithi\Downloads\01-FredPerry-master\01-FredPerry-master\src\test\java\com\thinktimetechno\projects\website\pages\ResetPasswordPage.java
 C:\Users\rithi\Downloads\01-FredPerry-master\01-FredPerry-master\src\test\java\com\thinktimetechno\runners\SingleUser\SU_TC_07_Login_with_Invalid_Username_valid_Password_TestRunner.java
+C:\Users\rithi\Downloads\01-FredPerry-master\01-FredPerry-master\src\test\java\com\thinktimetechno\projects\website\pages\BillingPage.java
 C:\Users\rithi\Downloads\01-FredPerry-master\01-FredPerry-master\src\test\java\com\thinktimetechno\runners\FullTest\FullTestTestRunner.java
 C:\Users\rithi\Downloads\01-FredPerry-master\01-FredPerry-master\src\test\java\com\thinktimetechno\runners\GroupUser\C_TC_08_Verify_Forgot_Password_Functionality_Using_Valid_Registered_Email_Address_TestRunner.java
+C:\Users\rithi\Downloads\01-FredPerry-master\01-FredPerry-master\src\test\java\com\thinktimetechno\projects\website\pages\FieldOfStudyPage.java
 C:\Users\rithi\Downloads\01-FredPerry-master\01-FredPerry-master\src\test\java\com\thinktimetechno\runners\GroupUser\C_TC_07_Login_invalid_username_and_invalid_password_TestRunner.java
 C:\Users\rithi\Downloads\01-FredPerry-master\01-FredPerry-master\src\test\java\com\thinktimetechno\runners\SingleUser\SU_TC_08_Login_with_Invalid_Username_Invalid_Password_TestRunner.java
 C:\Users\rithi\Downloads\01-FredPerry-master\01-FredPerry-master\src\test\java\com\thinktimetechno\projects\website\Multipages\CorporateRegistrationPage.java

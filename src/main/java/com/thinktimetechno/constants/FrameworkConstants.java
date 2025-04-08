@@ -20,11 +20,16 @@ public final class FrameworkConstants {
         PropertiesHelpers.loadAllFiles();
         System.out.println("Data From FrameworkConstants: " + PropertiesHelpers.getProperties());
     }
-
+    public static final String RECEIVER_MAIL_1 = PropertiesHelpers.getValue("RECEIVER_MAIL_1");
+    public static final String RECEIVER_MAIL_2 = PropertiesHelpers.getValue("RECEIVER_MAIL_2");
+    public static final String RECEIVER_MAIL_3 = PropertiesHelpers.getValue("RECEIVER_MAIL_3");
+    public static final String RECEIVER_MAIL_4 = PropertiesHelpers.getValue("RECEIVER_MAIL_4");
+    public static final String RECEIVER_MAIL_5 = PropertiesHelpers.getValue("RECEIVER_MAIL_5");
+    
     public static final String PROJECT_PATH = Helpers.getCurrentDir();
     public static final String EXCEL_DATA_FILE_PATH = PropertiesHelpers.getValue("EXCEL_DATA_FILE_PATH");
     public static final String JSON_DATA_FILE_PATH = PropertiesHelpers.getValue("JSON_DATA_FILE_PATH");
-
+    
     public static final String BROWSER = PropertiesHelpers.getValue("BROWSER");
     public static final String URL_CRM = PropertiesHelpers.getValue("URL_CRM");
     public static final String REMOTE_URL = PropertiesHelpers.getValue("REMOTE_URL");

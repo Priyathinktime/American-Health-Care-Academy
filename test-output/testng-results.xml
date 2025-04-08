@@ -2,50 +2,50 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-04T16:59:01 IST" name="Default suite" finished-at="2025-04-04T17:01:30 IST" duration-ms="148984">
+  <suite started-at="2025-04-08T10:00:41 IST" name="Default suite" finished-at="2025-04-08T10:01:24 IST" duration-ms="43020">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.SingleUser.SU_TC_15_Verify_if_user_can_make_payment_for_selected_course_TestRunner@310b2b6f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.SingleUser.SU_TC_01_Registration_with_Valid_Details_TestRunner@310b2b6f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-04-04T16:59:01 IST" name="Default test" finished-at="2025-04-04T17:01:30 IST" duration-ms="148984">
-      <class name="com.thinktimetechno.runners.SingleUser.SU_TC_15_Verify_if_user_can_make_payment_for_selected_course_TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.thinktimetechno.runners.SingleUser.SU_TC_15_Verify_if_user_can_make_payment_for_selected_course_TestRunner@310b2b6f]" started-at="2025-04-04T16:59:01 IST" name="setUpClass" finished-at="2025-04-04T16:59:03 IST" duration-ms="2090" status="PASS">
+    <test started-at="2025-04-08T10:00:41 IST" name="Default test" finished-at="2025-04-08T10:01:24 IST" duration-ms="43020">
+      <class name="com.thinktimetechno.runners.SingleUser.SU_TC_01_Registration_with_Valid_Details_TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.thinktimetechno.runners.SingleUser.SU_TC_01_Registration_with_Valid_Details_TestRunner@310b2b6f]" started-at="2025-04-08T10:00:41 IST" name="setUpClass" finished-at="2025-04-08T10:00:43 IST" duration-ms="2117" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@aee08df]]>
+                <![CDATA[org.testng.TestRunner@129e6f3a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.SingleUser.SU_TC_15_Verify_if_user_can_make_payment_for_selected_course_TestRunner@310b2b6f]" started-at="2025-04-04T16:59:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-04T17:01:30 IST" duration-ms="146266" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.SingleUser.SU_TC_01_Registration_with_Valid_Details_TestRunner@310b2b6f]" started-at="2025-04-08T10:00:43 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-08T10:01:23 IST" duration-ms="40280" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["TC_15 Registration with Valid Details and Course Completion"]]>
+                <![CDATA["TC_01 Registration with Valid Details"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["User Registration and Course Enrollment"]]>
+                <![CDATA["User Registration"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.thinktimetechno.runners.SingleUser.SU_TC_15_Verify_if_user_can_make_payment_for_selected_course_TestRunner@310b2b6f]" started-at="2025-04-04T17:01:30 IST" name="tearDownClass" finished-at="2025-04-04T17:01:30 IST" duration-ms="541" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.thinktimetechno.runners.SingleUser.SU_TC_01_Registration_with_Valid_Details_TestRunner@310b2b6f]" started-at="2025-04-08T10:01:23 IST" name="tearDownClass" finished-at="2025-04-08T10:01:24 IST" duration-ms="536" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.thinktimetechno.runners.SingleUser.SU_TC_15_Verify_if_user_can_make_payment_for_selected_course_TestRunner@310b2b6f]" started-at="2025-04-04T17:01:30 IST" name="afterSuite" finished-at="2025-04-04T17:01:30 IST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.thinktimetechno.runners.SingleUser.SU_TC_01_Registration_with_Valid_Details_TestRunner@310b2b6f]" started-at="2025-04-08T10:01:24 IST" name="afterSuite" finished-at="2025-04-08T10:01:27 IST" duration-ms="2982" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- com.thinktimetechno.runners.SingleUser.SU_TC_15_Verify_if_user_can_make_payment_for_selected_course_TestRunner -->
+      </class> <!-- com.thinktimetechno.runners.SingleUser.SU_TC_01_Registration_with_Valid_Details_TestRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

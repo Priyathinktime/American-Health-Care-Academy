@@ -4,10 +4,16 @@ import java.util.Map;
 
 import com.thinktimetechno.hooks.TestContext;
 import com.thinktimetechno.keywords.WebUI;
+import com.thinktimetechno.projects.website.pages.BillingPage;
+import com.thinktimetechno.projects.website.pages.CourseSelectionPage;
 import com.thinktimetechno.projects.website.pages.DashboardPage;
+import com.thinktimetechno.projects.website.pages.FieldOfStudyPage;
 import com.thinktimetechno.projects.website.pages.LoginPage;
+import com.thinktimetechno.projects.website.pages.PaymentPage;
+import com.thinktimetechno.projects.website.pages.QuizPage;
 import com.thinktimetechno.projects.website.pages.RegistrationPage;
-
+import com.thinktimetechno.projects.website.pages.ResetPasswordPage;
+import com.thinktimetechno.projects.website.pages.TypeOfProfessionPage;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -18,11 +24,25 @@ public class Single_User_StepDefinitions {
 	private DashboardPage dashboardPage;
 	private LoginPage loginPage;
 	private RegistrationPage registrationPage;
+	private ResetPasswordPage resetpasswordPage;
+	private FieldOfStudyPage fieldOfStudyPage;
+	private TypeOfProfessionPage typeOfProfessionPage;
+	private CourseSelectionPage courseSelectionPage;
+	private QuizPage quizpage;
+	private PaymentPage paymentPage;
+	private BillingPage billingPage;
 
 	public Single_User_StepDefinitions(TestContext testContext) {
 		dashboardPage = testContext.getDashboardPage();
 		loginPage = testContext.getLoginPage();
 		registrationPage = testContext.getRegistrationPage();
+		resetpasswordPage = testContext.getResetPasswordPage();
+		fieldOfStudyPage = testContext.getFieldOfStudyPage();
+		typeOfProfessionPage = testContext.getTypeOfProfessionPage();
+		courseSelectionPage = testContext.getCourseSelectionPage();
+		quizpage = testContext.getQuizPage();
+		paymentPage = testContext.getPaymentPage();
+		billingPage = testContext.getBillingPage();
 	}
 
 	@Given("User navigate to {string} for SingleUser registration")
@@ -132,22 +152,22 @@ public class Single_User_StepDefinitions {
 
 	@When("User enter the Username\\/Email as {string}")
 	public void user_enter_the_username_email_as(String username) {
-		loginPage.enter_username(username);
+		resetpasswordPage.enter_username(username);
 	}
 
 	@When("User hit the Send Instructions")
 	public void user_hit_the_send_instructions() {
-		loginPage.click_Send_Instructions();
+		resetpasswordPage.click_Send_Instructions();
 	}
 
 	@Then("User should see the message {string}")
 	public void user_should_see_the_message(String success) {
-		loginPage.success_message_validation(success);
+		resetpasswordPage.success_message_validation(success);
 	}
 
 	@Then("User should redirected to the Reset Password page")
 	public void user_should_redirected_to_the_reset_password_page() {
-		loginPage.Resetpassword_page_validation();
+		resetpasswordPage.Resetpassword_page_validation();
 	}
 
 	@Then("User should redirected to the dashboard")
@@ -203,24 +223,23 @@ public class Single_User_StepDefinitions {
 
 	@Then("User should see an existing account error message")
 	public void user_should_see_existing_account_an_error_message() {
-//		System.out.println("This User Already Exit! Please Register with different email!");
+
 		registrationPage.error_validation_existing_account();
 	}
 
-//su_15
-	@Then("User is on the {string} page")
-	public void user_is_on_the_page(String page) throws InterruptedException {
-		dashboardPage.verify_fieldofstudytab(page);
+	@Then("User is on the Are you a Healthcare Provider? page")
+	public void user_is_on_the_page() throws InterruptedException {
+		fieldOfStudyPage.verify_fieldofstudytab();
 	}
 
 	@When("User selects {string}")
 	public void user_selects(String page) {
-		dashboardPage.select_healthcare_provider(page);
+		fieldOfStudyPage.select_healthcare_provider(page);
 	}
 
-	@Then("User should be navigated to the {string} page")
-	public void user_should_be_navigated_to_the_profession_page(String page) throws InterruptedException {
-		dashboardPage.verify_typeofprofessiontab(page);
+	@Then("User should be navigated to the Please choose your profession page")
+	public void user_should_be_navigated_to_the_profession_page() throws InterruptedException {
+		typeOfProfessionPage.verify_typeofprofessiontab();
 	}
 
 	@Then("User should be navigated to the Course Selection page")
@@ -230,57 +249,56 @@ public class Single_User_StepDefinitions {
 
 	@When("User selects the profession as {string}")
 	public void user_selects_the_profession_as(String profession) {
-		dashboardPage.select_profession(profession);
+		typeOfProfessionPage.select_profession(profession);
 	}
 
 	@When("User selects the course as {string}")
 	public void user_selects_the_course_as(String course) {
-		dashboardPage.select_course(course);
+		courseSelectionPage.select_course(course);
 	}
 
 	@Then("User lands on the Course Page")
 	public void user_lands_on_the() throws InterruptedException {
-		dashboardPage.verify_coursePageDisplays();
+		courseSelectionPage.verify_coursePageDisplays();
 	}
 
 	@Then("User lands on the Quiz Page")
 	public void user_lands_on_the_() throws InterruptedException {
-		dashboardPage.verify_quizPageDisplays();
+		quizpage.verify_quizPageDisplays();
 	}
 
 	@When("User taps on the Take Quiz button")
 	public void user_taps_on_the_button() {
-		dashboardPage.click_quiz_button();
+		quizpage.click_quiz_button();
 	}
 
 	@When("User attends all the {int} questions")
 	public void user_attends_all_the_questions(Integer int1) throws InterruptedException {
-		dashboardPage.question_and_answer();
+		quizpage.question_and_answer();
 	}
 
 	@When("User taps on the Submit Quiz button")
 	public void user_taps_on() throws InterruptedException {
-		dashboardPage.submitQuiz();
+		quizpage.submitQuiz();
 
 	}
 
 	@Then("User lands on the Quiz Success Page")
 	public void user_quiz_lands_on_the_() throws InterruptedException {
-		dashboardPage.verify_successquizPageDisplays();
+		quizpage.verify_successquizPageDisplays();
 	}
 
 	@When("User taps on Continue to Download Card")
 	public void user_taps_on_download_card() throws InterruptedException {
-		dashboardPage.select_download_card();
+		paymentPage.select_download_card();
 
 	}
 
 	@Then("User lands on the Payment Page")
 	public void user_land_on_payement_page() throws InterruptedException {
-		dashboardPage.verify_paymentPageDisplays();
+		paymentPage.verify_paymentPageDisplays();
 	}
 
-	// payment page
 	@When("User enters the following payment card details:")
 	public void user_enters_the_following_payment_card_details(io.cucumber.datatable.DataTable dataTable) {
 		Map<String, String> data = dataTable.asMap(String.class, String.class);
@@ -290,18 +308,18 @@ public class Single_User_StepDefinitions {
 		String expirationmonth = data.get("Expiration Month");
 		String expirationyear = data.get("Expiration Year");
 		String cvv = data.get("CVV");
-		dashboardPage.payment_details(fullName, cardnumber, expirationmonth, expirationyear, cvv);
+		paymentPage.payment_details(fullName, cardnumber, expirationmonth, expirationyear, cvv);
 
 	}
 
 	@When("User taps on Next button")
 	public void user_taps_on_next_button() throws InterruptedException {
-		dashboardPage.click_next_button();
+		paymentPage.click_next_button();
 	}
 
 	@Then("User lands on the Billing and Shipping Address Page")
 	public void user_lands_on_the_billing_and_shipping_address_page() {
-		dashboardPage.verify_billingPageDisplays();
+		billingPage.verify_billingPageDisplays();
 	}
 
 	@When("User enters the following shipping and billing details:")
@@ -315,18 +333,18 @@ public class Single_User_StepDefinitions {
 		String state = data.get("State");
 		String zipcode = data.get("Zip Code");
 		String country = data.get("Country");
-		dashboardPage.billing_details(FirstName, LastName, Address, city, state, zipcode, country);
+		billingPage.billing_details(FirstName, LastName, Address, city, state, zipcode, country);
 
 	}
 
 	@When("User taps on the Same as Billing Address radio button")
 	public void user_taps_on_the_same_as_billing_address_radio_button() {
-		dashboardPage.click_sameasbilling_button();
+		billingPage.click_sameasbilling_button();
 	}
 
 	@When("User taps on the Submit Payment button")
 	public void user_taps_on_submit_payment_button() throws InterruptedException {
-		dashboardPage.click_submitbilling_button();
+		billingPage.click_submitbilling_button();
 	}
 
 	@When("User taps on I Accept")
@@ -352,7 +370,8 @@ public class Single_User_StepDefinitions {
 
 	@Then("User lands on the Congratulations Page")
 	public void user_land_on_congratulation_page() throws InterruptedException {
-		dashboardPage.verify_thankyouDisplays();
+		dashboardPage.verify_thankyouPageAndCloseOtherTabs();
+//		dashboardPage.verify_thankyouDisplays1();
 	}
 
 }
