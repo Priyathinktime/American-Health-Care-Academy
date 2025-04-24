@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="20" passed="20" failed="0" skipped="0">
+<testng-results ignored="0" total="33" passed="25" failed="8" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-07T17:12:53 IST" name="Suite Cucumber All Feature" finished-at="2025-04-07T17:31:02 IST" duration-ms="1088349">
+  <suite started-at="2025-04-23T18:18:36 IST" name="CucumberSuite" finished-at="2025-04-23T18:35:35 IST" duration-ms="1018849">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestRunner@574059d5]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-04-07T17:12:53 IST" name="Test Cucumber All Feature" finished-at="2025-04-07T17:31:02 IST" duration-ms="1088349">
-      <class name="com.thinktimetechno.runners.FullTest.FullTestTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:12:53 IST" name="setUpClass" finished-at="2025-04-07T17:12:56 IST" duration-ms="2808" status="PASS">
+    <test started-at="2025-04-23T18:18:36 IST" name="CucumberFeatureTest" finished-at="2025-04-23T18:35:35 IST" duration-ms="1018849">
+      <class name="com.thinktimetechno.runners.FullTest.FullTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestRunner@574059d5]" started-at="2025-04-23T18:18:36 IST" name="setUpClass" finished-at="2025-04-23T18:18:39 IST" duration-ms="2857" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3994c5fa]]>
+                <![CDATA[org.testng.TestRunner@33f6a7b4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:12:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:13:28 IST" duration-ms="31737" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestRunner@574059d5]" started-at="2025-04-23T18:18:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-23T18:19:00 IST" duration-ms="21696" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,14 +30,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["Group Registration"]]>
+                <![CDATA["C_TC_01_Corporate_Registration_with_Valid_Details"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:13:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:13:50 IST" duration-ms="21921" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestRunner@574059d5]" started-at="2025-04-23T18:19:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-23T18:19:11 IST" duration-ms="10264" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -46,14 +46,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["Group Registration"]]>
+                <![CDATA["C_TC_02_Register_with_leaving_one_mandatory_field_blank"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:13:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:14:17 IST" duration-ms="26793" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestRunner@574059d5]" started-at="2025-04-23T18:19:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-23T18:19:24 IST" duration-ms="13022" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -62,14 +62,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["Group Registration"]]>
+                <![CDATA["C_TC_03_Register_with_existing_accounts_credentials"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:14:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:14:36 IST" duration-ms="19667" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestRunner@574059d5]" started-at="2025-04-23T18:19:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-23T18:19:36 IST" duration-ms="12623" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -78,14 +78,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["Group Login"]]>
+                <![CDATA["C_TC_04_login_valid_credentials"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:14:36 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:14:53 IST" duration-ms="16503" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestRunner@574059d5]" started-at="2025-04-23T18:19:36 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-23T18:19:47 IST" duration-ms="10716" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -94,14 +94,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["Group Login"]]>
+                <![CDATA["C_TC_05_login_valid_username_invalid_password"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:14:53 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:15:08 IST" duration-ms="15568" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestRunner@574059d5]" started-at="2025-04-23T18:19:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-23T18:19:57 IST" duration-ms="10142" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -110,14 +110,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["Group Login"]]>
+                <![CDATA["C_TC_06_login_invalid_username_valid_password"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:15:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:15:25 IST" duration-ms="17025" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestRunner@574059d5]" started-at="2025-04-23T18:19:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-23T18:20:08 IST" duration-ms="11330" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -126,14 +126,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["Group Login"]]>
+                <![CDATA["C_TC_07_login_invalid_username_invalid_password"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:15:25 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:15:45 IST" duration-ms="19732" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestRunner@574059d5]" started-at="2025-04-23T18:20:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-23T18:20:21 IST" duration-ms="12456" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -142,14 +142,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["Group Login"]]>
+                <![CDATA["C_TC_08_Forgot_password_with_valid_registered_email"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:15:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:16:04 IST" duration-ms="18664" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestRunner@574059d5]" started-at="2025-04-23T18:20:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-23T18:20:33 IST" duration-ms="12374" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -158,14 +158,137 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["Group Login"]]>
+                <![CDATA["C_TC_09_Forgot_password_with_invalid_registered_email"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:16:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:17:26 IST" duration-ms="82452" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestRunner@574059d5]" started-at="2025-04-23T18:20:33 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-23T18:21:17 IST" duration-ms="43448" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC_10 Invite Employee"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["C_TC_10_Invite_Employee"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestRunner@574059d5]" started-at="2025-04-23T18:21:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-23T18:22:01 IST" duration-ms="44247" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["C_TC_11_Invite_Employee_in_bulk"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["C_TC_11_Invite_Employee_in_bulk"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button data-role="none" class="btn-large btn-default" id="submit-assign-course" type="button" onclick="sendInvitation()">...</button> is not clickable at point (2274, 989). Other element would receive the click: <div id="select2-drop-mask" class="select2-drop-mask" style=""></div>
+  (Session info: chrome=135.0.7049.96)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f491774a7bd819bb102f6cb90df7a80c, clickElement {id=f.B9CE3690A3CF0C42DFC96F210565AA49.d.699D72BF35085190CC2C51313FF51EE8.e.533}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.97 (b41307079c9b..., userDataDir: C:\Users\rithi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60597}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60597/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f491774a7bd819bb102f6cb90df7a80c)] -> xpath: //button[contains(text(),'Next')]]
+Session ID: f491774a7bd819bb102f6cb90df7a80c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button data-role="none" class="btn-large btn-default" id="submit-assign-course" type="button" onclick="sendInvitation()">...</button> is not clickable at point (2274, 989). Other element would receive the click: <div id="select2-drop-mask" class="select2-drop-mask" style=""></div>
+  (Session info: chrome=135.0.7049.96)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f491774a7bd819bb102f6cb90df7a80c, clickElement {id=f.B9CE3690A3CF0C42DFC96F210565AA49.d.699D72BF35085190CC2C51313FF51EE8.e.533}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.97 (b41307079c9b..., userDataDir: C:\Users\rithi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60597}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60597/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f491774a7bd819bb102f6cb90df7a80c)] -> xpath: //button[contains(text(),'Next')]]
+Session ID: f491774a7bd819bb102f6cb90df7a80c
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at com.thinktimetechno.keywords.WebUI.clickElement(WebUI.java:2116)
+at com.thinktimetechno.projects.website.Multipages.CorporateLoginPage.click_nxt(CorporateLoginPage.java:151)
+at com.thinktimetechno.projects.website.stepdefinitions.CorporateUser.Corporate_StepDefinitions.group_user_tap_the_button1(Corporate_StepDefinitions.java:406)
+at ✽.GroupUser tap the Next button(file:///D:/Workspace/AHCA/src/test/resources/features/GroupUser/C_TC_11%20Invite%20Employee%20in%20bulk.feature:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestRunner@574059d5]" started-at="2025-04-23T18:22:01 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-23T18:22:36 IST" duration-ms="35084" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["C_TC_12 Purchase Codes(select quantity above 5)"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["C_TC_12_Purchase Codes(select quantity above 5)"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestRunner@574059d5]" started-at="2025-04-23T18:22:36 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-23T18:22:59 IST" duration-ms="22821" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["C_TC_13_Purchase Codes(select quantity below 5)"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["C_TC_13_Purchase Codes(select quantity below 5)"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestRunner@574059d5]" started-at="2025-04-23T18:22:59 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-23T18:23:21 IST" duration-ms="21636" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["C_TC_14_Export_Reports"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["C_TC_14_Export_Reports"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestRunner@574059d5]" started-at="2025-04-23T18:23:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-23T18:23:45 IST" duration-ms="24028" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -174,14 +297,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["User Registration"]]>
+                <![CDATA["SU_TC01_Register_with_valid_credentials"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:17:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:18:42 IST" duration-ms="75297" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestRunner@574059d5]" started-at="2025-04-23T18:23:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-23T18:23:57 IST" duration-ms="12908" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -190,14 +313,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["User Registration"]]>
+                <![CDATA["SU_TC02_Register_with_leaving_one_mandatory_field_blank"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:18:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:20:00 IST" duration-ms="78133" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestRunner@574059d5]" started-at="2025-04-23T18:23:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-23T18:24:10 IST" duration-ms="12944" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -206,14 +329,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["User Registration"]]>
+                <![CDATA["SU_TC03_Register_with_existing_accounts_credentials"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:20:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:21:31 IST" duration-ms="90752" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestRunner@574059d5]" started-at="2025-04-23T18:24:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-23T18:24:39 IST" duration-ms="28874" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -222,14 +345,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["User Registration"]]>
+                <![CDATA["SU_TC04_Navigate_to_Registration_Page_from_Login_Page"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:21:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:22:41 IST" duration-ms="70272" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestRunner@574059d5]" started-at="2025-04-23T18:24:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-23T18:24:53 IST" duration-ms="14148" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -238,14 +361,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["User Login"]]>
+                <![CDATA["SU_TC05_login_valid_credentials"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:22:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:23:13 IST" duration-ms="32508" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestRunner@574059d5]" started-at="2025-04-23T18:24:53 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-23T18:25:07 IST" duration-ms="13466" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -254,14 +377,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["User Login"]]>
+                <![CDATA["SU_TC06_Login_with_Valid_Username_Invalid_Password"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:23:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:23:47 IST" duration-ms="33960" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestRunner@574059d5]" started-at="2025-04-23T18:25:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-23T18:25:19 IST" duration-ms="11635" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -270,14 +393,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["User Login"]]>
+                <![CDATA["SU_TC07_Login_with_InValid_Username_valid_Password"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:23:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:24:20 IST" duration-ms="32413" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestRunner@574059d5]" started-at="2025-04-23T18:25:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-23T18:25:30 IST" duration-ms="11517" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -286,14 +409,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["User Login"]]>
+                <![CDATA["SU_TC08_Login_with_InValid_Username_Invalid_Password"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:24:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:24:57 IST" duration-ms="37664" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestRunner@574059d5]" started-at="2025-04-23T18:25:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-23T18:25:47 IST" duration-ms="17152" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -302,14 +425,159 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["User Login"]]>
+                <![CDATA["SU_TC09_Navigate_to_Reset_password_page"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:24:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:27:48 IST" duration-ms="170303" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestRunner@574059d5]" started-at="2025-04-23T18:25:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-23T18:26:12 IST" duration-ms="24754" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["SU_TC10_store_purchase"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["SU_TC10_store_purchase"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestRunner@574059d5]" started-at="2025-04-23T18:26:12 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-23T18:26:41 IST" duration-ms="29335" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC_11 Take Quiz (failed in quiz)"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["SU_TC11_Take_Quiz_failed_in_quiz"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.ArrayIndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index 1 out of bounds for length 1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+at com.thinktimetechno.projects.website.pages.QuizPage.question_and_wronganswer(QuizPage.java:139)
+at com.thinktimetechno.projects.website.stepdefinitions.SingleUser.Single_User_StepDefinitions.user_attends_all_the_wrongquestions(Single_User_StepDefinitions.java:438)
+at ✽.User attends all the 20 questions with some wrong answer(file:///D:/Workspace/AHCA/src/test/resources/features/SingleUser/SU_TC_11%20Take%20Quiz(failed%20in%20quiz).feature:32)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArrayIndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestRunner@574059d5]" started-at="2025-04-23T18:26:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-23T18:27:19 IST" duration-ms="38158" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC_12 SU_TC12_Quiz_Reattempt_Passed"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["SU_TC12_Quiz_Reattempt_Passed"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.ArrayIndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index 1 out of bounds for length 1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+at com.thinktimetechno.projects.website.pages.QuizPage.question_and_wronganswer(QuizPage.java:139)
+at com.thinktimetechno.projects.website.stepdefinitions.SingleUser.Single_User_StepDefinitions.user_attends_all_the_wrongquestions(Single_User_StepDefinitions.java:438)
+at ✽.User attends all the 20 questions with some wrong answer(file:///D:/Workspace/AHCA/src/test/resources/features/SingleUser/SU_TC_12%20Quiz%20Reattempt%20Passed.feature:32)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArrayIndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestRunner@574059d5]" started-at="2025-04-23T18:27:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-23T18:28:04 IST" duration-ms="44524" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC13_Register_with_Group_Code"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["SU_TC13_Register_with_Group_Code"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for title to contain "Welcome - American Health Care Academy". Current title: "Register - American Health Care Academy" (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: jdk.proxy2.$Proxy57]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain "Welcome - American Health Care Academy". Current title: "Register - American Health Care Academy" (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: jdk.proxy2.$Proxy57
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at com.thinktimetechno.projects.website.pages.DashboardPage.verifyDashboardPageDisplays(DashboardPage.java:25)
+at com.thinktimetechno.projects.website.stepdefinitions.SingleUser.Single_User_StepDefinitions.the_user_should_redirected_to_the_dashboard(Single_User_StepDefinitions.java:208)
+at ✽.User should redirected to the dashboard Page(file:///D:/Workspace/AHCA/src/test/resources/features/SingleUser/SU_TC_13%20Registration%20with%20Group%20Code.feature:19)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestRunner@574059d5]" started-at="2025-04-23T18:28:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-23T18:29:30 IST" duration-ms="85843" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC_14 Register to the website(Quiz_Register_Payment)"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["SU_TC_14_Register_to_the_website(Quiz_Register_Payment)"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for title to be "Lifetime | Register - American Health Care Academy". Current title: "Payment | Register - American Health Care Academy" (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: jdk.proxy2.$Proxy57]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be "Lifetime | Register - American Health Care Academy". Current title: "Payment | Register - American Health Care Academy" (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: jdk.proxy2.$Proxy57
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at com.thinktimetechno.keywords.WebUI.verifyPageTitleContains(WebUI.java:2542)
+at com.thinktimetechno.projects.website.pages.DashboardPage.verifyContinuousEducationPageDisplays(DashboardPage.java:30)
+at com.thinktimetechno.projects.website.stepdefinitions.SingleUser.Single_User_StepDefinitions.user_lands_on_the_continuous_education_credits_and_course_renewal_page(Single_User_StepDefinitions.java:587)
+at ✽.User lands on the Continuous Education Credits and Course Renewal Page(file:///D:/Workspace/AHCA/src/test/resources/features/SingleUser/SU_TC_14%20Register%20to%20the%20website(Quiz_Register_Payment).feature:55)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestRunner@574059d5]" started-at="2025-04-23T18:29:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-23T18:30:23 IST" duration-ms="52882" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -318,14 +586,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["User Registration and Course Enrollment"]]>
+                <![CDATA["SU_TC15_User_can_make_payment_for_the_selected_course"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:27:48 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-07T17:31:01 IST" duration-ms="193070" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestRunner@574059d5]" started-at="2025-04-23T18:30:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-23T18:31:05 IST" duration-ms="42066" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -334,22 +602,112 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["User Registration and Course Enrollment"]]>
+                <![CDATA["SU_TC16_Verify_if_the_user_can_purchase_course_with_add-ons"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.ArrayIndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index 1 out of bounds for length 1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+at com.thinktimetechno.projects.website.pages.QuizPage.question_and_answer(QuizPage.java:107)
+at com.thinktimetechno.projects.website.stepdefinitions.SingleUser.Single_User_StepDefinitions.user_attends_all_the_questions(Single_User_StepDefinitions.java:428)
+at ✽.User attends all the 20 questions(file:///D:/Workspace/AHCA/src/test/resources/features/SingleUser/SU_TC_16%20Verify%20if%20the%20user%20can%20purchase%20course%20with%20add-ons.feature:32)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArrayIndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestRunner@574059d5]" started-at="2025-04-23T18:31:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-23T18:32:26 IST" duration-ms="80706" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC_17_Schedule_Virtual_HandsOn_Training"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["SU_TC_17_Schedule_Virtual_HandsOn_Training"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:31:01 IST" name="tearDownClass" finished-at="2025-04-07T17:31:02 IST" duration-ms="966" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestRunner@574059d5]" started-at="2025-04-23T18:32:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-23T18:33:41 IST" duration-ms="75170" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC_18 Purchase wallet card and virtual review session add-ons"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["SU_TC_18_Purchase_walletcard_and_virtual_review_session_add-ons"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Element not exist. By.xpath: //h2[contains(text(),'Do you need a Blended Hands-on Training?')]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Element not exist. By.xpath: //h2[contains(text(),'Do you need a Blended Hands-on Training?')]
+at org.testng.Assert.fail(Assert.java:111)
+at com.thinktimetechno.keywords.WebUI.waitForElementPresent(WebUI.java:2509)
+at com.thinktimetechno.keywords.WebUI.waitForElementVisible(WebUI.java:2417)
+at com.thinktimetechno.projects.website.pages.BillingPage.verify_handsonkit_PageDisplays(BillingPage.java:58)
+at com.thinktimetechno.projects.website.stepdefinitions.SingleUser.Single_User_StepDefinitions.user_lands_on_handson_kirpage(Single_User_StepDefinitions.java:398)
+at ✽.User lands on the Hands-on Kit Page(file:///D:/Workspace/AHCA/src/test/resources/features/SingleUser/SU_TC_18%20Purchase%20wallet%20card%20with%20virtual%20review%20session%20add-ons.feature:66)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestRunner@574059d5]" started-at="2025-04-23T18:33:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-23T18:35:10 IST" duration-ms="89763" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["SU_TC19_Certificate_download"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["SU_TC19_Certificate_download"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Element not exist. By.xpath: //h2[contains(text(),'Do you need a Blended Hands-on Training?')]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Element not exist. By.xpath: //h2[contains(text(),'Do you need a Blended Hands-on Training?')]
+at org.testng.Assert.fail(Assert.java:111)
+at com.thinktimetechno.keywords.WebUI.waitForElementPresent(WebUI.java:2509)
+at com.thinktimetechno.keywords.WebUI.waitForElementVisible(WebUI.java:2417)
+at com.thinktimetechno.projects.website.pages.BillingPage.verify_handsonkit_PageDisplays(BillingPage.java:58)
+at com.thinktimetechno.projects.website.stepdefinitions.SingleUser.Single_User_StepDefinitions.user_lands_on_handson_kirpage(Single_User_StepDefinitions.java:398)
+at ✽.User lands on the Hands-on Kit Page(file:///D:/Workspace/AHCA/src/test/resources/features/SingleUser/SU_TC_19%20Certificate%20Download.feature:66)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestRunner@574059d5]" started-at="2025-04-23T18:35:10 IST" name="tearDownClass" finished-at="2025-04-23T18:35:35 IST" duration-ms="24083" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestTestRunner@5529ff44]" started-at="2025-04-07T17:31:02 IST" name="afterSuite" finished-at="2025-04-07T17:31:02 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.thinktimetechno.runners.FullTest.FullTestRunner@574059d5]" started-at="2025-04-23T18:35:35 IST" name="afterSuite" finished-at="2025-04-23T18:35:35 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- com.thinktimetechno.runners.FullTest.FullTestTestRunner -->
-    </test> <!-- Test Cucumber All Feature -->
-  </suite> <!-- Suite Cucumber All Feature -->
+      </class> <!-- com.thinktimetechno.runners.FullTest.FullTestRunner -->
+    </test> <!-- CucumberFeatureTest -->
+  </suite> <!-- CucumberSuite -->
 </testng-results>

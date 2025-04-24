@@ -1,5 +1,5 @@
 @GroupUser @fulltest
-Feature: Group Login
+Feature: C_TC_09_Forgot_password_with_invalid_registered_email
 
 @C_TC_09_Forgot_password_with_invalid_registered_email
 Scenario: TC_09 Verify Forgot Password Functionality Using a Non-Registered/Invalid Email Address

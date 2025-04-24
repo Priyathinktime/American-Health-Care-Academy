@@ -17,7 +17,7 @@ import org.testng.annotations.Test;
 				"json:target/cucumber-reports/LoginCMSTestRunner.json",
 				"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" }, monochrome = true,
-				tags = " @SU_TC01_Register_with_valid_credentials")
+				tags = "@SU_TC01_Register_with_valid_credentials")
 
 public class SU_TC_01_Registration_with_Valid_Details_TestRunner extends AbstractTestNGCucumberTests {
 	@Override

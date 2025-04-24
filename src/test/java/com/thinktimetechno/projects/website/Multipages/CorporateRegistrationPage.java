@@ -41,7 +41,8 @@ public class CorporateRegistrationPage {
 
 	public void click_register() throws InterruptedException {
 
-		WebUI.waitForElementVisible(By.xpath("//button[@id='select_course']")).click();
+//		WebUI.waitForElementVisible(By.xpath("//button[@id='select_course']")).click();
+		WebUI.clickElementWithJs(By.xpath("//button[@id='select_course']"));
 	}
 
 	public void click_terms_conditions() {
@@ -59,6 +60,7 @@ public class CorporateRegistrationPage {
 		WebUI.setText(By.xpath("//input[@id='first_name']"), firstName);
 		WebUI.setText(By.xpath("//input[@id='last_name']"), lastname);
 		WebUI.setText(By.xpath("//input[@id='company']"), Companyname);
+		WebUI.clickElement(By.xpath("//input[@id='phone_number']"));
 		WebUI.setText(By.xpath("//input[@id='phone_number']"), phonenumber);
 		WebUI.setText(By.xpath("//input[@id='email_address']"), emailAddress);
 		WebUI.setText(By.xpath("//input[@id='password-cop']"), createpassword);

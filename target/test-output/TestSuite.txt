@@ -1,4 +1,95 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1093 s -- in TestSuite
+Tests run: 33, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 1022 s <<< FAILURE! -- in TestSuite
+com.thinktimetechno.runners.FullTest.FullTestRunner.runScenario["C_TC_11_Invite_Employee_in_bulk", "C_TC_11_Invite_Employee_in_bulk"](11) -- Time elapsed: 44.26 s <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <button data-role="none" class="btn-large btn-default" id="submit-assign-course" type="button" onclick="sendInvitation()">...</button> is not clickable at point (2274, 989). Other element would receive the click: <div id="select2-drop-mask" class="select2-drop-mask" style=""></div>
+  (Session info: chrome=135.0.7049.96)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f491774a7bd819bb102f6cb90df7a80c, clickElement {id=f.B9CE3690A3CF0C42DFC96F210565AA49.d.699D72BF35085190CC2C51313FF51EE8.e.533}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.97 (b41307079c9b..., userDataDir: C:\Users\rithi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60597}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60597/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f491774a7bd819bb102f6cb90df7a80c)] -> xpath: //button[contains(text(),'Next')]]
+Session ID: f491774a7bd819bb102f6cb90df7a80c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at com.thinktimetechno.keywords.WebUI.clickElement(WebUI.java:2116)
+	at com.thinktimetechno.projects.website.Multipages.CorporateLoginPage.click_nxt(CorporateLoginPage.java:151)
+	at com.thinktimetechno.projects.website.stepdefinitions.CorporateUser.Corporate_StepDefinitions.group_user_tap_the_button1(Corporate_StepDefinitions.java:406)
+	at ✽.GroupUser tap the Next button(file:///D:/Workspace/AHCA/src/test/resources/features/GroupUser/C_TC_11%20Invite%20Employee%20in%20bulk.feature:58)
+
+com.thinktimetechno.runners.FullTest.FullTestRunner.runScenario["TC_11 Take Quiz (failed in quiz)", "SU_TC11_Take_Quiz_failed_in_quiz"](25) -- Time elapsed: 29.34 s <<< FAILURE!
+java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at com.thinktimetechno.projects.website.pages.QuizPage.question_and_wronganswer(QuizPage.java:139)
+	at com.thinktimetechno.projects.website.stepdefinitions.SingleUser.Single_User_StepDefinitions.user_attends_all_the_wrongquestions(Single_User_StepDefinitions.java:438)
+	at ✽.User attends all the 20 questions with some wrong answer(file:///D:/Workspace/AHCA/src/test/resources/features/SingleUser/SU_TC_11%20Take%20Quiz(failed%20in%20quiz).feature:32)
+
+com.thinktimetechno.runners.FullTest.FullTestRunner.runScenario["TC_12 SU_TC12_Quiz_Reattempt_Passed", "SU_TC12_Quiz_Reattempt_Passed"](26) -- Time elapsed: 38.16 s <<< FAILURE!
+java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at com.thinktimetechno.projects.website.pages.QuizPage.question_and_wronganswer(QuizPage.java:139)
+	at com.thinktimetechno.projects.website.stepdefinitions.SingleUser.Single_User_StepDefinitions.user_attends_all_the_wrongquestions(Single_User_StepDefinitions.java:438)
+	at ✽.User attends all the 20 questions with some wrong answer(file:///D:/Workspace/AHCA/src/test/resources/features/SingleUser/SU_TC_12%20Quiz%20Reattempt%20Passed.feature:32)
+
+com.thinktimetechno.runners.FullTest.FullTestRunner.runScenario["TC13_Register_with_Group_Code", "SU_TC13_Register_with_Group_Code"](27) -- Time elapsed: 44.52 s <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for title to contain "Welcome - American Health Care Academy". Current title: "Register - American Health Care Academy" (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: jdk.proxy2.$Proxy57
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at com.thinktimetechno.projects.website.pages.DashboardPage.verifyDashboardPageDisplays(DashboardPage.java:25)
+	at com.thinktimetechno.projects.website.stepdefinitions.SingleUser.Single_User_StepDefinitions.the_user_should_redirected_to_the_dashboard(Single_User_StepDefinitions.java:208)
+	at ✽.User should redirected to the dashboard Page(file:///D:/Workspace/AHCA/src/test/resources/features/SingleUser/SU_TC_13%20Registration%20with%20Group%20Code.feature:19)
+
+com.thinktimetechno.runners.FullTest.FullTestRunner.runScenario["TC_14 Register to the website(Quiz_Register_Payment)", "SU_TC_14_Register_to_the_website(Quiz_Register_Payment)"](28) -- Time elapsed: 85.85 s <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for title to be "Lifetime | Register - American Health Care Academy". Current title: "Payment | Register - American Health Care Academy" (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: jdk.proxy2.$Proxy57
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at com.thinktimetechno.keywords.WebUI.verifyPageTitleContains(WebUI.java:2542)
+	at com.thinktimetechno.projects.website.pages.DashboardPage.verifyContinuousEducationPageDisplays(DashboardPage.java:30)
+	at com.thinktimetechno.projects.website.stepdefinitions.SingleUser.Single_User_StepDefinitions.user_lands_on_the_continuous_education_credits_and_course_renewal_page(Single_User_StepDefinitions.java:587)
+	at ✽.User lands on the Continuous Education Credits and Course Renewal Page(file:///D:/Workspace/AHCA/src/test/resources/features/SingleUser/SU_TC_14%20Register%20to%20the%20website(Quiz_Register_Payment).feature:55)
+
+com.thinktimetechno.runners.FullTest.FullTestRunner.runScenario["TC_16 Verify if the user can purchase course with add-ons", "SU_TC16_Verify_if_the_user_can_purchase_course_with_add-ons"](30) -- Time elapsed: 42.07 s <<< FAILURE!
+java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at com.thinktimetechno.projects.website.pages.QuizPage.question_and_answer(QuizPage.java:107)
+	at com.thinktimetechno.projects.website.stepdefinitions.SingleUser.Single_User_StepDefinitions.user_attends_all_the_questions(Single_User_StepDefinitions.java:428)
+	at ✽.User attends all the 20 questions(file:///D:/Workspace/AHCA/src/test/resources/features/SingleUser/SU_TC_16%20Verify%20if%20the%20user%20can%20purchase%20course%20with%20add-ons.feature:32)
+
+com.thinktimetechno.runners.FullTest.FullTestRunner.runScenario["TC_18 Purchase wallet card and virtual review session add-ons", "SU_TC_18_Purchase_walletcard_and_virtual_review_session_add-ons"](32) -- Time elapsed: 75.17 s <<< FAILURE!
+java.lang.AssertionError: Element not exist. By.xpath: //h2[contains(text(),'Do you need a Blended Hands-on Training?')]
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.thinktimetechno.keywords.WebUI.waitForElementPresent(WebUI.java:2509)
+	at com.thinktimetechno.keywords.WebUI.waitForElementVisible(WebUI.java:2417)
+	at com.thinktimetechno.projects.website.pages.BillingPage.verify_handsonkit_PageDisplays(BillingPage.java:58)
+	at com.thinktimetechno.projects.website.stepdefinitions.SingleUser.Single_User_StepDefinitions.user_lands_on_handson_kirpage(Single_User_StepDefinitions.java:398)
+	at ✽.User lands on the Hands-on Kit Page(file:///D:/Workspace/AHCA/src/test/resources/features/SingleUser/SU_TC_18%20Purchase%20wallet%20card%20with%20virtual%20review%20session%20add-ons.feature:66)
+
+com.thinktimetechno.runners.FullTest.FullTestRunner.runScenario["SU_TC19_Certificate_download", "SU_TC19_Certificate_download"](33) -- Time elapsed: 89.76 s <<< FAILURE!
+java.lang.AssertionError: Element not exist. By.xpath: //h2[contains(text(),'Do you need a Blended Hands-on Training?')]
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.thinktimetechno.keywords.WebUI.waitForElementPresent(WebUI.java:2509)
+	at com.thinktimetechno.keywords.WebUI.waitForElementVisible(WebUI.java:2417)
+	at com.thinktimetechno.projects.website.pages.BillingPage.verify_handsonkit_PageDisplays(BillingPage.java:58)
+	at com.thinktimetechno.projects.website.stepdefinitions.SingleUser.Single_User_StepDefinitions.user_lands_on_handson_kirpage(Single_User_StepDefinitions.java:398)
+	at ✽.User lands on the Hands-on Kit Page(file:///D:/Workspace/AHCA/src/test/resources/features/SingleUser/SU_TC_19%20Certificate%20Download.feature:66)
+

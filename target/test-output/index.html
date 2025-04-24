@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 8 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Suite_Cucumber_All_Feature" class="navigator-link">
-              <span class="suite-name border-passed">Suite Cucumber All Feature</span>
+            <a href="#" panel-name="suite-CucumberSuite" class="navigator-link">
+              <span class="suite-name border-failed">CucumberSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Suite_Cucumber_All_Feature" class="navigator-link ">
-                    <span>C:\Users\rithi\Downloads\01-FredPerry-master\01-FredPerry-master\src\test\resources\suites\ACHA.xml</span>
+                  <a href="#" panel-name="test-xml-CucumberSuite" class="navigator-link ">
+                    <span>D:\Workspace\AHCA\src\test\resources\suites\ACHA.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Suite_Cucumber_All_Feature" class="navigator-link ">
+                  <a href="#" panel-name="testlist-CucumberSuite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Suite_Cucumber_All_Feature" class="navigator-link ">
+                  <a href="#" panel-name="group-CucumberSuite" class="navigator-link ">
                     <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Suite_Cucumber_All_Feature" class="navigator-link ">
+                  <a href="#" panel-name="times-CucumberSuite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Suite_Cucumber_All_Feature" class="navigator-link ">
+                  <a href="#" panel-name="reporter-CucumberSuite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Suite_Cucumber_All_Feature" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-CucumberSuite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Suite_Cucumber_All_Feature" class="navigator-link ">
+                  <a href="#" panel-name="chronological-CucumberSuite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,116 +92,190 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">20 methods,   20 passed</span>
+                    <span class="method-stats">33 methods, 8 failed,   25 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-CucumberSuite" class="hide-methods failed suite-CucumberSuite"> (hide)</a> <!-- hide-methods failed suite-CucumberSuite -->
+                      <a href="#" panel-name="suite-CucumberSuite" class="show-methods failed suite-CucumberSuite"> (show)</a> <!-- show-methods failed suite-CucumberSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-CucumberSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="com.thinktimetechno.runners.FullTest.FullTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_12 SU_TC12_Quiz_Reattempt_Passed&quot;, &quot;SU_TC12_Quiz_Reattempt_Passed&quot;)">runScenario("TC_12 SU_TC12_Quiz_Reattempt_Passed", "SU_TC12_Quiz_Reattempt_Passed")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="com.thinktimetechno.runners.FullTest.FullTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_16 Verify if the user can purchase course with add-ons&quot;, &quot;SU_TC16_Verify_if_the_user_can_purchas...)">runScenario("TC_16 Verify if the user can purchase course with add-ons", "SU_TC16_Verify_if_the_user_can_purchas...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="com.thinktimetechno.runners.FullTest.FullTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC13_Register_with_Group_Code&quot;, &quot;SU_TC13_Register_with_Group_Code&quot;)">runScenario("TC13_Register_with_Group_Code", "SU_TC13_Register_with_Group_Code")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="com.thinktimetechno.runners.FullTest.FullTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_18 Purchase wallet card and virtual review session add-ons&quot;, &quot;SU_TC_18_Purchase_walletcard_and_v...)">runScenario("TC_18 Purchase wallet card and virtual review session add-ons", "SU_TC_18_Purchase_walletcard_and_v...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="com.thinktimetechno.runners.FullTest.FullTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_14 Register to the website(Quiz_Register_Payment)&quot;, &quot;SU_TC_14_Register_to_the_website(Quiz_Regis...)">runScenario("TC_14 Register to the website(Quiz_Register_Payment)", "SU_TC_14_Register_to_the_website(Quiz_Regis...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="com.thinktimetechno.runners.FullTest.FullTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_11 Take Quiz (failed in quiz)&quot;, &quot;SU_TC11_Take_Quiz_failed_in_quiz&quot;)">runScenario("TC_11 Take Quiz (failed in quiz)", "SU_TC11_Take_Quiz_failed_in_quiz")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="com.thinktimetechno.runners.FullTest.FullTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;C_TC_11_Invite_Employee_in_bulk&quot;, &quot;C_TC_11_Invite_Employee_in_bulk&quot;)">runScenario("C_TC_11_Invite_Employee_in_bulk", "C_TC_11_Invite_Employee_in_bulk")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="com.thinktimetechno.runners.FullTest.FullTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;SU_TC19_Certificate_download&quot;, &quot;SU_TC19_Certificate_download&quot;)">runScenario("SU_TC19_Certificate_download", "SU_TC19_Certificate_download")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-CucumberSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite_Cucumber_All_Feature" class="hide-methods passed suite-Suite_Cucumber_All_Feature"> (hide)</a> <!-- hide-methods passed suite-Suite_Cucumber_All_Feature -->
-                      <a href="#" panel-name="suite-Suite_Cucumber_All_Feature" class="show-methods passed suite-Suite_Cucumber_All_Feature"> (show)</a> <!-- show-methods passed suite-Suite_Cucumber_All_Feature -->
+                      <a href="#" panel-name="suite-CucumberSuite" class="hide-methods passed suite-CucumberSuite"> (hide)</a> <!-- hide-methods passed suite-CucumberSuite -->
+                      <a href="#" panel-name="suite-CucumberSuite" class="show-methods passed suite-CucumberSuite"> (show)</a> <!-- show-methods passed suite-CucumberSuite -->
                     </span>
-                    <div class="method-list-content passed suite-Suite_Cucumber_All_Feature">
+                    <div class="method-list-content passed suite-CucumberSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite_Cucumber_All_Feature" title="com.thinktimetechno.runners.FullTest.FullTestTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_01 Corporate Registration with Valid Details&quot;, &quot;Group Registration&quot;)">runScenario("TC_01 Corporate Registration with Valid Details", "Group Registration")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-CucumberSuite" title="com.thinktimetechno.runners.FullTest.FullTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_08 Verify Forgot Password Functionality Using a Valid Registered Email Address&quot;, &quot;C_TC_08_Forgot...)">runScenario("TC_08 Verify Forgot Password Functionality Using a Valid Registered Email Address", "C_TC_08_Forgot...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite_Cucumber_All_Feature" title="com.thinktimetechno.runners.FullTest.FullTestTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_04 Login with Valid Credentials&quot;, &quot;Group Login&quot;)">runScenario("TC_04 Login with Valid Credentials", "Group Login")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-CucumberSuite" title="com.thinktimetechno.runners.FullTest.FullTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_01 Corporate Registration with Valid Details&quot;, &quot;C_TC_01_Corporate_Registration_with_Valid_Detail...)">runScenario("TC_01 Corporate Registration with Valid Details", "C_TC_01_Corporate_Registration_with_Valid_Detail...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite_Cucumber_All_Feature" title="com.thinktimetechno.runners.FullTest.FullTestTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_06 Login with Valid Username Invalid  Password&quot;, &quot;User Login&quot;)">runScenario("TC_06 Login with Valid Username Invalid  Password", "User Login")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-CucumberSuite" title="com.thinktimetechno.runners.FullTest.FullTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_06 Login with Invalid Username valid  Password&quot;, &quot;C_TC_06_login_invalid_username_valid_password&quot;)">runScenario("TC_06 Login with Invalid Username valid  Password", "C_TC_06_login_invalid_username_valid_password")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite_Cucumber_All_Feature" title="com.thinktimetechno.runners.FullTest.FullTestTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_07 Login with Invalid Username valid  Password&quot;, &quot;User Login&quot;)">runScenario("TC_07 Login with Invalid Username valid  Password", "User Login")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-CucumberSuite" title="com.thinktimetechno.runners.FullTest.FullTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_06 Login with Valid Username Invalid  Password&quot;, &quot;SU_TC06_Login_with_Valid_Username_Invalid_Pass...)">runScenario("TC_06 Login with Valid Username Invalid  Password", "SU_TC06_Login_with_Valid_Username_Invalid_Pass...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite_Cucumber_All_Feature" title="com.thinktimetechno.runners.FullTest.FullTestTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_03 Register(with existing accounts credentials)&quot;, &quot;User Registration&quot;)">runScenario("TC_03 Register(with existing accounts credentials)", "User Registration")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-CucumberSuite" title="com.thinktimetechno.runners.FullTest.FullTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;C_TC_13_Purchase Codes(select quantity below 5)&quot;, &quot;C_TC_13_Purchase Codes(select quantity below 5)&quot;)">runScenario("C_TC_13_Purchase Codes(select quantity below 5)", "C_TC_13_Purchase Codes(select quantity below 5)")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite_Cucumber_All_Feature" title="com.thinktimetechno.runners.FullTest.FullTestTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_05 Login with Valid Credentials&quot;, &quot;User Login&quot;)">runScenario("TC_05 Login with Valid Credentials", "User Login")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-CucumberSuite" title="com.thinktimetechno.runners.FullTest.FullTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_02 Corporate Register(leaving one mandatory field blank)&quot;, &quot;C_TC_02_Register_with_leaving_one_ma...)">runScenario("TC_02 Corporate Register(leaving one mandatory field blank)", "C_TC_02_Register_with_leaving_one_ma...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite_Cucumber_All_Feature" title="com.thinktimetechno.runners.FullTest.FullTestTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_02 Register(leaving one mandatory field blank)&quot;, &quot;User Registration&quot;)">runScenario("TC_02 Register(leaving one mandatory field blank)", "User Registration")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-CucumberSuite" title="com.thinktimetechno.runners.FullTest.FullTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_03 Corporate Register(with existing accounts credentials)&quot;, &quot;C_TC_03_Register_with_existing_acco...)">runScenario("TC_03 Corporate Register(with existing accounts credentials)", "C_TC_03_Register_with_existing_acco...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite_Cucumber_All_Feature" title="com.thinktimetechno.runners.FullTest.FullTestTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_08 Login with Invalid Username Invalid  Password&quot;, &quot;User Login&quot;)">runScenario("TC_08 Login with Invalid Username Invalid  Password", "User Login")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-CucumberSuite" title="com.thinktimetechno.runners.FullTest.FullTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;C_TC_14_Export_Reports&quot;, &quot;C_TC_14_Export_Reports&quot;)">runScenario("C_TC_14_Export_Reports", "C_TC_14_Export_Reports")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite_Cucumber_All_Feature" title="com.thinktimetechno.runners.FullTest.FullTestTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_05 Login with Valid Username Invalid  Password&quot;, &quot;Group Login&quot;)">runScenario("TC_05 Login with Valid Username Invalid  Password", "Group Login")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-CucumberSuite" title="com.thinktimetechno.runners.FullTest.FullTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_15 Registration with Valid Details and Course Completion&quot;, &quot;SU_TC15_User_can_make_payment_for_th...)">runScenario("TC_15 Registration with Valid Details and Course Completion", "SU_TC15_User_can_make_payment_for_th...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite_Cucumber_All_Feature" title="com.thinktimetechno.runners.FullTest.FullTestTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_08 Verify Forgot Password Functionality Using a Valid Registered Email Address&quot;, &quot;Group Login&quot;)">runScenario("TC_08 Verify Forgot Password Functionality Using a Valid Registered Email Address", "Group Login")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-CucumberSuite" title="com.thinktimetechno.runners.FullTest.FullTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_07 Login with Invalid Username Invalid  Password&quot;, &quot;C_TC_07_login_invalid_username_invalid_passw...)">runScenario("TC_07 Login with Invalid Username Invalid  Password", "C_TC_07_login_invalid_username_invalid_passw...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite_Cucumber_All_Feature" title="com.thinktimetechno.runners.FullTest.FullTestTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_02 Corporate Register(leaving one mandatory field blank)&quot;, &quot;Group Registration&quot;)">runScenario("TC_02 Corporate Register(leaving one mandatory field blank)", "Group Registration")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-CucumberSuite" title="com.thinktimetechno.runners.FullTest.FullTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_05 Login with Valid Credentials&quot;, &quot;SU_TC05_login_valid_credentials&quot;)">runScenario("TC_05 Login with Valid Credentials", "SU_TC05_login_valid_credentials")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite_Cucumber_All_Feature" title="com.thinktimetechno.runners.FullTest.FullTestTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_09 Verify Forgot Password Functionality Using a Non-Registered/Invalid Email Address&quot;, &quot;Group Lo...)">runScenario("TC_09 Verify Forgot Password Functionality Using a Non-Registered/Invalid Email Address", "Group Lo...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-CucumberSuite" title="com.thinktimetechno.runners.FullTest.FullTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_02 Register(leaving one mandatory field blank)&quot;, &quot;SU_TC02_Register_with_leaving_one_mandatory_fi...)">runScenario("TC_02 Register(leaving one mandatory field blank)", "SU_TC02_Register_with_leaving_one_mandatory_fi...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite_Cucumber_All_Feature" title="com.thinktimetechno.runners.FullTest.FullTestTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_16 Verify if the user can purchase course with add-ons&quot;, &quot;User Registration and Course Enrollmen...)">runScenario("TC_16 Verify if the user can purchase course with add-ons", "User Registration and Course Enrollmen...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-CucumberSuite" title="com.thinktimetechno.runners.FullTest.FullTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_04 Login with Valid Credentials&quot;, &quot;C_TC_04_login_valid_credentials&quot;)">runScenario("TC_04 Login with Valid Credentials", "C_TC_04_login_valid_credentials")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite_Cucumber_All_Feature" title="com.thinktimetechno.runners.FullTest.FullTestTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_01 Registration with Valid Details&quot;, &quot;User Registration&quot;)">runScenario("TC_01 Registration with Valid Details", "User Registration")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-CucumberSuite" title="com.thinktimetechno.runners.FullTest.FullTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_07 Login with Invalid Username valid  Password&quot;, &quot;SU_TC07_Login_with_InValid_Username_valid_Pass...)">runScenario("TC_07 Login with Invalid Username valid  Password", "SU_TC07_Login_with_InValid_Username_valid_Pass...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite_Cucumber_All_Feature" title="com.thinktimetechno.runners.FullTest.FullTestTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_04 Navigate to Registration Page from Login Page&quot;, &quot;User Registration&quot;)">runScenario("TC_04 Navigate to Registration Page from Login Page", "User Registration")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-CucumberSuite" title="com.thinktimetechno.runners.FullTest.FullTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_09 Navigate to Reset Password Page&quot;, &quot;SU_TC09_Navigate_to_Reset_password_page&quot;)">runScenario("TC_09 Navigate to Reset Password Page", "SU_TC09_Navigate_to_Reset_password_page")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite_Cucumber_All_Feature" title="com.thinktimetechno.runners.FullTest.FullTestTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_06 Login with Invalid Username valid  Password&quot;, &quot;Group Login&quot;)">runScenario("TC_06 Login with Invalid Username valid  Password", "Group Login")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-CucumberSuite" title="com.thinktimetechno.runners.FullTest.FullTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;SU_TC10_store_purchase&quot;, &quot;SU_TC10_store_purchase&quot;)">runScenario("SU_TC10_store_purchase", "SU_TC10_store_purchase")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite_Cucumber_All_Feature" title="com.thinktimetechno.runners.FullTest.FullTestTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_03 Corporate Register(with existing accounts credentials)&quot;, &quot;Group Registration&quot;)">runScenario("TC_03 Corporate Register(with existing accounts credentials)", "Group Registration")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-CucumberSuite" title="com.thinktimetechno.runners.FullTest.FullTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;C_TC_12 Purchase Codes(select quantity above 5)&quot;, &quot;C_TC_12_Purchase Codes(select quantity above 5)&quot;)">runScenario("C_TC_12 Purchase Codes(select quantity above 5)", "C_TC_12_Purchase Codes(select quantity above 5)")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite_Cucumber_All_Feature" title="com.thinktimetechno.runners.FullTest.FullTestTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_07 Login with Invalid Username Invalid  Password&quot;, &quot;Group Login&quot;)">runScenario("TC_07 Login with Invalid Username Invalid  Password", "Group Login")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-CucumberSuite" title="com.thinktimetechno.runners.FullTest.FullTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_17_Schedule_Virtual_HandsOn_Training&quot;, &quot;SU_TC_17_Schedule_Virtual_HandsOn_Training&quot;)">runScenario("TC_17_Schedule_Virtual_HandsOn_Training", "SU_TC_17_Schedule_Virtual_HandsOn_Training")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite_Cucumber_All_Feature" title="com.thinktimetechno.runners.FullTest.FullTestTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_15 Registration with Valid Details and Course Completion&quot;, &quot;User Registration and Course Enrollm...)">runScenario("TC_15 Registration with Valid Details and Course Completion", "User Registration and Course Enrollm...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-CucumberSuite" title="com.thinktimetechno.runners.FullTest.FullTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_01 Registration with Valid Details&quot;, &quot;SU_TC01_Register_with_valid_credentials&quot;)">runScenario("TC_01 Registration with Valid Details", "SU_TC01_Register_with_valid_credentials")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite_Cucumber_All_Feature" title="com.thinktimetechno.runners.FullTest.FullTestTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_09 Navigate to Reset Password Page&quot;, &quot;User Login&quot;)">runScenario("TC_09 Navigate to Reset Password Page", "User Login")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-CucumberSuite" title="com.thinktimetechno.runners.FullTest.FullTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_04 Navigate to Registration Page from Login Page&quot;, &quot;SU_TC04_Navigate_to_Registration_Page_from_L...)">runScenario("TC_04 Navigate to Registration Page from Login Page", "SU_TC04_Navigate_to_Registration_Page_from_L...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Suite_Cucumber_All_Feature -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="com.thinktimetechno.runners.FullTest.FullTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_09 Verify Forgot Password Functionality Using a Non-Registered/Invalid Email Address&quot;, &quot;C_TC_09_...)">runScenario("TC_09 Verify Forgot Password Functionality Using a Non-Registered/Invalid Email Address", "C_TC_09_...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="com.thinktimetechno.runners.FullTest.FullTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_05 Login with Valid Username Invalid  Password&quot;, &quot;C_TC_05_login_valid_username_invalid_password&quot;)">runScenario("TC_05 Login with Valid Username Invalid  Password", "C_TC_05_login_valid_username_invalid_password")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="com.thinktimetechno.runners.FullTest.FullTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_10 Invite Employee&quot;, &quot;C_TC_10_Invite_Employee&quot;)">runScenario("TC_10 Invite Employee", "C_TC_10_Invite_Employee")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="com.thinktimetechno.runners.FullTest.FullTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_08 Login with Invalid Username Invalid  Password&quot;, &quot;SU_TC08_Login_with_InValid_Username_Invalid_...)">runScenario("TC_08 Login with Invalid Username Invalid  Password", "SU_TC08_Login_with_InValid_Username_Invalid_...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="com.thinktimetechno.runners.FullTest.FullTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_03 Register(with existing accounts credentials)&quot;, &quot;SU_TC03_Register_with_existing_accounts_crede...)">runScenario("TC_03 Register(with existing accounts credentials)", "SU_TC03_Register_with_existing_accounts_crede...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-CucumberSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -212,250 +286,469 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Suite_Cucumber_All_Feature" class="panel Suite_Cucumber_All_Feature">
-          <div class="suite-Suite_Cucumber_All_Feature-class-passed">
+        <div panel-name="suite-CucumberSuite" class="panel CucumberSuite">
+          <div class="suite-CucumberSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.thinktimetechno.runners.FullTest.FullTestTestRunner</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.thinktimetechno.runners.FullTest.FullTestRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;TC_01 Corporate Registration with Valid Details&quot;, &quot;Group Registration&quot;)">
-                  </a> <!-- runScenario("TC_01 Corporate Registration with Valid Details", "Group Registration") -->
+                  <a name="runScenario(&quot;TC_12 SU_TC12_Quiz_Reattempt_Passed&quot;, &quot;SU_TC12_Quiz_Reattempt_Passed&quot;)">
+                  </a> <!-- runScenario("TC_12 SU_TC12_Quiz_Reattempt_Passed", "SU_TC12_Quiz_Reattempt_Passed") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_01 Corporate Registration with Valid Details","Group Registration")</span>
+                  <span class="parameters">("TC_12 SU_TC12_Quiz_Reattempt_Passed","SU_TC12_Quiz_Reattempt_Passed")</span>
+                  <div class="stack-trace">java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at com.thinktimetechno.projects.website.pages.QuizPage.question_and_wronganswer(QuizPage.java:139)
+	at com.thinktimetechno.projects.website.stepdefinitions.SingleUser.Single_User_StepDefinitions.user_attends_all_the_wrongquestions(Single_User_StepDefinitions.java:438)
+	at ✽.User attends all the 20 questions with some wrong answer(file:///D:/Workspace/AHCA/src/test/resources/features/SingleUser/SU_TC_12%20Quiz%20Reattempt%20Passed.feature:32)
+
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;TC_04 Login with Valid Credentials&quot;, &quot;Group Login&quot;)">
-                  </a> <!-- runScenario("TC_04 Login with Valid Credentials", "Group Login") -->
+                  <a name="runScenario(&quot;TC_16 Verify if the user can purchase course with add-ons&quot;, &quot;SU_TC16_Verify_if_the_user_can_purchas...)">
+                  </a> <!-- runScenario("TC_16 Verify if the user can purchase course with add-ons", "SU_TC16_Verify_if_the_user_can_purchas...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_04 Login with Valid Credentials","Group Login")</span>
+                  <span class="parameters">("TC_16 Verify if the user can purchase course with add-ons","SU_TC16_Verify_if_the_user_can_purchase_course_with_add-ons")</span>
+                  <div class="stack-trace">java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at com.thinktimetechno.projects.website.pages.QuizPage.question_and_answer(QuizPage.java:107)
+	at com.thinktimetechno.projects.website.stepdefinitions.SingleUser.Single_User_StepDefinitions.user_attends_all_the_questions(Single_User_StepDefinitions.java:428)
+	at ✽.User attends all the 20 questions(file:///D:/Workspace/AHCA/src/test/resources/features/SingleUser/SU_TC_16%20Verify%20if%20the%20user%20can%20purchase%20course%20with%20add-ons.feature:32)
+
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;TC_06 Login with Valid Username Invalid  Password&quot;, &quot;User Login&quot;)">
-                  </a> <!-- runScenario("TC_06 Login with Valid Username Invalid  Password", "User Login") -->
+                  <a name="runScenario(&quot;TC13_Register_with_Group_Code&quot;, &quot;SU_TC13_Register_with_Group_Code&quot;)">
+                  </a> <!-- runScenario("TC13_Register_with_Group_Code", "SU_TC13_Register_with_Group_Code") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_06 Login with Valid Username Invalid  Password","User Login")</span>
+                  <span class="parameters">("TC13_Register_with_Group_Code","SU_TC13_Register_with_Group_Code")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain &quot;Welcome - American Health Care Academy&quot;. Current title: &quot;Register - American Health Care Academy&quot; (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: jdk.proxy2.$Proxy57
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at com.thinktimetechno.projects.website.pages.DashboardPage.verifyDashboardPageDisplays(DashboardPage.java:25)
+	at com.thinktimetechno.projects.website.stepdefinitions.SingleUser.Single_User_StepDefinitions.the_user_should_redirected_to_the_dashboard(Single_User_StepDefinitions.java:208)
+	at ✽.User should redirected to the dashboard Page(file:///D:/Workspace/AHCA/src/test/resources/features/SingleUser/SU_TC_13%20Registration%20with%20Group%20Code.feature:19)
+
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;TC_07 Login with Invalid Username valid  Password&quot;, &quot;User Login&quot;)">
-                  </a> <!-- runScenario("TC_07 Login with Invalid Username valid  Password", "User Login") -->
+                  <a name="runScenario(&quot;TC_18 Purchase wallet card and virtual review session add-ons&quot;, &quot;SU_TC_18_Purchase_walletcard_and_v...)">
+                  </a> <!-- runScenario("TC_18 Purchase wallet card and virtual review session add-ons", "SU_TC_18_Purchase_walletcard_and_v...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_07 Login with Invalid Username valid  Password","User Login")</span>
+                  <span class="parameters">("TC_18 Purchase wallet card and virtual review session add-ons","SU_TC_18_Purchase_walletcard_and_virtual_review_session_add-ons")</span>
+                  <div class="stack-trace">java.lang.AssertionError: Element not exist. By.xpath: //h2[contains(text(),&apos;Do you need a Blended Hands-on Training?&apos;)]
+	at com.thinktimetechno.keywords.WebUI.waitForElementPresent(WebUI.java:2509)
+	at com.thinktimetechno.keywords.WebUI.waitForElementVisible(WebUI.java:2417)
+	at com.thinktimetechno.projects.website.pages.BillingPage.verify_handsonkit_PageDisplays(BillingPage.java:58)
+	at com.thinktimetechno.projects.website.stepdefinitions.SingleUser.Single_User_StepDefinitions.user_lands_on_handson_kirpage(Single_User_StepDefinitions.java:398)
+	at ✽.User lands on the Hands-on Kit Page(file:///D:/Workspace/AHCA/src/test/resources/features/SingleUser/SU_TC_18%20Purchase%20wallet%20card%20with%20virtual%20review%20session%20add-ons.feature:66)
+... Removed 1 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;TC_03 Register(with existing accounts credentials)&quot;, &quot;User Registration&quot;)">
-                  </a> <!-- runScenario("TC_03 Register(with existing accounts credentials)", "User Registration") -->
+                  <a name="runScenario(&quot;TC_14 Register to the website(Quiz_Register_Payment)&quot;, &quot;SU_TC_14_Register_to_the_website(Quiz_Regis...)">
+                  </a> <!-- runScenario("TC_14 Register to the website(Quiz_Register_Payment)", "SU_TC_14_Register_to_the_website(Quiz_Regis...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_03 Register(with existing accounts credentials)","User Registration")</span>
+                  <span class="parameters">("TC_14 Register to the website(Quiz_Register_Payment)","SU_TC_14_Register_to_the_website(Quiz_Register_Payment)")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be &quot;Lifetime | Register - American Health Care Academy&quot;. Current title: &quot;Payment | Register - American Health Care Academy&quot; (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: jdk.proxy2.$Proxy57
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at com.thinktimetechno.keywords.WebUI.verifyPageTitleContains(WebUI.java:2542)
+	at com.thinktimetechno.projects.website.pages.DashboardPage.verifyContinuousEducationPageDisplays(DashboardPage.java:30)
+	at com.thinktimetechno.projects.website.stepdefinitions.SingleUser.Single_User_StepDefinitions.user_lands_on_the_continuous_education_credits_and_course_renewal_page(Single_User_StepDefinitions.java:587)
+	at ✽.User lands on the Continuous Education Credits and Course Renewal Page(file:///D:/Workspace/AHCA/src/test/resources/features/SingleUser/SU_TC_14%20Register%20to%20the%20website(Quiz_Register_Payment).feature:55)
+
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;TC_05 Login with Valid Credentials&quot;, &quot;User Login&quot;)">
-                  </a> <!-- runScenario("TC_05 Login with Valid Credentials", "User Login") -->
+                  <a name="runScenario(&quot;TC_11 Take Quiz (failed in quiz)&quot;, &quot;SU_TC11_Take_Quiz_failed_in_quiz&quot;)">
+                  </a> <!-- runScenario("TC_11 Take Quiz (failed in quiz)", "SU_TC11_Take_Quiz_failed_in_quiz") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_05 Login with Valid Credentials","User Login")</span>
+                  <span class="parameters">("TC_11 Take Quiz (failed in quiz)","SU_TC11_Take_Quiz_failed_in_quiz")</span>
+                  <div class="stack-trace">java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at com.thinktimetechno.projects.website.pages.QuizPage.question_and_wronganswer(QuizPage.java:139)
+	at com.thinktimetechno.projects.website.stepdefinitions.SingleUser.Single_User_StepDefinitions.user_attends_all_the_wrongquestions(Single_User_StepDefinitions.java:438)
+	at ✽.User attends all the 20 questions with some wrong answer(file:///D:/Workspace/AHCA/src/test/resources/features/SingleUser/SU_TC_11%20Take%20Quiz(failed%20in%20quiz).feature:32)
+
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;TC_02 Register(leaving one mandatory field blank)&quot;, &quot;User Registration&quot;)">
-                  </a> <!-- runScenario("TC_02 Register(leaving one mandatory field blank)", "User Registration") -->
+                  <a name="runScenario(&quot;C_TC_11_Invite_Employee_in_bulk&quot;, &quot;C_TC_11_Invite_Employee_in_bulk&quot;)">
+                  </a> <!-- runScenario("C_TC_11_Invite_Employee_in_bulk", "C_TC_11_Invite_Employee_in_bulk") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_02 Register(leaving one mandatory field blank)","User Registration")</span>
+                  <span class="parameters">("C_TC_11_Invite_Employee_in_bulk","C_TC_11_Invite_Employee_in_bulk")</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button data-role=&quot;none&quot; class=&quot;btn-large btn-default&quot; id=&quot;submit-assign-course&quot; type=&quot;button&quot; onclick=&quot;sendInvitation()&quot;&gt;...&lt;/button&gt; is not clickable at point (2274, 989). Other element would receive the click: &lt;div id=&quot;select2-drop-mask&quot; class=&quot;select2-drop-mask&quot; style=&quot;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=135.0.7049.96)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f491774a7bd819bb102f6cb90df7a80c, clickElement {id=f.B9CE3690A3CF0C42DFC96F210565AA49.d.699D72BF35085190CC2C51313FF51EE8.e.533}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.97 (b41307079c9b..., userDataDir: C:\Users\rithi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60597}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60597/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f491774a7bd819bb102f6cb90df7a80c)] -&gt; xpath: //button[contains(text(),&apos;Next&apos;)]]
+Session ID: f491774a7bd819bb102f6cb90df7a80c
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at com.thinktimetechno.keywords.WebUI.clickElement(WebUI.java:2116)
+	at com.thinktimetechno.projects.website.Multipages.CorporateLoginPage.click_nxt(CorporateLoginPage.java:151)
+	at com.thinktimetechno.projects.website.stepdefinitions.CorporateUser.Corporate_StepDefinitions.group_user_tap_the_button1(Corporate_StepDefinitions.java:406)
+	at ✽.GroupUser tap the Next button(file:///D:/Workspace/AHCA/src/test/resources/features/GroupUser/C_TC_11%20Invite%20Employee%20in%20bulk.feature:58)
+... Removed 5 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;TC_08 Login with Invalid Username Invalid  Password&quot;, &quot;User Login&quot;)">
-                  </a> <!-- runScenario("TC_08 Login with Invalid Username Invalid  Password", "User Login") -->
+                  <a name="runScenario(&quot;SU_TC19_Certificate_download&quot;, &quot;SU_TC19_Certificate_download&quot;)">
+                  </a> <!-- runScenario("SU_TC19_Certificate_download", "SU_TC19_Certificate_download") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_08 Login with Invalid Username Invalid  Password","User Login")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;TC_05 Login with Valid Username Invalid  Password&quot;, &quot;Group Login&quot;)">
-                  </a> <!-- runScenario("TC_05 Login with Valid Username Invalid  Password", "Group Login") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_05 Login with Valid Username Invalid  Password","Group Login")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;TC_08 Verify Forgot Password Functionality Using a Valid Registered Email Address&quot;, &quot;Group Login&quot;)">
-                  </a> <!-- runScenario("TC_08 Verify Forgot Password Functionality Using a Valid Registered Email Address", "Group Login") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_08 Verify Forgot Password Functionality Using a Valid Registered Email Address","Group Login")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;TC_02 Corporate Register(leaving one mandatory field blank)&quot;, &quot;Group Registration&quot;)">
-                  </a> <!-- runScenario("TC_02 Corporate Register(leaving one mandatory field blank)", "Group Registration") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_02 Corporate Register(leaving one mandatory field blank)","Group Registration")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;TC_09 Verify Forgot Password Functionality Using a Non-Registered/Invalid Email Address&quot;, &quot;Group Lo...)">
-                  </a> <!-- runScenario("TC_09 Verify Forgot Password Functionality Using a Non-Registered/Invalid Email Address", "Group Lo...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_09 Verify Forgot Password Functionality Using a Non-Registered/Invalid Email Address","Group Login")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;TC_16 Verify if the user can purchase course with add-ons&quot;, &quot;User Registration and Course Enrollmen...)">
-                  </a> <!-- runScenario("TC_16 Verify if the user can purchase course with add-ons", "User Registration and Course Enrollmen...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_16 Verify if the user can purchase course with add-ons","User Registration and Course Enrollment")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;TC_01 Registration with Valid Details&quot;, &quot;User Registration&quot;)">
-                  </a> <!-- runScenario("TC_01 Registration with Valid Details", "User Registration") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_01 Registration with Valid Details","User Registration")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;TC_04 Navigate to Registration Page from Login Page&quot;, &quot;User Registration&quot;)">
-                  </a> <!-- runScenario("TC_04 Navigate to Registration Page from Login Page", "User Registration") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_04 Navigate to Registration Page from Login Page","User Registration")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;TC_06 Login with Invalid Username valid  Password&quot;, &quot;Group Login&quot;)">
-                  </a> <!-- runScenario("TC_06 Login with Invalid Username valid  Password", "Group Login") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_06 Login with Invalid Username valid  Password","Group Login")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;TC_03 Corporate Register(with existing accounts credentials)&quot;, &quot;Group Registration&quot;)">
-                  </a> <!-- runScenario("TC_03 Corporate Register(with existing accounts credentials)", "Group Registration") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_03 Corporate Register(with existing accounts credentials)","Group Registration")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;TC_07 Login with Invalid Username Invalid  Password&quot;, &quot;Group Login&quot;)">
-                  </a> <!-- runScenario("TC_07 Login with Invalid Username Invalid  Password", "Group Login") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_07 Login with Invalid Username Invalid  Password","Group Login")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;TC_15 Registration with Valid Details and Course Completion&quot;, &quot;User Registration and Course Enrollm...)">
-                  </a> <!-- runScenario("TC_15 Registration with Valid Details and Course Completion", "User Registration and Course Enrollm...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_15 Registration with Valid Details and Course Completion","User Registration and Course Enrollment")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;TC_09 Navigate to Reset Password Page&quot;, &quot;User Login&quot;)">
-                  </a> <!-- runScenario("TC_09 Navigate to Reset Password Page", "User Login") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_09 Navigate to Reset Password Page","User Login")</span>
+                  <span class="parameters">("SU_TC19_Certificate_download","SU_TC19_Certificate_download")</span>
+                  <div class="stack-trace">java.lang.AssertionError: Element not exist. By.xpath: //h2[contains(text(),&apos;Do you need a Blended Hands-on Training?&apos;)]
+	at com.thinktimetechno.keywords.WebUI.waitForElementPresent(WebUI.java:2509)
+	at com.thinktimetechno.keywords.WebUI.waitForElementVisible(WebUI.java:2417)
+	at com.thinktimetechno.projects.website.pages.BillingPage.verify_handsonkit_PageDisplays(BillingPage.java:58)
+	at com.thinktimetechno.projects.website.stepdefinitions.SingleUser.Single_User_StepDefinitions.user_lands_on_handson_kirpage(Single_User_StepDefinitions.java:398)
+	at ✽.User lands on the Hands-on Kit Page(file:///D:/Workspace/AHCA/src/test/resources/features/SingleUser/SU_TC_19%20Certificate%20Download.feature:66)
+... Removed 1 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite_Cucumber_All_Feature-class-passed -->
-        </div> <!-- panel Suite_Cucumber_All_Feature -->
-        <div panel-name="test-xml-Suite_Cucumber_All_Feature" class="panel">
+          </div> <!-- suite-CucumberSuite-class-failed -->
+          <div class="suite-CucumberSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.thinktimetechno.runners.FullTest.FullTestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;TC_08 Verify Forgot Password Functionality Using a Valid Registered Email Address&quot;, &quot;C_TC_08_Forgot...)">
+                  </a> <!-- runScenario("TC_08 Verify Forgot Password Functionality Using a Valid Registered Email Address", "C_TC_08_Forgot...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("TC_08 Verify Forgot Password Functionality Using a Valid Registered Email Address","C_TC_08_Forgot_password_with_valid_registered_email")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;TC_01 Corporate Registration with Valid Details&quot;, &quot;C_TC_01_Corporate_Registration_with_Valid_Detail...)">
+                  </a> <!-- runScenario("TC_01 Corporate Registration with Valid Details", "C_TC_01_Corporate_Registration_with_Valid_Detail...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("TC_01 Corporate Registration with Valid Details","C_TC_01_Corporate_Registration_with_Valid_Details")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;TC_06 Login with Invalid Username valid  Password&quot;, &quot;C_TC_06_login_invalid_username_valid_password&quot;)">
+                  </a> <!-- runScenario("TC_06 Login with Invalid Username valid  Password", "C_TC_06_login_invalid_username_valid_password") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("TC_06 Login with Invalid Username valid  Password","C_TC_06_login_invalid_username_valid_password")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;TC_06 Login with Valid Username Invalid  Password&quot;, &quot;SU_TC06_Login_with_Valid_Username_Invalid_Pass...)">
+                  </a> <!-- runScenario("TC_06 Login with Valid Username Invalid  Password", "SU_TC06_Login_with_Valid_Username_Invalid_Pass...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("TC_06 Login with Valid Username Invalid  Password","SU_TC06_Login_with_Valid_Username_Invalid_Password")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;C_TC_13_Purchase Codes(select quantity below 5)&quot;, &quot;C_TC_13_Purchase Codes(select quantity below 5)&quot;)">
+                  </a> <!-- runScenario("C_TC_13_Purchase Codes(select quantity below 5)", "C_TC_13_Purchase Codes(select quantity below 5)") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("C_TC_13_Purchase Codes(select quantity below 5)","C_TC_13_Purchase Codes(select quantity below 5)")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;TC_02 Corporate Register(leaving one mandatory field blank)&quot;, &quot;C_TC_02_Register_with_leaving_one_ma...)">
+                  </a> <!-- runScenario("TC_02 Corporate Register(leaving one mandatory field blank)", "C_TC_02_Register_with_leaving_one_ma...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("TC_02 Corporate Register(leaving one mandatory field blank)","C_TC_02_Register_with_leaving_one_mandatory_field_blank")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;TC_03 Corporate Register(with existing accounts credentials)&quot;, &quot;C_TC_03_Register_with_existing_acco...)">
+                  </a> <!-- runScenario("TC_03 Corporate Register(with existing accounts credentials)", "C_TC_03_Register_with_existing_acco...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("TC_03 Corporate Register(with existing accounts credentials)","C_TC_03_Register_with_existing_accounts_credentials")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;C_TC_14_Export_Reports&quot;, &quot;C_TC_14_Export_Reports&quot;)">
+                  </a> <!-- runScenario("C_TC_14_Export_Reports", "C_TC_14_Export_Reports") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("C_TC_14_Export_Reports","C_TC_14_Export_Reports")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;TC_15 Registration with Valid Details and Course Completion&quot;, &quot;SU_TC15_User_can_make_payment_for_th...)">
+                  </a> <!-- runScenario("TC_15 Registration with Valid Details and Course Completion", "SU_TC15_User_can_make_payment_for_th...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("TC_15 Registration with Valid Details and Course Completion","SU_TC15_User_can_make_payment_for_the_selected_course")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;TC_07 Login with Invalid Username Invalid  Password&quot;, &quot;C_TC_07_login_invalid_username_invalid_passw...)">
+                  </a> <!-- runScenario("TC_07 Login with Invalid Username Invalid  Password", "C_TC_07_login_invalid_username_invalid_passw...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("TC_07 Login with Invalid Username Invalid  Password","C_TC_07_login_invalid_username_invalid_password")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;TC_05 Login with Valid Credentials&quot;, &quot;SU_TC05_login_valid_credentials&quot;)">
+                  </a> <!-- runScenario("TC_05 Login with Valid Credentials", "SU_TC05_login_valid_credentials") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("TC_05 Login with Valid Credentials","SU_TC05_login_valid_credentials")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;TC_02 Register(leaving one mandatory field blank)&quot;, &quot;SU_TC02_Register_with_leaving_one_mandatory_fi...)">
+                  </a> <!-- runScenario("TC_02 Register(leaving one mandatory field blank)", "SU_TC02_Register_with_leaving_one_mandatory_fi...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("TC_02 Register(leaving one mandatory field blank)","SU_TC02_Register_with_leaving_one_mandatory_field_blank")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;TC_04 Login with Valid Credentials&quot;, &quot;C_TC_04_login_valid_credentials&quot;)">
+                  </a> <!-- runScenario("TC_04 Login with Valid Credentials", "C_TC_04_login_valid_credentials") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("TC_04 Login with Valid Credentials","C_TC_04_login_valid_credentials")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;TC_07 Login with Invalid Username valid  Password&quot;, &quot;SU_TC07_Login_with_InValid_Username_valid_Pass...)">
+                  </a> <!-- runScenario("TC_07 Login with Invalid Username valid  Password", "SU_TC07_Login_with_InValid_Username_valid_Pass...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("TC_07 Login with Invalid Username valid  Password","SU_TC07_Login_with_InValid_Username_valid_Password")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;TC_09 Navigate to Reset Password Page&quot;, &quot;SU_TC09_Navigate_to_Reset_password_page&quot;)">
+                  </a> <!-- runScenario("TC_09 Navigate to Reset Password Page", "SU_TC09_Navigate_to_Reset_password_page") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("TC_09 Navigate to Reset Password Page","SU_TC09_Navigate_to_Reset_password_page")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;SU_TC10_store_purchase&quot;, &quot;SU_TC10_store_purchase&quot;)">
+                  </a> <!-- runScenario("SU_TC10_store_purchase", "SU_TC10_store_purchase") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("SU_TC10_store_purchase","SU_TC10_store_purchase")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;C_TC_12 Purchase Codes(select quantity above 5)&quot;, &quot;C_TC_12_Purchase Codes(select quantity above 5)&quot;)">
+                  </a> <!-- runScenario("C_TC_12 Purchase Codes(select quantity above 5)", "C_TC_12_Purchase Codes(select quantity above 5)") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("C_TC_12 Purchase Codes(select quantity above 5)","C_TC_12_Purchase Codes(select quantity above 5)")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;TC_17_Schedule_Virtual_HandsOn_Training&quot;, &quot;SU_TC_17_Schedule_Virtual_HandsOn_Training&quot;)">
+                  </a> <!-- runScenario("TC_17_Schedule_Virtual_HandsOn_Training", "SU_TC_17_Schedule_Virtual_HandsOn_Training") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("TC_17_Schedule_Virtual_HandsOn_Training","SU_TC_17_Schedule_Virtual_HandsOn_Training")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;TC_01 Registration with Valid Details&quot;, &quot;SU_TC01_Register_with_valid_credentials&quot;)">
+                  </a> <!-- runScenario("TC_01 Registration with Valid Details", "SU_TC01_Register_with_valid_credentials") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("TC_01 Registration with Valid Details","SU_TC01_Register_with_valid_credentials")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;TC_04 Navigate to Registration Page from Login Page&quot;, &quot;SU_TC04_Navigate_to_Registration_Page_from_L...)">
+                  </a> <!-- runScenario("TC_04 Navigate to Registration Page from Login Page", "SU_TC04_Navigate_to_Registration_Page_from_L...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("TC_04 Navigate to Registration Page from Login Page","SU_TC04_Navigate_to_Registration_Page_from_Login_Page")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;TC_09 Verify Forgot Password Functionality Using a Non-Registered/Invalid Email Address&quot;, &quot;C_TC_09_...)">
+                  </a> <!-- runScenario("TC_09 Verify Forgot Password Functionality Using a Non-Registered/Invalid Email Address", "C_TC_09_...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("TC_09 Verify Forgot Password Functionality Using a Non-Registered/Invalid Email Address","C_TC_09_Forgot_password_with_invalid_registered_email")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;TC_05 Login with Valid Username Invalid  Password&quot;, &quot;C_TC_05_login_valid_username_invalid_password&quot;)">
+                  </a> <!-- runScenario("TC_05 Login with Valid Username Invalid  Password", "C_TC_05_login_valid_username_invalid_password") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("TC_05 Login with Valid Username Invalid  Password","C_TC_05_login_valid_username_invalid_password")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;TC_10 Invite Employee&quot;, &quot;C_TC_10_Invite_Employee&quot;)">
+                  </a> <!-- runScenario("TC_10 Invite Employee", "C_TC_10_Invite_Employee") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("TC_10 Invite Employee","C_TC_10_Invite_Employee")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;TC_08 Login with Invalid Username Invalid  Password&quot;, &quot;SU_TC08_Login_with_InValid_Username_Invalid_...)">
+                  </a> <!-- runScenario("TC_08 Login with Invalid Username Invalid  Password", "SU_TC08_Login_with_InValid_Username_Invalid_...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("TC_08 Login with Invalid Username Invalid  Password","SU_TC08_Login_with_InValid_Username_Invalid_Password")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;TC_03 Register(with existing accounts credentials)&quot;, &quot;SU_TC03_Register_with_existing_accounts_crede...)">
+                  </a> <!-- runScenario("TC_03 Register(with existing accounts credentials)", "SU_TC03_Register_with_existing_accounts_crede...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("TC_03 Register(with existing accounts credentials)","SU_TC03_Register_with_existing_accounts_credentials")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CucumberSuite-class-passed -->
+        </div> <!-- panel CucumberSuite -->
+        <div panel-name="test-xml-CucumberSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\rithi\Downloads\01-FredPerry-master\01-FredPerry-master\src\test\resources\suites\ACHA.xml</span>
+            <span class="header-content">D:\Workspace\AHCA\src\test\resources\suites\ACHA.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite Cucumber All Feature&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test Cucumber All Feature&quot; verbose=&quot;0&quot;&gt;
+&lt;suite name=&quot;CucumberSuite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;CucumberFeatureTest&quot; verbose=&quot;0&quot;&gt;
     &lt;parameter name=&quot;BROWSER&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.thinktimetechno.runners.FullTest.FullTestTestRunner&quot;/&gt;
+      &lt;class name=&quot;com.thinktimetechno.runners.FullTest.FullTestRunner&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test Cucumber All Feature --&gt;
-&lt;/suite&gt; &lt;!-- Suite Cucumber All Feature --&gt;
+  &lt;/test&gt; &lt;!-- CucumberFeatureTest --&gt;
+&lt;/suite&gt; &lt;!-- CucumberSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Suite_Cucumber_All_Feature" class="panel">
+        <div panel-name="testlist-CucumberSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Suite Cucumber All Feature</span>
+            <span class="header-content">Tests for CucumberSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test Cucumber All Feature (1 class)</span>
+                <span class="test-name">CucumberFeatureTest (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Suite_Cucumber_All_Feature" class="panel">
+        <div panel-name="group-CucumberSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Suite Cucumber All Feature</span>
+            <span class="header-content">Groups for CucumberSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
@@ -468,223 +761,343 @@
             </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Suite_Cucumber_All_Feature" class="panel">
+        <div panel-name="times-CucumberSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Suite Cucumber All Feature</span>
+            <span class="header-content">Times for CucumberSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Suite_Cucumber_All_Feature');
-function tableData_Suite_Cucumber_All_Feature() {
+suiteTableInitFunctions.push('tableData_CucumberSuite');
+function tableData_CucumberSuite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(20);
+data.addRows(33);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
-data.setCell(0, 2, 'com.thinktimetechno.runners.FullTest.FullTestTestRunner')
-data.setCell(0, 3, 193070);
+data.setCell(0, 2, 'com.thinktimetechno.runners.FullTest.FullTestRunner')
+data.setCell(0, 3, 89763);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
-data.setCell(1, 2, 'com.thinktimetechno.runners.FullTest.FullTestTestRunner')
-data.setCell(1, 3, 170303);
+data.setCell(1, 2, 'com.thinktimetechno.runners.FullTest.FullTestRunner')
+data.setCell(1, 3, 85843);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
-data.setCell(2, 2, 'com.thinktimetechno.runners.FullTest.FullTestTestRunner')
-data.setCell(2, 3, 90752);
+data.setCell(2, 2, 'com.thinktimetechno.runners.FullTest.FullTestRunner')
+data.setCell(2, 3, 80706);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
-data.setCell(3, 2, 'com.thinktimetechno.runners.FullTest.FullTestTestRunner')
-data.setCell(3, 3, 82452);
+data.setCell(3, 2, 'com.thinktimetechno.runners.FullTest.FullTestRunner')
+data.setCell(3, 3, 75170);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'runScenario')
-data.setCell(4, 2, 'com.thinktimetechno.runners.FullTest.FullTestTestRunner')
-data.setCell(4, 3, 78133);
+data.setCell(4, 2, 'com.thinktimetechno.runners.FullTest.FullTestRunner')
+data.setCell(4, 3, 52882);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'runScenario')
-data.setCell(5, 2, 'com.thinktimetechno.runners.FullTest.FullTestTestRunner')
-data.setCell(5, 3, 75297);
+data.setCell(5, 2, 'com.thinktimetechno.runners.FullTest.FullTestRunner')
+data.setCell(5, 3, 44524);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'runScenario')
-data.setCell(6, 2, 'com.thinktimetechno.runners.FullTest.FullTestTestRunner')
-data.setCell(6, 3, 70272);
+data.setCell(6, 2, 'com.thinktimetechno.runners.FullTest.FullTestRunner')
+data.setCell(6, 3, 44247);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'runScenario')
-data.setCell(7, 2, 'com.thinktimetechno.runners.FullTest.FullTestTestRunner')
-data.setCell(7, 3, 37664);
+data.setCell(7, 2, 'com.thinktimetechno.runners.FullTest.FullTestRunner')
+data.setCell(7, 3, 43448);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'runScenario')
-data.setCell(8, 2, 'com.thinktimetechno.runners.FullTest.FullTestTestRunner')
-data.setCell(8, 3, 33960);
+data.setCell(8, 2, 'com.thinktimetechno.runners.FullTest.FullTestRunner')
+data.setCell(8, 3, 42066);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'runScenario')
-data.setCell(9, 2, 'com.thinktimetechno.runners.FullTest.FullTestTestRunner')
-data.setCell(9, 3, 32508);
+data.setCell(9, 2, 'com.thinktimetechno.runners.FullTest.FullTestRunner')
+data.setCell(9, 3, 38158);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'runScenario')
-data.setCell(10, 2, 'com.thinktimetechno.runners.FullTest.FullTestTestRunner')
-data.setCell(10, 3, 32413);
+data.setCell(10, 2, 'com.thinktimetechno.runners.FullTest.FullTestRunner')
+data.setCell(10, 3, 35084);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'runScenario')
-data.setCell(11, 2, 'com.thinktimetechno.runners.FullTest.FullTestTestRunner')
-data.setCell(11, 3, 31737);
+data.setCell(11, 2, 'com.thinktimetechno.runners.FullTest.FullTestRunner')
+data.setCell(11, 3, 29335);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'runScenario')
-data.setCell(12, 2, 'com.thinktimetechno.runners.FullTest.FullTestTestRunner')
-data.setCell(12, 3, 26793);
+data.setCell(12, 2, 'com.thinktimetechno.runners.FullTest.FullTestRunner')
+data.setCell(12, 3, 28874);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'runScenario')
-data.setCell(13, 2, 'com.thinktimetechno.runners.FullTest.FullTestTestRunner')
-data.setCell(13, 3, 21921);
+data.setCell(13, 2, 'com.thinktimetechno.runners.FullTest.FullTestRunner')
+data.setCell(13, 3, 24754);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'runScenario')
-data.setCell(14, 2, 'com.thinktimetechno.runners.FullTest.FullTestTestRunner')
-data.setCell(14, 3, 19732);
+data.setCell(14, 2, 'com.thinktimetechno.runners.FullTest.FullTestRunner')
+data.setCell(14, 3, 24028);
 data.setCell(15, 0, 15)
 data.setCell(15, 1, 'runScenario')
-data.setCell(15, 2, 'com.thinktimetechno.runners.FullTest.FullTestTestRunner')
-data.setCell(15, 3, 19667);
+data.setCell(15, 2, 'com.thinktimetechno.runners.FullTest.FullTestRunner')
+data.setCell(15, 3, 22821);
 data.setCell(16, 0, 16)
 data.setCell(16, 1, 'runScenario')
-data.setCell(16, 2, 'com.thinktimetechno.runners.FullTest.FullTestTestRunner')
-data.setCell(16, 3, 18664);
+data.setCell(16, 2, 'com.thinktimetechno.runners.FullTest.FullTestRunner')
+data.setCell(16, 3, 21696);
 data.setCell(17, 0, 17)
 data.setCell(17, 1, 'runScenario')
-data.setCell(17, 2, 'com.thinktimetechno.runners.FullTest.FullTestTestRunner')
-data.setCell(17, 3, 17025);
+data.setCell(17, 2, 'com.thinktimetechno.runners.FullTest.FullTestRunner')
+data.setCell(17, 3, 21636);
 data.setCell(18, 0, 18)
 data.setCell(18, 1, 'runScenario')
-data.setCell(18, 2, 'com.thinktimetechno.runners.FullTest.FullTestTestRunner')
-data.setCell(18, 3, 16503);
+data.setCell(18, 2, 'com.thinktimetechno.runners.FullTest.FullTestRunner')
+data.setCell(18, 3, 17152);
 data.setCell(19, 0, 19)
 data.setCell(19, 1, 'runScenario')
-data.setCell(19, 2, 'com.thinktimetechno.runners.FullTest.FullTestTestRunner')
-data.setCell(19, 3, 15568);
-window.suiteTableData['Suite_Cucumber_All_Feature']= { tableData: data, tableDiv: 'times-div-Suite_Cucumber_All_Feature'}
+data.setCell(19, 2, 'com.thinktimetechno.runners.FullTest.FullTestRunner')
+data.setCell(19, 3, 14148);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'runScenario')
+data.setCell(20, 2, 'com.thinktimetechno.runners.FullTest.FullTestRunner')
+data.setCell(20, 3, 13466);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'runScenario')
+data.setCell(21, 2, 'com.thinktimetechno.runners.FullTest.FullTestRunner')
+data.setCell(21, 3, 13022);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'runScenario')
+data.setCell(22, 2, 'com.thinktimetechno.runners.FullTest.FullTestRunner')
+data.setCell(22, 3, 12944);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'runScenario')
+data.setCell(23, 2, 'com.thinktimetechno.runners.FullTest.FullTestRunner')
+data.setCell(23, 3, 12908);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'runScenario')
+data.setCell(24, 2, 'com.thinktimetechno.runners.FullTest.FullTestRunner')
+data.setCell(24, 3, 12623);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'runScenario')
+data.setCell(25, 2, 'com.thinktimetechno.runners.FullTest.FullTestRunner')
+data.setCell(25, 3, 12456);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'runScenario')
+data.setCell(26, 2, 'com.thinktimetechno.runners.FullTest.FullTestRunner')
+data.setCell(26, 3, 12374);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'runScenario')
+data.setCell(27, 2, 'com.thinktimetechno.runners.FullTest.FullTestRunner')
+data.setCell(27, 3, 11635);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'runScenario')
+data.setCell(28, 2, 'com.thinktimetechno.runners.FullTest.FullTestRunner')
+data.setCell(28, 3, 11517);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'runScenario')
+data.setCell(29, 2, 'com.thinktimetechno.runners.FullTest.FullTestRunner')
+data.setCell(29, 3, 11330);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'runScenario')
+data.setCell(30, 2, 'com.thinktimetechno.runners.FullTest.FullTestRunner')
+data.setCell(30, 3, 10716);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'runScenario')
+data.setCell(31, 2, 'com.thinktimetechno.runners.FullTest.FullTestRunner')
+data.setCell(31, 3, 10264);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'runScenario')
+data.setCell(32, 2, 'com.thinktimetechno.runners.FullTest.FullTestRunner')
+data.setCell(32, 3, 10142);
+window.suiteTableData['CucumberSuite']= { tableData: data, tableDiv: 'times-div-CucumberSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 18 minutes</span>
-              <div id="times-div-Suite_Cucumber_All_Feature">
-              </div> <!-- times-div-Suite_Cucumber_All_Feature -->
+              <span class="suite-total-time">Total running time: 16 minutes</span>
+              <div id="times-div-CucumberSuite">
+              </div> <!-- times-div-CucumberSuite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Suite_Cucumber_All_Feature" class="panel">
+        <div panel-name="reporter-CucumberSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Suite Cucumber All Feature</span>
+            <span class="header-content">Reporter output for CucumberSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Suite_Cucumber_All_Feature" class="panel">
+        <div panel-name="ignored-methods-CucumberSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Suite_Cucumber_All_Feature" class="panel">
+        <div panel-name="chronological-CucumberSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.thinktimetechno.runners.FullTest.FullTestTestRunner</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.thinktimetechno.runners.FullTest.FullTestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@3994c5fa)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@33f6a7b4)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("TC_01 Corporate Registration with Valid Details", "Group Registration")</span>
-                <span class="method-start">2841 ms</span>
+                <span class="method-name">runScenario("TC_01 Corporate Registration with Valid Details", "C_TC_01_Corporate_Registration_with_Valid_Detail...)</span>
+                <span class="method-start">2890 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("TC_02 Corporate Register(leaving one mandatory field blank)", "Group Registration")</span>
-                <span class="method-start">34585 ms</span>
+                <span class="method-name">runScenario("TC_02 Corporate Register(leaving one mandatory field blank)", "C_TC_02_Register_with_leaving_one_ma...)</span>
+                <span class="method-start">24592 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("TC_03 Corporate Register(with existing accounts credentials)", "Group Registration")</span>
-                <span class="method-start">56507 ms</span>
+                <span class="method-name">runScenario("TC_03 Corporate Register(with existing accounts credentials)", "C_TC_03_Register_with_existing_acco...)</span>
+                <span class="method-start">34857 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("TC_04 Login with Valid Credentials", "Group Login")</span>
-                <span class="method-start">83303 ms</span>
+                <span class="method-name">runScenario("TC_04 Login with Valid Credentials", "C_TC_04_login_valid_credentials")</span>
+                <span class="method-start">47880 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("TC_05 Login with Valid Username Invalid  Password", "Group Login")</span>
-                <span class="method-start">102971 ms</span>
+                <span class="method-name">runScenario("TC_05 Login with Valid Username Invalid  Password", "C_TC_05_login_valid_username_invalid_password")</span>
+                <span class="method-start">60505 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("TC_06 Login with Invalid Username valid  Password", "Group Login")</span>
-                <span class="method-start">119475 ms</span>
+                <span class="method-name">runScenario("TC_06 Login with Invalid Username valid  Password", "C_TC_06_login_invalid_username_valid_password")</span>
+                <span class="method-start">71221 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("TC_07 Login with Invalid Username Invalid  Password", "Group Login")</span>
-                <span class="method-start">135045 ms</span>
+                <span class="method-name">runScenario("TC_07 Login with Invalid Username Invalid  Password", "C_TC_07_login_invalid_username_invalid_passw...)</span>
+                <span class="method-start">81365 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("TC_08 Verify Forgot Password Functionality Using a Valid Registered Email Address", "Group Login")</span>
-                <span class="method-start">152071 ms</span>
+                <span class="method-name">runScenario("TC_08 Verify Forgot Password Functionality Using a Valid Registered Email Address", "C_TC_08_Forgot...)</span>
+                <span class="method-start">92697 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("TC_09 Verify Forgot Password Functionality Using a Non-Registered/Invalid Email Address", "Group Lo...)</span>
-                <span class="method-start">171805 ms</span>
+                <span class="method-name">runScenario("TC_09 Verify Forgot Password Functionality Using a Non-Registered/Invalid Email Address", "C_TC_09_...)</span>
+                <span class="method-start">105155 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("TC_01 Registration with Valid Details", "User Registration")</span>
-                <span class="method-start">190470 ms</span>
+                <span class="method-name">runScenario("TC_10 Invite Employee", "C_TC_10_Invite_Employee")</span>
+                <span class="method-start">117531 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("TC_02 Register(leaving one mandatory field blank)", "User Registration")</span>
-                <span class="method-start">272924 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("C_TC_11_Invite_Employee_in_bulk", "C_TC_11_Invite_Employee_in_bulk")</span>
+                <span class="method-start">160982 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("TC_03 Register(with existing accounts credentials)", "User Registration")</span>
-                <span class="method-start">348222 ms</span>
+                <span class="method-name">runScenario("C_TC_12 Purchase Codes(select quantity above 5)", "C_TC_12_Purchase Codes(select quantity above 5)")</span>
+                <span class="method-start">205237 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("TC_04 Navigate to Registration Page from Login Page", "User Registration")</span>
-                <span class="method-start">426357 ms</span>
+                <span class="method-name">runScenario("C_TC_13_Purchase Codes(select quantity below 5)", "C_TC_13_Purchase Codes(select quantity below 5)")</span>
+                <span class="method-start">240323 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("TC_05 Login with Valid Credentials", "User Login")</span>
-                <span class="method-start">517110 ms</span>
+                <span class="method-name">runScenario("C_TC_14_Export_Reports", "C_TC_14_Export_Reports")</span>
+                <span class="method-start">263146 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("TC_06 Login with Valid Username Invalid  Password", "User Login")</span>
-                <span class="method-start">587383 ms</span>
+                <span class="method-name">runScenario("TC_01 Registration with Valid Details", "SU_TC01_Register_with_valid_credentials")</span>
+                <span class="method-start">284784 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("TC_07 Login with Invalid Username valid  Password", "User Login")</span>
-                <span class="method-start">619892 ms</span>
+                <span class="method-name">runScenario("TC_02 Register(leaving one mandatory field blank)", "SU_TC02_Register_with_leaving_one_mandatory_fi...)</span>
+                <span class="method-start">308814 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("TC_08 Login with Invalid Username Invalid  Password", "User Login")</span>
-                <span class="method-start">653855 ms</span>
+                <span class="method-name">runScenario("TC_03 Register(with existing accounts credentials)", "SU_TC03_Register_with_existing_accounts_crede...)</span>
+                <span class="method-start">321723 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("TC_09 Navigate to Reset Password Page", "User Login")</span>
-                <span class="method-start">686270 ms</span>
+                <span class="method-name">runScenario("TC_04 Navigate to Registration Page from Login Page", "SU_TC04_Navigate_to_Registration_Page_from_L...)</span>
+                <span class="method-start">334669 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("TC_15 Registration with Valid Details and Course Completion", "User Registration and Course Enrollm...)</span>
-                <span class="method-start">723936 ms</span>
+                <span class="method-name">runScenario("TC_05 Login with Valid Credentials", "SU_TC05_login_valid_credentials")</span>
+                <span class="method-start">363545 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("TC_16 Verify if the user can purchase course with add-ons", "User Registration and Course Enrollmen...)</span>
-                <span class="method-start">894240 ms</span>
+                <span class="method-name">runScenario("TC_06 Login with Valid Username Invalid  Password", "SU_TC06_Login_with_Valid_Username_Invalid_Pass...)</span>
+                <span class="method-start">377693 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("TC_07 Login with Invalid Username valid  Password", "SU_TC07_Login_with_InValid_Username_valid_Pass...)</span>
+                <span class="method-start">391161 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("TC_08 Login with Invalid Username Invalid  Password", "SU_TC08_Login_with_InValid_Username_Invalid_...)</span>
+                <span class="method-start">402797 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("TC_09 Navigate to Reset Password Page", "SU_TC09_Navigate_to_Reset_password_page")</span>
+                <span class="method-start">414315 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("SU_TC10_store_purchase", "SU_TC10_store_purchase")</span>
+                <span class="method-start">431469 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("TC_11 Take Quiz (failed in quiz)", "SU_TC11_Take_Quiz_failed_in_quiz")</span>
+                <span class="method-start">456224 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("TC_12 SU_TC12_Quiz_Reattempt_Passed", "SU_TC12_Quiz_Reattempt_Passed")</span>
+                <span class="method-start">485562 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("TC13_Register_with_Group_Code", "SU_TC13_Register_with_Group_Code")</span>
+                <span class="method-start">523723 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("TC_14 Register to the website(Quiz_Register_Payment)", "SU_TC_14_Register_to_the_website(Quiz_Regis...)</span>
+                <span class="method-start">568249 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("TC_15 Registration with Valid Details and Course Completion", "SU_TC15_User_can_make_payment_for_th...)</span>
+                <span class="method-start">654095 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("TC_16 Verify if the user can purchase course with add-ons", "SU_TC16_Verify_if_the_user_can_purchas...)</span>
+                <span class="method-start">706978 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("TC_17_Schedule_Virtual_HandsOn_Training", "SU_TC_17_Schedule_Virtual_HandsOn_Training")</span>
+                <span class="method-start">749047 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("TC_18 Purchase wallet card and virtual review session add-ons", "SU_TC_18_Purchase_walletcard_and_v...)</span>
+                <span class="method-start">829755 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("SU_TC19_Certificate_download", "SU_TC19_Certificate_download")</span>
+                <span class="method-start">904925 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">1087316 ms</span>
+                <span class="method-start">994697 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">1088313 ms</span>
+                <span class="method-start">1018884 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

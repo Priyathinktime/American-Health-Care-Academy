@@ -1,5 +1,5 @@
 @SingleUser @fulltest 
-   Feature: User Registration
+   Feature: SU_TC01_Register_with_valid_credentials
 
   @SU_TC01_Register_with_valid_credentials
   Scenario: TC_01 Registration with Valid Details
@@ -8,8 +8,8 @@
     | Field         | Value                |
     | First Name    | John1                |
     | Last Name     | Doe1                 |
-    | Phone Number  | 9876543210           |
-    | Email Address | john.doe@example.com |
+    | Phone Number  | 98765432109          |
+    | Email Address | john.doe@gmail.com   |
     | Username      | johndoe              |
     | Password      | Secure@123           |
     | Confirm Password | Secure@123        |

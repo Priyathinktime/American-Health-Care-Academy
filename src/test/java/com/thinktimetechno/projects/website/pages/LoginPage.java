@@ -11,7 +11,7 @@ public class LoginPage {
 	public DashboardPage loginsingle(String email, String password) {
 		WebUI.setText(By.xpath("//input[@id='username']"), email);
 		WebUI.setText(By.xpath("//input[@id='password']"), password);
-		WebUI.clickElement(By.xpath("//input[@value='Login']"));
+		WebUI.clickElementWithJs(By.xpath("//input[@value='Login']"));
 		return new DashboardPage();
 	}
 

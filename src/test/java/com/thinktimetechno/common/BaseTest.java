@@ -11,7 +11,7 @@ import org.testng.annotations.*;
 import java.lang.reflect.Method;
 
 @Listeners({TestListener.class})
-public class BaseTest {
+public class BaseTest  {
 
     @Parameters("BROWSER")
     @BeforeMethod(alwaysRun = true)

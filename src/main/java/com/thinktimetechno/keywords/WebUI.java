@@ -5,65 +5,6 @@
 
 package com.thinktimetechno.keywords;
 
-import static com.thinktimetechno.constants.FrameworkConstants.ACTIVE_PAGE_LOADED;
-import static com.thinktimetechno.constants.FrameworkConstants.SCREENSHOT_ALL_STEPS;
-import static com.thinktimetechno.constants.FrameworkConstants.WAIT_EXPLICIT;
-import static com.thinktimetechno.constants.FrameworkConstants.WAIT_PAGE_LOADED;
-import static com.thinktimetechno.constants.FrameworkConstants.WAIT_SLEEP_STEP;
-import static com.thinktimetechno.constants.FrameworkConstants.YES;
-
-import java.awt.AWTException;
-import java.awt.Robot;
-import java.awt.Toolkit;
-import java.awt.datatransfer.StringSelection;
-import java.awt.event.InputEvent;
-import java.awt.event.KeyEvent;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.time.Duration;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
-import javax.annotation.Nullable;
-import javax.imageio.ImageIO;
-
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.Pdf;
-import org.openqa.selenium.Point;
-import org.openqa.selenium.PrintsPage;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.WindowType;
-import org.openqa.selenium.chrome.ChromeOptions;
-//import org.openqa.selenium.devtools.v120.network.Network;
-//import org.openqa.selenium.devtools.v120.network.model.Headers;
-//import org.openqa.selenium.devtools.v121.network.Network;
-//import org.openqa.selenium.devtools.v122.network.model.Headers;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.print.PrintOptions;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
-import org.testng.asserts.SoftAssert;
-
-import com.google.zxing.BinaryBitmap;
-import com.google.zxing.LuminanceSource;
-import com.google.zxing.MultiFormatReader;
-import com.google.zxing.Result;
-import com.google.zxing.client.j2se.BufferedImageLuminanceSource;
-import com.google.zxing.common.HybridBinarizer;
 import com.thinktimetechno.constants.FrameworkConstants;
 import com.thinktimetechno.driver.DriverManager;
 import com.thinktimetechno.enums.FailureHandling;
@@ -74,8 +15,48 @@ import com.thinktimetechno.report.ExtentTestManager;
 import com.thinktimetechno.utils.BrowserInfoUtils;
 import com.thinktimetechno.utils.DateUtils;
 import com.thinktimetechno.utils.LogUtils;
-
+import com.google.common.util.concurrent.Uninterruptibles;
+import com.google.zxing.BinaryBitmap;
+import com.google.zxing.LuminanceSource;
+import com.google.zxing.MultiFormatReader;
+import com.google.zxing.Result;
+import com.google.zxing.client.j2se.BufferedImageLuminanceSource;
+import com.google.zxing.common.HybridBinarizer;
 import io.qameta.allure.Step;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.Point;
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.devtools.DevTools;
+import org.openqa.selenium.devtools.HasDevTools;
+import org.openqa.selenium.devtools.v114.network.Network;
+import org.openqa.selenium.devtools.v114.network.model.Headers;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.print.PrintOptions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
+
+import javax.annotation.Nullable;
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.InputEvent;
+import java.awt.event.KeyEvent;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.time.Duration;
+import java.util.List;
+import java.util.*;
+
+import static com.thinktimetechno.constants.FrameworkConstants.*;
 
 /**
  * Keyword WebUI là class chung làm thư viện xử lý sẵn với nhiều hàm custom từ Selenium và Java.
@@ -269,28 +250,27 @@ public class WebUI {
     @Step("Get to URL {0} with authentication")
     public static void getToUrlAuthentication(String url, String username, String password) {
         // Get the devtools from the running driver and create a session
-//        DevTools devTools = ((HasDevTools) DriverManager.getDriver()).getDevTools();
-//        devTools.createSession();
-//
-//        // Enable the Network domain of devtools
-//        devTools.send(Network.enable(Optional.of(100000), Optional.of(100000), Optional.of(100000)));
-//        String auth = username + ":" + password;
-//
-//       // Encoding the username and password using Base64 (java.util)
-//        String encodeToString = Base64.getEncoder().encodeToString(auth.getBytes());
-//
-//        // Pass the network header -> Authorization : Basic <encoded String>
-//        Map<String, Object> headers = new HashMap<>();
-//        headers.put("Authorization", "Basic " + encodeToString);
-//        devTools.send(Network.setExtraHTTPHeaders(new Headers(headers)));
-//
-//        LogUtils.info("getToUrlAuthentication with URL: " + url);
-//        LogUtils.info("getToUrlAuthentication with Username: " + username);
-//        LogUtils.info("getToUrlAuthentication with Password: " + password);
-//        // Load the application url
-//        getURL(url);
-//        Uninterruptibles.sleepUninterruptibly(Duration.ofSeconds(3));
-    	DriverManager.getDriver().get("https://"+username+":"+password+"@"+url);
+        DevTools devTools = ((HasDevTools) DriverManager.getDriver()).getDevTools();
+        devTools.createSession();
+
+        // Enable the Network domain of devtools
+        devTools.send(Network.enable(Optional.of(100000), Optional.of(100000), Optional.of(100000)));
+        String auth = username + ":" + password;
+
+        // Encoding the username and password using Base64 (java.util)
+        String encodeToString = Base64.getEncoder().encodeToString(auth.getBytes());
+
+        // Pass the network header -> Authorization : Basic <encoded String>
+        Map<String, Object> headers = new HashMap<>();
+        headers.put("Authorization", "Basic " + encodeToString);
+        devTools.send(Network.setExtraHTTPHeaders(new Headers(headers)));
+
+        LogUtils.info("getToUrlAuthentication with URL: " + url);
+        LogUtils.info("getToUrlAuthentication with Username: " + username);
+        LogUtils.info("getToUrlAuthentication with Password: " + password);
+        // Load the application url
+        getURL(url);
+        Uninterruptibles.sleepUninterruptibly(Duration.ofSeconds(3));
     }
 
     /**
@@ -966,9 +946,10 @@ public class WebUI {
     }
 
     @Step("Get text on Alert")
-    public static void alertGetText() {
+    public static String alertGetText() {
         sleep(WAIT_SLEEP_STEP);
-        DriverManager.getDriver().switchTo().alert().getText();
+       return DriverManager.getDriver().switchTo().alert().getText();
+        
     }
 
     @Step("Set text on Alert {0}")
@@ -2175,36 +2156,8 @@ public class WebUI {
         JavascriptExecutor js = (JavascriptExecutor) DriverManager.getDriver();
 //        js.executeScript("arguments[0].scrollIntoView(false);", getWebElement(by));
         js.executeScript("arguments[0].scrollIntoView(true);", getWebElement(by));
-       
         //Click with JS
-       js.executeScript("arguments[0].click();", getWebElement(by));
-
-
-        LogUtils.info("Click on element with JS: " + by);
-        if (ExtentTestManager.getExtentTest() != null) {
-            ExtentReportManager.pass("Click on element with JS: " + by);
-        }
-        AllureManager.saveTextLog("Click on element with JS: " + by);
-        addScreenshotToReport(Thread.currentThread().getStackTrace()[1].getMethodName() + "_" + DateUtils.getCurrentDateTime());
-
-    }
-   /**
- * @param by Hari, (By , String)
- */
-
-   
-
-    @Step("ClickanScroll on the element by Javascript {0}")
-    public static void clickScrollElementWithJs(By by) {
-        waitForElementPresent(by);
-        //Scroll to element với Javascript Executor`
-        JavascriptExecutor js = (JavascriptExecutor) DriverManager.getDriver();
-//        js.executeScript("arguments[0].scrollIntoView(false);", getWebElement(by));
-        js.executeScript("arguments[0].scrollIntoView(true);", getWebElement(by));
-         
-        //Click with JS
-//       js.executeScript("arguments[0].click();", getWebElement(by));
-          clickElement(by);
+        js.executeScript("arguments[0].click();", getWebElement(by));
 
         LogUtils.info("Click on element with JS: " + by);
         if (ExtentTestManager.getExtentTest() != null) {
@@ -2243,7 +2196,6 @@ public class WebUI {
      */
     @Step("Right click on element {0}")
     public static void rightClickElement(By by) {
-    	
         Actions action = new Actions(DriverManager.getDriver());
         action.contextClick(waitForElementVisible(by)).build().perform();
         LogUtils.info("Right click on element " + by);
@@ -2465,7 +2417,7 @@ public class WebUI {
         waitForElementPresent(by);
 
         try {
-            WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(WAIT_EXPLICIT), Duration.ofMillis(500));
+            WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(WAIT_EXPLICIT), Duration.ofMillis(1000));
             boolean check = isElementVisible(by, 1);
             if (check == true) {
                 return wait.until(ExpectedConditions.visibilityOfElementLocated(by));
@@ -2578,6 +2530,22 @@ public class WebUI {
         }
         return false;
     }
+    
+    @Step("Verify that the page title contains: {0}")
+    public static boolean verifyPageTitleContains(String expectedTitle) {
+        smartWait(); // Add if needed based on project
+
+        
+            WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(WAIT_EXPLICIT), Duration.ofMillis(500));
+            
+            // Wait until title contains expected value
+            boolean titleIsCorrect = wait.until(ExpectedConditions.titleIs(expectedTitle));
+
+            // Assertion for validation
+            Assert.assertTrue(titleIsCorrect, "Page title does not contain expected value: " + expectedTitle + ". Actual title is: " + getPageTitle());
+            return true;
+
+        } 
 
     /**
      * Kiểm tra giá trị từ thuộc tính của một element có đúng hay không
@@ -2602,6 +2570,7 @@ public class WebUI {
             return false;
         }
     }
+    
 
     /**
      * Chờ đợi thuộc tính của một element tồn tại với thời gian tuỳ chỉnh
@@ -2652,27 +2621,6 @@ public class WebUI {
         }
     }
 
-    @Step("Verify that the page title contains: {0}")
-    public static boolean verifyPageTitleContains(String expectedTitle) {
-        smartWait(); // Add if needed based on project
-
-        try {
-            WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(WAIT_EXPLICIT), Duration.ofMillis(500));
-            
-            // Wait until title contains expected value
-            boolean titleIsCorrect = wait.until(ExpectedConditions.titleContains(expectedTitle));
-
-            // Assertion for validation
-            Assert.assertTrue(titleIsCorrect, "Page title does not contain expected value: " + expectedTitle + ". Actual title is: " + getPageTitle());
-            return true;
-
-        } catch (Throwable error) {
-            LogUtils.error("Page title does not contain expected value: " + expectedTitle + ". Actual title is: " + getPageTitle());
-            Assert.fail("Page title does not contain expected value: " + expectedTitle + ". Actual title is: " + getPageTitle());
-            return false;
-        }
-    }
-    
     /**
      * Chờ đợi JQuery tải xong với thời gian mặc định từ config
      */
@@ -2733,5 +2681,12 @@ public class WebUI {
         }
 
     }
+
+	public static void delay(int i) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
 
 }

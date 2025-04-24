@@ -1,7 +1,14 @@
 package com.thinktimetechno.projects.website.pages;
 
+import java.time.DayOfWeek;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.format.TextStyle;
+import java.util.Locale;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 import com.thinktimetechno.keywords.WebUI;
@@ -34,6 +41,8 @@ public class BillingPage {
 		WebUI.setText(By.xpath("//input[@id='zipcode']"), zipcode);
 		WebUI.setText(By.xpath("//select[@id='country']"), country);
 
+		
+
 	}
 
 	public void click_sameasbilling_button() {
@@ -43,7 +52,62 @@ public class BillingPage {
 
 	public void click_submitbilling_button() throws InterruptedException {
 		WebUI.clickElementWithJs(By.xpath("//input[@id='payment_submit_button']"));
-//		Thread.sleep(10000);
+
 	}
+	public void verify_handsonkit_PageDisplays() {
+		WebElement billing = WebUI.waitForElementVisible(By.xpath("//h2[contains(text(),'Do you need a Blended Hands-on Training?')]"));
+		String billingtext = billing.getText();
+
+		Assert.assertEquals(billingtext, "Do you need a Blended Hands-on Training?");
+	}
+	
+	public void selecttime() {
+
+    WebUI.selectOptionByIndex(By.xpath("//select[@id='champ_selected_time']"), 1);
+
+	}
+	public void click_PurchaseHandsonTraining_button(){
+		WebUI.clickElementWithJs(By.xpath("(//input[@id='purchase_champ_btn'])[1]"));
+
+	}
+	
+	public void user_selects_date(String dateStr) {
+	    // Parse the input string using the expected format: "30 April 2025"
+	    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd MMMM yyyy", Locale.ENGLISH);
+	    LocalDate targetDate = LocalDate.parse(dateStr, formatter);
+
+	    // Skip weekends
+	    DayOfWeek dayOfWeek = targetDate.getDayOfWeek();
+	    if (dayOfWeek == DayOfWeek.SATURDAY || dayOfWeek == DayOfWeek.SUNDAY) {
+	        System.out.println("Weekend selected, skipping: " + targetDate);
+	        return;
+	    }
+
+	    // Get target date details
+	    String targetMonth = targetDate.getMonth().getDisplayName(TextStyle.FULL, Locale.ENGLISH);
+	    int targetYear = targetDate.getYear();
+	    String targetDay = String.valueOf(targetDate.getDayOfMonth());
+
+	    // Navigate to the correct month and year in the calendar
+	    while (true) {
+	        String displayedMonth = WebUI.getWebElement(By.className("ui-datepicker-month")).getText();
+	        int displayedYear = Integer.parseInt(WebUI.getWebElement(By.className("ui-datepicker-year")).getText());
+
+	        if (displayedMonth.equalsIgnoreCase(targetMonth) && displayedYear == targetYear) {
+	            break;
+	        } else {
+	            WebUI.getWebElement(By.xpath("//a[@title='Next']")).click();
+	        }
+	    }
+
+	    // Click the correct active day
+	    String dayXpath = "//td[not(contains(@class, 'ui-datepicker-unselectable')) and not(contains(@class, 'ui-datepicker-week-end'))]/a[text()='" + targetDay + "']";
+	    WebElement activeDate = WebUI.getWebElement(By.xpath(dayXpath));
+	    activeDate.click();
+	}
+
+	public void selectcardtype(String card) {
+
+		}
 
 }

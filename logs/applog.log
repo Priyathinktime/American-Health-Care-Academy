@@ -1,134 +1,66 @@
-[INFO] 08-04-2025 09:56:54 [main] [Utils] - Method public java.lang.Object[][] com.thinktimetechno.runners.SingleUser.SU_TC_01_Registration_with_Valid_Details_TestRunner.scenarios() has a @Test annotation but also a return value: ignoring it. Use <suite allow-return-values="true"> to fix this
-[INFO] 08-04-2025 09:56:54 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 2 ms.
-[INFO] 08-04-2025 09:56:54 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 3 ms.
-[INFO] 08-04-2025 09:56:54 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 13 ms.
-[INFO] 08-04-2025 09:56:54 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 15 ms.
-[INFO] 08-04-2025 09:56:54 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 08-04-2025 09:56:54 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 08-04-2025 09:56:54 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 08-04-2025 09:56:54 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 08-04-2025 09:56:54 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 08-04-2025 09:56:54 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 08-04-2025 09:56:54 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 08-04-2025 09:56:54 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 08-04-2025 09:56:54 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 08-04-2025 09:56:54 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
-[INFO] 08-04-2025 09:56:54 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 08-04-2025 09:56:54 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 08-04-2025 09:56:54 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 08-04-2025 09:56:54 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 08-04-2025 09:56:54 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 08-04-2025 09:56:54 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 08-04-2025 09:56:54 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 08-04-2025 09:56:54 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 08-04-2025 09:56:54 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 08-04-2025 09:56:54 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 08-04-2025 09:56:54 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 08-04-2025 09:56:54 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
-[INFO] 08-04-2025 09:56:54 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 08-04-2025 09:56:54 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 08-04-2025 09:56:54 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 08-04-2025 09:56:54 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 08-04-2025 09:56:54 [main] [Utils] - [TestNG] Running:
-  C:\Users\rithi\AppData\Local\Temp\testng-eclipse--1193716553\testng-customsuite.xml
+[INFO] 24-04-2025 10:30:58 [main] [Utils] - Method public java.lang.Object[][] com.thinktimetechno.runners.SingleUser.SU_TC_01_Registration_with_Valid_Details_TestRunner.scenarios() has a @Test annotation but also a return value: ignoring it. Use <suite allow-return-values="true"> to fix this
+[INFO] 24-04-2025 10:30:58 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 2 ms.
+[INFO] 24-04-2025 10:30:58 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 4 ms.
+[INFO] 24-04-2025 10:30:58 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 10 ms.
+[INFO] 24-04-2025 10:30:58 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 18 ms.
+[INFO] 24-04-2025 10:30:58 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 24-04-2025 10:30:58 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 24-04-2025 10:30:58 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 24-04-2025 10:30:58 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 24-04-2025 10:30:58 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 24-04-2025 10:30:58 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 24-04-2025 10:30:58 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 24-04-2025 10:30:58 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+[INFO] 24-04-2025 10:30:58 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 24-04-2025 10:30:58 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 24-04-2025 10:30:58 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 24-04-2025 10:30:58 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 24-04-2025 10:30:58 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 24-04-2025 10:30:58 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 24-04-2025 10:30:58 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 24-04-2025 10:30:58 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 24-04-2025 10:30:58 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 24-04-2025 10:30:58 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 24-04-2025 10:30:58 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 24-04-2025 10:30:58 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 24-04-2025 10:30:58 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+[INFO] 24-04-2025 10:30:58 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+[INFO] 24-04-2025 10:30:58 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 24-04-2025 10:30:58 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 24-04-2025 10:30:58 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[INFO] 24-04-2025 10:30:58 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[INFO] 24-04-2025 10:30:58 [main] [Utils] - [TestNG] Running:
+  C:\Users\rithi\AppData\Local\Temp\testng-eclipse--992935585\testng-customsuite.xml
 
-[INFO] 08-04-2025 09:56:54 [main] [Utils] - [Utils] DynamicGraphHelper.createDynamicGraph() took 13 ms.
-[INFO] 08-04-2025 09:56:57 [main] [LogUtils] - Loaded all properties files.
-[INFO] 08-04-2025 09:56:57 [main] [LogUtils] - {TARGET=local, ownerDetail=xpath&&//div[@id='s2id_created_by']//a[@class='select2-choice']/span[1], menuClients=xpath&&//span[normalize-space()='Clients'], TELEGRAM_CHATID=, OVERRIDE_REPORTS=no, inputPhone=xpath&&//input[@id='phone'], inputClientGroups=xpath&&(//label[normalize-space()='Client groups']/following-sibling::div//input)[1], buttonSaveOnDialog=xpath&&//div[@id='ajaxModalContent']//button[normalize-space()='Save'], spanFirstItemClientGroups=xpath&&//span[@class='select2-match'], inputCountry=xpath&&//input[@id='country'], SEND_REPORT_TO_TELEGRAM=no, SEND_EMAIL_TO_USERS=yes, ZIP_FOLDER_NAME=ExtentReports.zip, WAIT_DEFAULT=5, REMOTE_PORT=4444, TELEGRAM_TOKEN=, buttonAddClient=xpath&&//a[normalize-space()='Add client'], labelClientGroups=xpath&&//li[@class='select2-search-choice']/div, inputState=xpath&&//input[@id='state'], labelOnClientPage=xpath&&//span[normalize-space()='Total clients'], inputPassword=xpath&&//input[@id='password'], EXTENT_REPORT_PDF=PdfReport.pdf, inputAddress=xpath&&//textarea[@id='address'], VIDEO_RECORD=no, inputSearchOwner=xpath&&//div[@id='select2-drop']//input, tabClient=xpath&&//ul[@id='client-tabs']//li[2], labelEmailError=id&&email-error, tabClientInfo=xpath&&//a[normalize-space()='Client info'], PASSWORD=T+wyT5u9cOelDJbBWNgxLw, inputWebsite=xpath&&//input[@id='website'], SCREENSHOT_ALL_STEPS=yes, labelAuthentication=xpath&&//div[@role='alert'], EXTENT_REPORT_NAME=Spark, EXPORT_VIDEO_PATH=ExportData/Videos, EXPORT_CAPTURE_PATH=ExportData/Images, WAIT_PAGE_LOADED=30, SCREENSHOT_PASSED_STEPS=no, radioOrganization=xpath&&//input[@id='type_organization'], EXTENT_REPORT_FOLDER=ExtentReports, itemClientFirstRow=xpath&&//table[@id='client-table']//tbody/tr[1]/td[2]/a, WAIT_EXPLICIT=10, BROWSER=chrome, RECEIVER_MAIL_1=shankar@thinktime.in, RECEIVER_MAIL_2=hari@thinktime.in, SCREENSHOT_SKIPPED_STEPS=yes, inputEmail=xpath&&//input[@id='email'], menuDashboard=xpath&&//span[normalize-space()='Dashboard'], REPORT_TITLE=Report | Automation Framework Cucumber TestNG | Anh Tester, AUTHOR=Anh Tester, EXCEL_DATA_FILE_PATH=src/test/resources/testdata/ClientsDataExcel.xlsx, WAIT_IMPLICIT=20, PROJECT_NAME=CRM Application| Thinktime Tester, HEADLESS=true, REMOTE_URL=localhost, inputCompanyName=xpath&&//input[@id='company_name'], selectOwner=xpath&&//div[@id='s2id_created_by'], inputCity=xpath&&//input[@id='city'], SCREENSHOT_FAILED_STEPS=yes, TXT_FILE_PATH=src/test/resources/testdata/TxtFileData.txt, selectFirstItemOwner=xpath&&(//div[contains(@id,'select2-result-label')])[1], buttonSignIn=xpath&&//button[normalize-space()='Sign in'], JSON_DATA_FILE_PATH=src/test/resources/config/config.json, inputVat=xpath&&//input[@id='vat_number'], ACTIVE_PAGE_LOADED=true, headerPageClientInfo=xpath&&//form[@id='company-form']//h4, URL_CRM=https://rise.fairsketch.com/signin, WAIT_SLEEP_STEP=0, OPEN_REPORTS_AFTER_EXECUTION=no, buttonDynamicXpath=xpath&&//button[normalize-space()='%s'], ZIP_FOLDER_PATH=reports/ExtentReports, inputZip=xpath&&//input[@id='zip'], inputSearch=xpath&&//input[@placeholder='Search'], ZIP_FOLDER=no, menuProjects=xpath&&//span[normalize-space()='Projects']}
-[INFO] 08-04-2025 09:56:57 [main] [LogUtils] - Loaded all properties files.
-[INFO] 08-04-2025 09:56:57 [main] [LogUtils] - {TARGET=local, ownerDetail=xpath&&//div[@id='s2id_created_by']//a[@class='select2-choice']/span[1], menuClients=xpath&&//span[normalize-space()='Clients'], TELEGRAM_CHATID=, OVERRIDE_REPORTS=no, inputPhone=xpath&&//input[@id='phone'], inputClientGroups=xpath&&(//label[normalize-space()='Client groups']/following-sibling::div//input)[1], buttonSaveOnDialog=xpath&&//div[@id='ajaxModalContent']//button[normalize-space()='Save'], spanFirstItemClientGroups=xpath&&//span[@class='select2-match'], inputCountry=xpath&&//input[@id='country'], SEND_REPORT_TO_TELEGRAM=no, SEND_EMAIL_TO_USERS=yes, ZIP_FOLDER_NAME=ExtentReports.zip, WAIT_DEFAULT=5, REMOTE_PORT=4444, TELEGRAM_TOKEN=, buttonAddClient=xpath&&//a[normalize-space()='Add client'], labelClientGroups=xpath&&//li[@class='select2-search-choice']/div, inputState=xpath&&//input[@id='state'], labelOnClientPage=xpath&&//span[normalize-space()='Total clients'], inputPassword=xpath&&//input[@id='password'], EXTENT_REPORT_PDF=PdfReport.pdf, inputAddress=xpath&&//textarea[@id='address'], VIDEO_RECORD=no, inputSearchOwner=xpath&&//div[@id='select2-drop']//input, tabClient=xpath&&//ul[@id='client-tabs']//li[2], labelEmailError=id&&email-error, tabClientInfo=xpath&&//a[normalize-space()='Client info'], PASSWORD=T+wyT5u9cOelDJbBWNgxLw, inputWebsite=xpath&&//input[@id='website'], SCREENSHOT_ALL_STEPS=yes, labelAuthentication=xpath&&//div[@role='alert'], EXTENT_REPORT_NAME=Spark, EXPORT_VIDEO_PATH=ExportData/Videos, EXPORT_CAPTURE_PATH=ExportData/Images, WAIT_PAGE_LOADED=30, SCREENSHOT_PASSED_STEPS=no, radioOrganization=xpath&&//input[@id='type_organization'], EXTENT_REPORT_FOLDER=ExtentReports, itemClientFirstRow=xpath&&//table[@id='client-table']//tbody/tr[1]/td[2]/a, WAIT_EXPLICIT=10, BROWSER=chrome, RECEIVER_MAIL_1=shankar@thinktime.in, RECEIVER_MAIL_2=hari@thinktime.in, SCREENSHOT_SKIPPED_STEPS=yes, inputEmail=xpath&&//input[@id='email'], menuDashboard=xpath&&//span[normalize-space()='Dashboard'], REPORT_TITLE=Report | Automation Framework Cucumber TestNG | Anh Tester, AUTHOR=Anh Tester, EXCEL_DATA_FILE_PATH=src/test/resources/testdata/ClientsDataExcel.xlsx, WAIT_IMPLICIT=20, PROJECT_NAME=CRM Application| Thinktime Tester, HEADLESS=true, REMOTE_URL=localhost, inputCompanyName=xpath&&//input[@id='company_name'], selectOwner=xpath&&//div[@id='s2id_created_by'], inputCity=xpath&&//input[@id='city'], SCREENSHOT_FAILED_STEPS=yes, TXT_FILE_PATH=src/test/resources/testdata/TxtFileData.txt, selectFirstItemOwner=xpath&&(//div[contains(@id,'select2-result-label')])[1], buttonSignIn=xpath&&//button[normalize-space()='Sign in'], JSON_DATA_FILE_PATH=src/test/resources/config/config.json, inputVat=xpath&&//input[@id='vat_number'], ACTIVE_PAGE_LOADED=true, headerPageClientInfo=xpath&&//form[@id='company-form']//h4, URL_CRM=https://rise.fairsketch.com/signin, WAIT_SLEEP_STEP=0, OPEN_REPORTS_AFTER_EXECUTION=no, buttonDynamicXpath=xpath&&//button[normalize-space()='%s'], ZIP_FOLDER_PATH=reports/ExtentReports, inputZip=xpath&&//input[@id='zip'], inputSearch=xpath&&//input[@placeholder='Search'], ZIP_FOLDER=no, menuProjects=xpath&&//span[normalize-space()='Projects']}
-[INFO] 08-04-2025 09:57:05 [main] [LogUtils] - Driver in TestContext: ChromeDriver: chrome on windows (5c9d122e258027a58feda368a14fc64d)
-[INFO] 08-04-2025 09:57:11 [main] [LogUtils] - Open URL: https://staging2-cpraedcourse.gitview.net/register
-[INFO] 08-04-2025 09:57:13 [main] [LogUtils] - Verify element visible By.xpath: //input[@id='first_name']
-[INFO] 08-04-2025 09:57:13 [main] [LogUtils] - Set text John1 on By.xpath: //input[@id='first_name']
-[INFO] 08-04-2025 09:57:15 [main] [LogUtils] - Verify element visible By.xpath: //input[@id='last_name']
-[INFO] 08-04-2025 09:57:15 [main] [LogUtils] - Set text Doe1 on By.xpath: //input[@id='last_name']
-[INFO] 08-04-2025 09:57:17 [main] [LogUtils] - Verify element visible By.xpath: //input[@id='phone_number']
-[INFO] 08-04-2025 09:57:17 [main] [LogUtils] - Set text 9876543210 on By.xpath: //input[@id='phone_number']
-[INFO] 08-04-2025 09:57:19 [main] [LogUtils] - Verify element visible By.xpath: //input[@id='email_address']
-[INFO] 08-04-2025 09:57:19 [main] [LogUtils] - Set text john.doe20250408095713@example.com on By.xpath: //input[@id='email_address']
-[INFO] 08-04-2025 09:57:20 [main] [LogUtils] - Verify element visible By.xpath: //input[@id='username']
-[INFO] 08-04-2025 09:57:20 [main] [LogUtils] - Set text johndoe20250408095713 on By.xpath: //input[@id='username']
-[INFO] 08-04-2025 09:57:22 [main] [LogUtils] - Verify element visible By.xpath: //input[@id='password']
-[INFO] 08-04-2025 09:57:23 [main] [LogUtils] - Set text Secure@123 on By.xpath: //input[@id='password']
-[INFO] 08-04-2025 09:57:25 [main] [LogUtils] - Verify element visible By.xpath: //input[@id='confirm_password']
-[INFO] 08-04-2025 09:57:25 [main] [LogUtils] - Set text Secure@123 on By.xpath: //input[@id='confirm_password']
-[INFO] 08-04-2025 09:57:27 [main] [LogUtils] - Verify element visible By.xpath: //input[@id='opt_in_button']
-[INFO] 08-04-2025 09:57:27 [main] [LogUtils] - Clicked on the element By.xpath: //input[@id='opt_in_button']
-[INFO] 08-04-2025 09:57:28 [main] [LogUtils] - Verify element visible By.id: register-button
-[INFO] 08-04-2025 09:57:43 [main] [LogUtils] - Clicked on the element By.id: register-button
-[INFO] 08-04-2025 09:57:43 [main] [LogUtils] - Get Page Title: Welcome - American Health Care Academy
-[INFO] 08-04-2025 09:57:51 [main] [Utils] - [TestNG] Time taken by org.testng.reporters.SuiteHTMLReporter@76705ce1: 28 ms
-[INFO] 08-04-2025 09:57:51 [main] [Utils] - [TestNG] Time taken by org.testng.reporters.jq.Main@76fabd1: 154 ms
-[INFO] 08-04-2025 09:57:51 [main] [Utils] - [TestNG] Time taken by org.testng.reporters.FailedReporter@20309fde: 1 ms
-[INFO] 08-04-2025 09:57:51 [main] [Utils] - [TestNG] Time taken by org.testng.reporters.XMLReporter@553f3655: 10 ms
-[INFO] 08-04-2025 09:57:51 [main] [Utils] - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@5659f3b4: 21 ms
-[INFO] 08-04-2025 09:57:51 [main] [Utils] - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@2012f14e: 6 ms
-[INFO] 08-04-2025 09:57:51 [main] [Utils] - [TestNG] Time taken by org.testng.internal.ExitCodeListener@4a2eb2e: 0 ms
-[INFO] 08-04-2025 10:00:41 [main] [Utils] - Method public java.lang.Object[][] com.thinktimetechno.runners.SingleUser.SU_TC_01_Registration_with_Valid_Details_TestRunner.scenarios() has a @Test annotation but also a return value: ignoring it. Use <suite allow-return-values="true"> to fix this
-[INFO] 08-04-2025 10:00:41 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
-[INFO] 08-04-2025 10:00:41 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 3 ms.
-[INFO] 08-04-2025 10:00:41 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 9 ms.
-[INFO] 08-04-2025 10:00:41 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 12 ms.
-[INFO] 08-04-2025 10:00:41 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 08-04-2025 10:00:41 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 08-04-2025 10:00:41 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 08-04-2025 10:00:41 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 08-04-2025 10:00:41 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 08-04-2025 10:00:41 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
-[INFO] 08-04-2025 10:00:41 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 08-04-2025 10:00:41 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 08-04-2025 10:00:41 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 08-04-2025 10:00:41 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 08-04-2025 10:00:41 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 08-04-2025 10:00:41 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 08-04-2025 10:00:41 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 08-04-2025 10:00:41 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 08-04-2025 10:00:41 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 08-04-2025 10:00:41 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 08-04-2025 10:00:41 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 08-04-2025 10:00:41 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 08-04-2025 10:00:41 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 08-04-2025 10:00:41 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 08-04-2025 10:00:41 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 08-04-2025 10:00:41 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
-[INFO] 08-04-2025 10:00:41 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 08-04-2025 10:00:41 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO] 08-04-2025 10:00:41 [main] [Utils] - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO] 08-04-2025 10:00:41 [main] [Utils] - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
-[INFO] 08-04-2025 10:00:41 [main] [Utils] - [TestNG] Running:
-  C:\Users\rithi\AppData\Local\Temp\testng-eclipse--130333535\testng-customsuite.xml
-
-[INFO] 08-04-2025 10:00:41 [main] [Utils] - [Utils] DynamicGraphHelper.createDynamicGraph() took 10 ms.
-[INFO] 08-04-2025 10:00:42 [main] [LogUtils] - Loaded all properties files.
-[INFO] 08-04-2025 10:00:42 [main] [LogUtils] - {TARGET=local, ownerDetail=xpath&&//div[@id='s2id_created_by']//a[@class='select2-choice']/span[1], menuClients=xpath&&//span[normalize-space()='Clients'], TELEGRAM_CHATID=, OVERRIDE_REPORTS=no, inputPhone=xpath&&//input[@id='phone'], inputClientGroups=xpath&&(//label[normalize-space()='Client groups']/following-sibling::div//input)[1], buttonSaveOnDialog=xpath&&//div[@id='ajaxModalContent']//button[normalize-space()='Save'], spanFirstItemClientGroups=xpath&&//span[@class='select2-match'], inputCountry=xpath&&//input[@id='country'], SEND_REPORT_TO_TELEGRAM=no, SEND_EMAIL_TO_USERS=yes, ZIP_FOLDER_NAME=ExtentReports.zip, WAIT_DEFAULT=5, REMOTE_PORT=4444, TELEGRAM_TOKEN=, buttonAddClient=xpath&&//a[normalize-space()='Add client'], labelClientGroups=xpath&&//li[@class='select2-search-choice']/div, inputState=xpath&&//input[@id='state'], labelOnClientPage=xpath&&//span[normalize-space()='Total clients'], inputPassword=xpath&&//input[@id='password'], EXTENT_REPORT_PDF=PdfReport.pdf, inputAddress=xpath&&//textarea[@id='address'], VIDEO_RECORD=no, inputSearchOwner=xpath&&//div[@id='select2-drop']//input, tabClient=xpath&&//ul[@id='client-tabs']//li[2], labelEmailError=id&&email-error, tabClientInfo=xpath&&//a[normalize-space()='Client info'], PASSWORD=T+wyT5u9cOelDJbBWNgxLw, inputWebsite=xpath&&//input[@id='website'], SCREENSHOT_ALL_STEPS=yes, labelAuthentication=xpath&&//div[@role='alert'], EXTENT_REPORT_NAME=Spark, EXPORT_VIDEO_PATH=ExportData/Videos, EXPORT_CAPTURE_PATH=ExportData/Images, WAIT_PAGE_LOADED=30, SCREENSHOT_PASSED_STEPS=no, radioOrganization=xpath&&//input[@id='type_organization'], EXTENT_REPORT_FOLDER=ExtentReports, itemClientFirstRow=xpath&&//table[@id='client-table']//tbody/tr[1]/td[2]/a, WAIT_EXPLICIT=10, BROWSER=chrome, RECEIVER_MAIL_1=shankar@thinktime.in, RECEIVER_MAIL_2=hariharan@thinktime.in, SCREENSHOT_SKIPPED_STEPS=yes, inputEmail=xpath&&//input[@id='email'], menuDashboard=xpath&&//span[normalize-space()='Dashboard'], REPORT_TITLE=Report | Automation Framework Cucumber TestNG | Anh Tester, AUTHOR=Anh Tester, EXCEL_DATA_FILE_PATH=src/test/resources/testdata/ClientsDataExcel.xlsx, WAIT_IMPLICIT=20, PROJECT_NAME=CRM Application| Thinktime Tester, HEADLESS=true, REMOTE_URL=localhost, inputCompanyName=xpath&&//input[@id='company_name'], selectOwner=xpath&&//div[@id='s2id_created_by'], inputCity=xpath&&//input[@id='city'], SCREENSHOT_FAILED_STEPS=yes, TXT_FILE_PATH=src/test/resources/testdata/TxtFileData.txt, selectFirstItemOwner=xpath&&(//div[contains(@id,'select2-result-label')])[1], buttonSignIn=xpath&&//button[normalize-space()='Sign in'], JSON_DATA_FILE_PATH=src/test/resources/config/config.json, inputVat=xpath&&//input[@id='vat_number'], ACTIVE_PAGE_LOADED=true, headerPageClientInfo=xpath&&//form[@id='company-form']//h4, URL_CRM=https://rise.fairsketch.com/signin, WAIT_SLEEP_STEP=0, OPEN_REPORTS_AFTER_EXECUTION=no, buttonDynamicXpath=xpath&&//button[normalize-space()='%s'], ZIP_FOLDER_PATH=reports/ExtentReports, inputZip=xpath&&//input[@id='zip'], inputSearch=xpath&&//input[@placeholder='Search'], ZIP_FOLDER=no, menuProjects=xpath&&//span[normalize-space()='Projects']}
-[INFO] 08-04-2025 10:00:43 [main] [LogUtils] - Loaded all properties files.
-[INFO] 08-04-2025 10:00:43 [main] [LogUtils] - {TARGET=local, ownerDetail=xpath&&//div[@id='s2id_created_by']//a[@class='select2-choice']/span[1], menuClients=xpath&&//span[normalize-space()='Clients'], TELEGRAM_CHATID=, OVERRIDE_REPORTS=no, inputPhone=xpath&&//input[@id='phone'], inputClientGroups=xpath&&(//label[normalize-space()='Client groups']/following-sibling::div//input)[1], buttonSaveOnDialog=xpath&&//div[@id='ajaxModalContent']//button[normalize-space()='Save'], spanFirstItemClientGroups=xpath&&//span[@class='select2-match'], inputCountry=xpath&&//input[@id='country'], SEND_REPORT_TO_TELEGRAM=no, SEND_EMAIL_TO_USERS=yes, ZIP_FOLDER_NAME=ExtentReports.zip, WAIT_DEFAULT=5, REMOTE_PORT=4444, TELEGRAM_TOKEN=, buttonAddClient=xpath&&//a[normalize-space()='Add client'], labelClientGroups=xpath&&//li[@class='select2-search-choice']/div, inputState=xpath&&//input[@id='state'], labelOnClientPage=xpath&&//span[normalize-space()='Total clients'], inputPassword=xpath&&//input[@id='password'], EXTENT_REPORT_PDF=PdfReport.pdf, inputAddress=xpath&&//textarea[@id='address'], VIDEO_RECORD=no, inputSearchOwner=xpath&&//div[@id='select2-drop']//input, tabClient=xpath&&//ul[@id='client-tabs']//li[2], labelEmailError=id&&email-error, tabClientInfo=xpath&&//a[normalize-space()='Client info'], PASSWORD=T+wyT5u9cOelDJbBWNgxLw, inputWebsite=xpath&&//input[@id='website'], SCREENSHOT_ALL_STEPS=yes, labelAuthentication=xpath&&//div[@role='alert'], EXTENT_REPORT_NAME=Spark, EXPORT_VIDEO_PATH=ExportData/Videos, EXPORT_CAPTURE_PATH=ExportData/Images, WAIT_PAGE_LOADED=30, SCREENSHOT_PASSED_STEPS=no, radioOrganization=xpath&&//input[@id='type_organization'], EXTENT_REPORT_FOLDER=ExtentReports, itemClientFirstRow=xpath&&//table[@id='client-table']//tbody/tr[1]/td[2]/a, WAIT_EXPLICIT=10, BROWSER=chrome, RECEIVER_MAIL_1=shankar@thinktime.in, RECEIVER_MAIL_2=hariharan@thinktime.in, SCREENSHOT_SKIPPED_STEPS=yes, inputEmail=xpath&&//input[@id='email'], menuDashboard=xpath&&//span[normalize-space()='Dashboard'], REPORT_TITLE=Report | Automation Framework Cucumber TestNG | Anh Tester, AUTHOR=Anh Tester, EXCEL_DATA_FILE_PATH=src/test/resources/testdata/ClientsDataExcel.xlsx, WAIT_IMPLICIT=20, PROJECT_NAME=CRM Application| Thinktime Tester, HEADLESS=true, REMOTE_URL=localhost, inputCompanyName=xpath&&//input[@id='company_name'], selectOwner=xpath&&//div[@id='s2id_created_by'], inputCity=xpath&&//input[@id='city'], SCREENSHOT_FAILED_STEPS=yes, TXT_FILE_PATH=src/test/resources/testdata/TxtFileData.txt, selectFirstItemOwner=xpath&&(//div[contains(@id,'select2-result-label')])[1], buttonSignIn=xpath&&//button[normalize-space()='Sign in'], JSON_DATA_FILE_PATH=src/test/resources/config/config.json, inputVat=xpath&&//input[@id='vat_number'], ACTIVE_PAGE_LOADED=true, headerPageClientInfo=xpath&&//form[@id='company-form']//h4, URL_CRM=https://rise.fairsketch.com/signin, WAIT_SLEEP_STEP=0, OPEN_REPORTS_AFTER_EXECUTION=no, buttonDynamicXpath=xpath&&//button[normalize-space()='%s'], ZIP_FOLDER_PATH=reports/ExtentReports, inputZip=xpath&&//input[@id='zip'], inputSearch=xpath&&//input[@placeholder='Search'], ZIP_FOLDER=no, menuProjects=xpath&&//span[normalize-space()='Projects']}
-[INFO] 08-04-2025 10:00:47 [main] [LogUtils] - Driver in TestContext: ChromeDriver: chrome on windows (670bc6fead8306e3af37ffbb5e52d777)
-[INFO] 08-04-2025 10:00:54 [main] [LogUtils] - Open URL: https://staging2-cpraedcourse.gitview.net/register
-[INFO] 08-04-2025 10:00:56 [main] [LogUtils] - Verify element visible By.xpath: //input[@id='first_name']
-[INFO] 08-04-2025 10:00:56 [main] [LogUtils] - Set text John1 on By.xpath: //input[@id='first_name']
-[INFO] 08-04-2025 10:00:58 [main] [LogUtils] - Verify element visible By.xpath: //input[@id='last_name']
-[INFO] 08-04-2025 10:00:58 [main] [LogUtils] - Set text Doe1 on By.xpath: //input[@id='last_name']
-[INFO] 08-04-2025 10:01:00 [main] [LogUtils] - Verify element visible By.xpath: //input[@id='phone_number']
-[INFO] 08-04-2025 10:01:00 [main] [LogUtils] - Set text 9876543210 on By.xpath: //input[@id='phone_number']
-[INFO] 08-04-2025 10:01:01 [main] [LogUtils] - Verify element visible By.xpath: //input[@id='email_address']
-[INFO] 08-04-2025 10:01:02 [main] [LogUtils] - Set text john.doe20250408100056@example.com on By.xpath: //input[@id='email_address']
-[INFO] 08-04-2025 10:01:03 [main] [LogUtils] - Verify element visible By.xpath: //input[@id='username']
-[INFO] 08-04-2025 10:01:03 [main] [LogUtils] - Set text johndoe20250408100056 on By.xpath: //input[@id='username']
-[INFO] 08-04-2025 10:01:05 [main] [LogUtils] - Verify element visible By.xpath: //input[@id='password']
-[INFO] 08-04-2025 10:01:06 [main] [LogUtils] - Set text Secure@123 on By.xpath: //input[@id='password']
-[INFO] 08-04-2025 10:01:08 [main] [LogUtils] - Verify element visible By.xpath: //input[@id='confirm_password']
-[INFO] 08-04-2025 10:01:08 [main] [LogUtils] - Set text Secure@123 on By.xpath: //input[@id='confirm_password']
-[INFO] 08-04-2025 10:01:09 [main] [LogUtils] - Verify element visible By.xpath: //input[@id='opt_in_button']
-[INFO] 08-04-2025 10:01:10 [main] [LogUtils] - Clicked on the element By.xpath: //input[@id='opt_in_button']
-[INFO] 08-04-2025 10:01:11 [main] [LogUtils] - Verify element visible By.id: register-button
-[INFO] 08-04-2025 10:01:21 [main] [LogUtils] - Clicked on the element By.id: register-button
-[INFO] 08-04-2025 10:01:22 [main] [LogUtils] - Get Page Title: Welcome - American Health Care Academy
-[INFO] 08-04-2025 10:01:27 [main] [Utils] - [TestNG] Time taken by org.testng.reporters.SuiteHTMLReporter@28fc7156: 31 ms
-[INFO] 08-04-2025 10:01:27 [main] [Utils] - [TestNG] Time taken by org.testng.reporters.jq.Main@28394e41: 66 ms
-[INFO] 08-04-2025 10:01:27 [main] [Utils] - [TestNG] Time taken by org.testng.reporters.FailedReporter@60f6aa4b: 0 ms
-[INFO] 08-04-2025 10:01:27 [main] [Utils] - [TestNG] Time taken by org.testng.reporters.XMLReporter@245b6b85: 12 ms
-[INFO] 08-04-2025 10:01:27 [main] [Utils] - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@551a7123: 8 ms
-[INFO] 08-04-2025 10:01:27 [main] [Utils] - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@7d8e8e89: 6 ms
-[INFO] 08-04-2025 10:01:27 [main] [Utils] - [TestNG] Time taken by org.testng.internal.ExitCodeListener@7722c8e6: 0 ms
+[INFO] 24-04-2025 10:30:58 [main] [Utils] - [Utils] DynamicGraphHelper.createDynamicGraph() took 17 ms.
+[INFO] 24-04-2025 10:31:00 [main] [LogUtils] - Warning !! Can not Load All File.
+[INFO] 24-04-2025 10:31:00 [main] [LogUtils] - Warning !! Can not Load All File.
+[INFO] 24-04-2025 10:31:36 [main] [LogUtils] - Driver in TestContext: ChromeDriver: chrome on windows (a21a292d95d8322dc7c43f4ce51ebd31)
+[INFO] 24-04-2025 10:31:46 [main] [LogUtils] - Open URL: https://staging2-cpraedcourse.gitview.net/register
+[INFO] 24-04-2025 10:31:46 [main] [LogUtils] - Verify element visible By.xpath: //input[@id='first_name']
+[INFO] 24-04-2025 10:31:47 [main] [LogUtils] - Set text John1 on By.xpath: //input[@id='first_name']
+[INFO] 24-04-2025 10:31:47 [main] [LogUtils] - Verify element visible By.xpath: //input[@id='last_name']
+[INFO] 24-04-2025 10:31:47 [main] [LogUtils] - Set text Doe1 on By.xpath: //input[@id='last_name']
+[INFO] 24-04-2025 10:31:47 [main] [LogUtils] - Verify element visible By.xpath: //input[@id='phone_number']
+[INFO] 24-04-2025 10:31:47 [main] [LogUtils] - Clicked on the element By.xpath: //input[@id='phone_number']
+[INFO] 24-04-2025 10:31:47 [main] [LogUtils] - Verify element visible By.xpath: //input[@id='phone_number']
+[INFO] 24-04-2025 10:31:47 [main] [LogUtils] - Set text 98765432109 on By.xpath: //input[@id='phone_number']
+[INFO] 24-04-2025 10:31:47 [main] [LogUtils] - Verify element visible By.xpath: //input[@id='email_address']
+[INFO] 24-04-2025 10:31:47 [main] [LogUtils] - Set text john.doe20250424103146@gmail.com on By.xpath: //input[@id='email_address']
+[INFO] 24-04-2025 10:31:47 [main] [LogUtils] - Verify element visible By.xpath: //input[@id='username']
+[INFO] 24-04-2025 10:31:47 [main] [LogUtils] - Set text johndoe20250424103146 on By.xpath: //input[@id='username']
+[INFO] 24-04-2025 10:31:47 [main] [LogUtils] - Verify element visible By.xpath: //input[@id='password']
+[INFO] 24-04-2025 10:31:48 [main] [LogUtils] - Set text Secure@123 on By.xpath: //input[@id='password']
+[INFO] 24-04-2025 10:31:48 [main] [LogUtils] - Verify element visible By.xpath: //input[@id='confirm_password']
+[INFO] 24-04-2025 10:31:48 [main] [LogUtils] - Set text Secure@123 on By.xpath: //input[@id='confirm_password']
+[INFO] 24-04-2025 10:31:48 [main] [LogUtils] - Verify element visible By.xpath: //input[@id='opt_in_button']
+[INFO] 24-04-2025 10:31:48 [main] [LogUtils] - Clicked on the element By.xpath: //input[@id='opt_in_button']
+[INFO] 24-04-2025 10:31:58 [main] [LogUtils] - Click on element with JS: By.id: register-button
+[INFO] 24-04-2025 10:31:58 [main] [LogUtils] - Get Page Title: Welcome - American Health Care Academy
+[INFO] 24-04-2025 10:32:08 [main] [Utils] - [TestNG] Time taken by org.testng.reporters.SuiteHTMLReporter@63aabbda: 28 ms
+[INFO] 24-04-2025 10:32:08 [main] [Utils] - [TestNG] Time taken by org.testng.reporters.jq.Main@524cb059: 49 ms
+[INFO] 24-04-2025 10:32:08 [main] [Utils] - [TestNG] Time taken by org.testng.reporters.FailedReporter@27c08b53: 1 ms
+[INFO] 24-04-2025 10:32:08 [main] [Utils] - [TestNG] Time taken by org.testng.reporters.XMLReporter@29295f4e: 8 ms
+[INFO] 24-04-2025 10:32:08 [main] [Utils] - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@169eb06e: 6 ms
+[INFO] 24-04-2025 10:32:08 [main] [Utils] - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@7577843e: 3 ms
+[INFO] 24-04-2025 10:32:08 [main] [Utils] - [TestNG] Time taken by org.testng.internal.ExitCodeListener@5bf56604: 0 ms

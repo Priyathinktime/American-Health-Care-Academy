@@ -12,6 +12,9 @@ import javax.mail.MessagingException;
 
 import static com.thinktimetechno.mail.EmailConfig.*;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 public class EmailSendUtils {
 
     private EmailSendUtils() {
@@ -49,38 +52,43 @@ public class EmailSendUtils {
 
     }
 
-    private static String getTestCasesCountInFormat(int count_totalTCs, int count_passedTCs, int count_failedTCs,
-                                                    int count_skippedTCs) {
-        System.out.println("count_totalTCs: " + count_totalTCs);
-        System.out.println("count_passedTCs: " + count_passedTCs);
-        System.out.println("count_failedTCs: " + count_failedTCs);
-        System.out.println("count_skippedTCs: " + count_skippedTCs);
-
-        return "<html>\r\n" + "\r\n" + " \r\n" + "\r\n"
-                + "        <body> \r\n<table class=\"container\" align=\"center\" style=\"padding-top:20px\">\r\n<tr align=\"center\"><td colspan=\"4\"><h2>"
-                + FrameworkConstants.REPORT_TITLE + "</h2></td></tr>\r\n<tr><td>\r\n\r\n"
-                + "       <table style=\"background:#67c2ef;width:120px\" >\r\n"
-                + "                     <tr><td style=\"font-size: 36px\" class=\"value\" align=\"center\">"
-                + count_totalTCs + "</td></tr>\r\n"
-                + "                     <tr><td align=\"center\">Total</td></tr>\r\n" + "       \r\n"
-                + "                </table>\r\n" + "                </td>\r\n" + "                <td>\r\n"
-                + "               \r\n" + "                 <table style=\"background:#79c447;width:120px\">\r\n"
-                + "                     <tr><td style=\"font-size: 36px\" class=\"value\" align=\"center\">"
-                + count_passedTCs + "</td></tr>\r\n"
-                + "                     <tr><td align=\"center\">Passed</td></tr>\r\n" + "       \r\n"
-                + "                </table>\r\n" + "                </td>\r\n" + "                <td>\r\n"
-                + "                <table style=\"background:#ff5454;width:120px\">\r\n"
-                + "                     <tr><td style=\"font-size: 36px\" class=\"value\" align=\"center\">"
-                + count_failedTCs + "</td></tr>\r\n"
-                + "                     <tr><td align=\"center\">Failed</td></tr>\r\n" + "       \r\n"
-                + "                </table>\r\n" + "                \r\n" + "                </td>\r\n"
-                + "                <td>\r\n" + "                <table style=\"background:#fabb3d;width:120px\">\r\n"
-                + "                     <tr><td style=\"font-size: 36px\" class=\"value\" align=\"center\">"
-                + count_skippedTCs + "</td></tr>\r\n"
-                + "                     <tr><td align=\"center\">Skipped</td></tr>\r\n" + "       \r\n"
-                + "                </table>\r\n" + "                \r\n" + "                </td>\r\n"
-                + "                </tr>\r\n" + "               \r\n" + "                \r\n"
-                + "            </table>\r\n" + "       \r\n" + "    </body>\r\n" + "</html>";
-    }
-
+    private static String getTestCasesCountInFormat(int count_totalTCs, int count_passedTCs,
+            int count_failedTCs, int count_skippedTCs) {
+		
+		//String clientName = "Satnam";        
+		String executionDate = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd '&' HH:mm.ss"));
+	    
+		String companyName = "ThinkTime Automation Team";
+		
+		return "<html>" +
+		"<body style=\"font-family:Arial, sans-serif; font-size:14px; color:#333\">" +
+		"<p>Hi Team,</p>" +
+	    "<p>Please find below the summary of the <strong>Automation Test Execution Report</strong> for the latest run.</p>" +
+	    
+	    "<p><strong>Execution Date & Time:</strong> " + executionDate + "<br/>" +
+	    "<p><strong>Test Summary:</strong></p>" +
+	    "<table border='1' cellpadding='8' cellspacing='0' style='border-collapse:collapse; text-align:left;'>" +
+	    "<tr style='background-color:#f4f4f4;'>" +
+	    "<th>Total</th>" +
+	    "<th>Passed</th>" +
+	    "<th>Failed</th>" +
+	    "<th>Skipped</th>" +
+	    "</tr>" +
+	    "<tr>" +
+	    "<td style='text-align:center;'>" + count_totalTCs + "</td>" +
+	    "<td style='color:green; text-align:center;'>" + count_passedTCs + "</td>" +
+	    "<td style='color:red; text-align:center;'>" + count_failedTCs + "</td>" +
+	    "<td style='color:orange; text-align:center;'>" + count_skippedTCs + "</td>" +
+	    "</tr>" +
+	    "</table>" +
+		"<br/>" +
+		"<p>You can find the detailed test results in the above attached report.</p>" +
+		"<p>Please feel free to reach out in case of any queries or clarifications.</p>" +
+		"<br/>" +
+		"<p>Best regards,<br/>" +
+		companyName+ 
+		"<a href='https://thinktime.in/' style='color:#1E90FF;'>https://thinktime.in/</a></p>" +"."+
+		
+		"</body></html>";
+		}
 }

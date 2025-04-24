@@ -35,7 +35,6 @@ public class ReportUtils {
 //            return link;
 //        }
 //    }
-
     
     public static String createExtentReportPath() {
         String link = "";

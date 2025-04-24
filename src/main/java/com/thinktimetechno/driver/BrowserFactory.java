@@ -5,8 +5,11 @@
 
 package com.thinktimetechno.driver;
 
-import com.thinktimetechno.constants.FrameworkConstants;
-import com.thinktimetechno.exceptions.HeadlessNotSupportedException;
+import static java.lang.Boolean.TRUE;
+
+import java.util.HashMap;
+import java.util.Map;
+
 import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -18,56 +21,54 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.safari.SafariOptions;
 
-import java.util.HashMap;
-import java.util.Map;
-
-import static java.lang.Boolean.TRUE;
+import com.google.protobuf.compiler.PluginProtos.CodeGeneratorResponse.File;
+import com.thinktimetechno.constants.FrameworkConstants;
+import com.thinktimetechno.exceptions.HeadlessNotSupportedException;
 
 public enum BrowserFactory {
+	CHROME {
+	    @Override
+	    public WebDriver createDriver() {
+	        return new ChromeDriver(getOptions());
+	    }
 
-    CHROME {
-        @Override
-        public WebDriver createDriver() {
-            //WebDriverManager.getInstance(DriverManagerType.CHROME).setup();
+	    @Override
+	    public ChromeOptions getOptions() {
+	        ChromeOptions options = new ChromeOptions();
 
-            return new ChromeDriver(getOptions());
-        }
+	        // Custom download path (project directory)
+	        String projectPath = System.getProperty("user.dir");
+	        String downloadFilepath = projectPath + "\\src\\test\\resources\\Downloads";
 
-        @Override
-        public ChromeOptions getOptions() {
-            ChromeOptions options = new ChromeOptions();
-            Map<String, Object> prefs = new HashMap<String, Object>();
-            prefs.put("profile.default_content_setting_values.notifications", 2);
-            prefs.put("credentials_enable_service", false);
-            prefs.put("profile.password_manager_enabled", false);
-            options.setExperimentalOption("prefs", prefs);
-            options.addArguments("--disable-extensions");
-            options.addArguments("--disable-infobars");
-            options.addArguments("--disable-notifications");
-            options.addArguments("--remote-allow-origins=*");
-            
-            
-            
-            options.addArguments("--disable-blink-features=AutomationControlled"); // Bypass automation detection
-            options.addArguments("--disable-popup-blocking"); // Disable pop-ups
-   
-          
-            options.addArguments("--disable-geolocation");
-         // Add this to ChromeOptions to avoid automatic sign-in prompts
-            options.addArguments("--disable-autofill-keyboard-accessory-view");
-            options.addArguments("--disable-single-click-autofill");
-            options.addArguments("--disable-save-password-bubble");
-            options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
-            options.setExperimentalOption("useAutomationExtension", false);
-            
-            if (Boolean.valueOf(FrameworkConstants.HEADLESS) == true) {
-                options.addArguments("--headless=new");
-                options.addArguments("window-size=1800,900");
-            }
+	        // Ensure the folder exists
+//	        File folder = new File(downloadFilepath);
+//	        if (!folder.exists()) {
+//	            folder.mkdirs();
+//	        }
 
-            return options;
-        }
-    }, FIREFOX {
+	        // Chrome preferences
+	        Map<String, Object> prefs = new HashMap<>();
+	        prefs.put("download.default_directory", downloadFilepath);
+	        prefs.put("download.prompt_for_download", false);
+	        prefs.put("profile.default_content_setting_values.notifications", 2);
+	        prefs.put("credentials_enable_service", false);
+	        prefs.put("profile.password_manager_enabled", false);
+
+	        options.setExperimentalOption("prefs", prefs);
+	        options.addArguments("--disable-extensions");
+	        options.addArguments("--disable-infobars");
+	        options.addArguments("--disable-notifications");
+	        options.addArguments("--remote-allow-origins=*");
+
+	        if (Boolean.parseBoolean(FrameworkConstants.HEADLESS)) {
+	            options.addArguments("--headless=new");
+	            options.addArguments("window-size=1800,900");
+	        }
+
+	        return options;
+	    }
+	}
+, FIREFOX {
         @Override
         public WebDriver createDriver() {
             //WebDriverManager.getInstance(DriverManagerType.FIREFOX).setup();

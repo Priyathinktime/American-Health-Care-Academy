@@ -365,17 +365,5 @@ public class ExcelHelpers {
         }
     }
 
-    public String readandgetTestData(String filePath, String sheetName,int NOrow,int NOcol) throws IOException {
-        FileInputStream inputStream = new FileInputStream(filePath);
-        XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
-         Sheet sheet = workbook.getSheet(sheetName);
-            Row row = sheet.getRow(NOrow);
-             Cell cellval= row.getCell(NOcol);
-             cellval.toString();
-  
-        workbook.close();
-        inputStream.close();
-        return cellval.toString();
-    
-    }
+
 }

@@ -8,6 +8,7 @@ public class DriverManager {
 
     private DriverManager() {
         super();
+        
     }
 
     public static WebDriver getDriver() {
@@ -23,6 +24,7 @@ public class DriverManager {
             DriverManager.getDriver().quit();
         }
     }
+
 
 //    public static String getInfo() {
 //        Capabilities cap = ((RemoteWebDriver) DriverManager.getDriver()).getCapabilities();
