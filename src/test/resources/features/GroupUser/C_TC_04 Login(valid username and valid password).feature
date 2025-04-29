@@ -1,5 +1,5 @@
 @GroupUser @fulltest  
-Feature: Group Login
+Feature: C_TC_04_login_valid_credentials
 
 @C_TC_04_login_valid_credentials  
 Scenario: TC_04 Login with Valid Credentials

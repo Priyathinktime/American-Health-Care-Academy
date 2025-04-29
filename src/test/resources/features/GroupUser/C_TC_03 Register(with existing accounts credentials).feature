@@ -1,5 +1,5 @@
 @GroupUser @fulltest 
-Feature: Group Registration
+Feature: C_TC_03_Register_with_existing_accounts_credentials
 
   @C_TC_03_Register_with_existing_accounts_credentials
   Scenario: TC_03 Corporate Register(with existing accounts credentials)
@@ -9,7 +9,7 @@ Feature: Group Registration
     | First Name    | John                |
     | Last Name     | Doe                 |
     | Company Name  | Thinktime           |
-    | Phone Number  | 9087654321          |
+    | Phone Number  | 90876543219          |
     | Email Address | john.doe@example.com|
     | Create Password   | Secure@123      |
     | Confirm Password  | Secure@123      |

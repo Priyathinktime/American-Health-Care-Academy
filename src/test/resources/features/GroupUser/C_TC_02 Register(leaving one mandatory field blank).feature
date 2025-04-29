@@ -1,5 +1,5 @@
 @GroupUser @fulltest 
-Feature: Group Registration
+Feature: C_TC_02_Register_with_leaving_one_mandatory_field_blank
 
   @C_TC_02_Register_with_leaving_one_mandatory_field_blank  
   Scenario: TC_02 Corporate Register(leaving one mandatory field blank)

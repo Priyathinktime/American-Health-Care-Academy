@@ -1,5 +1,5 @@
 @SingleUser @fulltest
-   Feature: User Registration
+   Feature: SU_TC02_Register_with_leaving_one_mandatory_field_blank
 
   @SU_TC02_Register_with_leaving_one_mandatory_field_blank 
   Scenario: TC_02 Register(leaving one mandatory field blank)
@@ -9,7 +9,7 @@
     | First Name    | John1                  |
     | Last Name     | Doe1                   |
     | Phone Number  | 9876543210             |
-    | Email Address | john.doe@example.com |
+    | Email Address | john.doe@gmail.com |
     | Username      | johndoe                |
     | Password      | Secure@123             |
     | Confirm Password | Secure@123          |

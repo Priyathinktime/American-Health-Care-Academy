@@ -1,5 +1,5 @@
  @SingleUser @fulltest
-Feature: User Login
+Feature: SU_TC06_Login_with_Valid_Username_Invalid_Password 
 
 @SU_TC06_Login_with_Valid_Username_Invalid_Password 
 Scenario: TC_06 Login with Valid Username Invalid  Password

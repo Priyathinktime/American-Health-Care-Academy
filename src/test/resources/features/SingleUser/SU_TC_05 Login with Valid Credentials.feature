@@ -1,5 +1,5 @@
  @SingleUser @fulltest
-Feature: User Login
+Feature: SU_TC05_login_valid_credentials  
 
 @SU_TC05_login_valid_credentials  
 Scenario: TC_05 Login with Valid Credentials

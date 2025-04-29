@@ -1,5 +1,5 @@
 @GroupUser @fulltest 
-Feature: Group Login
+Feature: C_TC_08_Forgot_password_with_valid_registered_email
 
 @C_TC_08_Forgot_password_with_valid_registered_email
 Scenario: TC_08 Verify Forgot Password Functionality Using a Valid Registered Email Address

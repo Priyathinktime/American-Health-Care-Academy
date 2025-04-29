@@ -1,5 +1,5 @@
  @SingleUser @fulltest
-   Feature: User Registration
+   Feature: SU_TC04_Navigate_to_Registration_Page_from_Login_Page 
     
   @SU_TC04_Navigate_to_Registration_Page_from_Login_Page   
   Scenario: TC_04 Navigate to Registration Page from Login Page
@@ -10,8 +10,8 @@
     | Field         | Value                |
     | First Name    | John01               |
     | Last Name     | Doe                  |
-    | Phone Number  | 9876543210           |
-    | Email Address | john.doe@example.com |
+    | Phone Number  | 98765432109          |
+   | Email Address  | john.doe@gmail.com   |
     | Username      | johndoe              |
     | Password      | Secure@123           |
     | Confirm Password | Secure@123        |

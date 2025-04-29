@@ -1,5 +1,5 @@
-@SingleUser @fulltest
-Feature: User Registration and Course Enrollment
+@SingleUser @fulltest @fultest
+Feature: SU_TC15_User_can_make_payment_for_the_selected_course
 
   @SU_TC15_User_can_make_payment_for_the_selected_course
   Scenario: TC_15 Registration with Valid Details and Course Completion
@@ -8,7 +8,7 @@ Feature: User Registration and Course Enrollment
     | Field         | Value                |
     | First Name    | John1                |
     | Last Name     | Doe1                 |
-    | Phone Number  | 9876543210           |
+    | Phone Number  | 98765432109          |
     | Email Address | john.doe@example.com |
     | Username      | johndoe              |
     | Password      | Secure@123           |
@@ -56,6 +56,7 @@ Feature: User Registration and Course Enrollment
       | Zip Code       | 10001              |
       | Country        | USA                |
     And User taps on the Same as Billing Address radio button
+    And User enters the Coupon Code "AUTO10"
     And User taps on the Submit Payment button
     Then User lands on the Continuous Education Credits and Course Renewal Page
 

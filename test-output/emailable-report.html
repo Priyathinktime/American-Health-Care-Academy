@@ -9,10 +9,20 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">43,020</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">102,276</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.thinktimetechno.runners.SingleUser.SU_TC_01_Registration_with_Valid_Details_TestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1744086643391</td><td rowspan="1">40280</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.thinktimetechno.runners.SingleUser.SU_TC_18_Purchase_wallet_card_and_virtual_review_session_with_addons_TestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1745904871433</td><td rowspan="1">92165</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.thinktimetechno.runners.SingleUser.SU_TC_01_Registration_with_Valid_Details_TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;TC_01 Registration with Valid Details&quot;</td><td>&quot;User Registration&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">com.thinktimetechno.runners.SingleUser.SU_TC_18_Purchase_wallet_card_and_virtual_review_session_with_addons_TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;TC_18 Purchase wallet card and virtual review session add-ons&quot;</td><td>&quot;SU_TC_18_Purchase_walletcard_and_virtual_review_session_add-ons&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be &quot;Purchased courses list | Learntastic&quot;. Current title: &quot;| Learntastic&quot; (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: jdk.proxy2.$Proxy60
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at com.thinktimetechno.keywords.WebUI.verifyPageTitleContains(WebUI.java:80)
+	at com.thinktimetechno.projects.website.pages.DashboardPage.verifypurchasecoursePageDisplays(DashboardPage.java:35)
+	at com.thinktimetechno.projects.website.stepdefinitions.SingleUser.Single_User_StepDefinitions.user_lands_on_the_purchasecourse_page(Single_User_StepDefinitions.java:602)
+	at ✽.User lands on Purchased courses list Page(file:///D:/Workspace/Learntastic-main/src/test/resources/features/SingleUser/SU_TC_18%20Purchase%20wallet%20card%20with%20virtual%20review%20session%20add-ons.feature:72)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

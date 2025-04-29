@@ -3,6 +3,7 @@ package com.thinktimetechno.hooks;
 import com.thinktimetechno.driver.DriverManager;
 import com.thinktimetechno.driver.TargetFactory;
 import com.thinktimetechno.projects.website.Multipages.CorporateDashboardPage;
+import com.thinktimetechno.projects.website.Multipages.CorporateInvitePage;
 import com.thinktimetechno.projects.website.Multipages.CorporateLoginPage;
 import com.thinktimetechno.projects.website.Multipages.CorporateRegistrationPage;
 import com.thinktimetechno.projects.website.Multipages.CorporateResetPasswordPage;
@@ -47,9 +48,16 @@ public class TestContext {
 	private CorporateLoginPage corporateloginPage;
 	private CorporateResetPasswordPage corporateresetpasswordPage;
 	private CorporateRegistrationPage corporateregistrationPage;
-
+	private CorporateInvitePage corporateinvitePage;
 	public WebDriver getDriver() {
 		return DriverManager.getDriver();
+	}
+	
+	public CorporateInvitePage getCorporateInvitePage() {
+		if (corporateinvitePage == null) {
+			corporateinvitePage = new CorporateInvitePage();
+		}
+		return corporateinvitePage;
 	}
 	public QuizPage getQuizPage() {
 		if (quizpage == null) {

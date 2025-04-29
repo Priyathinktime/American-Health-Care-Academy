@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Apr 08 10:00:41 IST 2025</td>
+<td>Started on:</td><td>Tue Apr 29 11:04:29 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>43 seconds (43020 ms)</td>
+<tr><td>Total time:</td><td>102 seconds (102276 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,10 +76,31 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.thinktimetechno.runners.SingleUser.SU_TC_01_Registration_with_Valid_Details_TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.thinktimetechno.runners.SingleUser.SU_TC_01_Registration_with_Valid_Details_TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_01 Registration with Valid Details", "User Registration"</td>
-<td></td>
-<td>40</td>
-<td>com.thinktimetechno.runners.SingleUser.SU_TC_01_Registration_with_Valid_Details_TestRunner@310b2b6f</td></tr>
+<td title='com.thinktimetechno.runners.SingleUser.SU_TC_18_Purchase_wallet_card_and_virtual_review_session_with_addons_TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.thinktimetechno.runners.SingleUser.SU_TC_18_Purchase_wallet_card_and_virtual_review_session_with_addons_TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_18 Purchase wallet card and virtual review session add-ons", "SU_TC_18_Purchase_walletcard_and_virtual_review_session_add-ons"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be &quot;Purchased courses list | Learntastic&quot;. Current title: &quot;| Learntastic&quot; (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: jdk.proxy2.$Proxy60
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at com.thinktimetechno.keywords.WebUI.verifyPageTitleContains(WebUI.java:80)
+	at com.thinktimetechno.projects.website.pages.DashboardPage.verifypurchasecoursePageDisplays(DashboardPage.java:35)
+	at com.thinktimetechno.projects.website.stepdefinitions.SingleUser.Single_User_StepDefinitions.user_lands_on_the_purchasecourse_page(Single_User_StepDefinitions.java:602)
+	at ✽.User lands on Purchased courses list Page(file:///D:/Workspace/Learntastic-main/src/test/resources/features/SingleUser/SU_TC_18%20Purchase%20wallet%20card%20with%20virtual%20review%20session%20add-ons.feature:72)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1322631798", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1322631798'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be &quot;Purchased courses list | Learntastic&quot;. Current title: &quot;| Learntastic&quot; (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: jdk.proxy2.$Proxy60
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at com.thinktimetechno.keywords.WebUI.verifyPageTitleContains(WebUI.java:80)
+	at com.thinktimetechno.projects.website.pages.DashboardPage.verifypurchasecoursePageDisplays(DashboardPage.java:35)
+	at com.thinktimetechno.projects.website.stepdefinitions.SingleUser.Single_User_StepDefinitions.user_lands_on_the_purchasecourse_page(Single_User_StepDefinitions.java:602)
+	at ✽.User lands on Purchased courses list Page(file:///D:/Workspace/Learntastic-main/src/test/resources/features/SingleUser/SU_TC_18%20Purchase%20wallet%20card%20with%20virtual%20review%20session%20add-ons.feature:72)
+</pre></div></td>
+<td>92</td>
+<td>com.thinktimetechno.runners.SingleUser.SU_TC_18_Purchase_wallet_card_and_virtual_review_session_with_addons_TestRunner@6909f6be</td></tr>
 </table><p>
 </body>
 </html>

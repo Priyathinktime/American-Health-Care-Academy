@@ -31,17 +31,14 @@ public class CorporateRegistrationPage {
 
 	public void exiting_account_validation(String error) {
 
-		String error_message = WebUI
-				.waitForElementVisible(
-						By.xpath("(//form[@id='form_groupdiscount']/descendant::div[@class='error_msg'])[2]"))
-				.getText();
+		String error_message = WebUI.waitForElementVisible(By.xpath("(//form[@id='form_groupdiscount']/descendant::div[@class='error_msg'])[2]")).getText();
 		Assert.assertEquals(error_message, error);
 
 	}
 
 	public void click_register() throws InterruptedException {
 
-		WebUI.waitForElementVisible(By.xpath("//button[@id='select_course']")).click();
+		WebUI.clickElementWithJs(By.xpath("//button[@id='select_course']"));
 	}
 
 	public void click_terms_conditions() {
@@ -59,6 +56,7 @@ public class CorporateRegistrationPage {
 		WebUI.setText(By.xpath("//input[@id='first_name']"), firstName);
 		WebUI.setText(By.xpath("//input[@id='last_name']"), lastname);
 		WebUI.setText(By.xpath("//input[@id='company']"), Companyname);
+		WebUI.clickElement(By.xpath("//input[@id='phone_number']"));
 		WebUI.setText(By.xpath("//input[@id='phone_number']"), phonenumber);
 		WebUI.setText(By.xpath("//input[@id='email_address']"), emailAddress);
 		WebUI.setText(By.xpath("//input[@id='password-cop']"), createpassword);
@@ -117,8 +115,6 @@ public class CorporateRegistrationPage {
 			System.out.println("=== The First Name field contains: === " + fieldValue);
 		}
 	}
-
-
 
 	public void error_validation_existing_account() {
 		String PageTitle = WebUI.getPageTitle();

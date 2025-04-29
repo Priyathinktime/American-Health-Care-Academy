@@ -1,5 +1,5 @@
 @GroupUser @fulltest 
-Feature: Group Login
+Feature: C_TC_07_login_invalid_username_invalid_password
 
 @C_TC_07_login_invalid_username_invalid_password  
 Scenario: TC_07 Login with Invalid Username Invalid  Password

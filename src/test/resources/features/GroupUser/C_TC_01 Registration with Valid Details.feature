@@ -1,5 +1,5 @@
 @GroupUser @fulltest 
-Feature: Group Registration
+Feature: C_TC_01_Corporate_Registration_with_Valid_Details
 
   @C_TC_01_Corporate_Registration_with_Valid_Details 
   Scenario: TC_01 Corporate Registration with Valid Details
@@ -9,10 +9,11 @@ Feature: Group Registration
     | First Name    | John                |
     | Last Name     | Doe                 |
     | Company Name  | Thinktime           |
-    | Phone Number  | 0987654123          |
+    | Phone Number  | 09876541239         |
     | Email Address | john.doe@gmail.com  |
     | Create Password   | Secure@123      |
     | Confirm Password  | Secure@123      |
    And GroupUser clicks on the Register button
-   Then GroupUser should redirected to the Corporate dashboard page
-
+   Then GroupUser should redirected to the Corporate dashboard page 
+   
+ 

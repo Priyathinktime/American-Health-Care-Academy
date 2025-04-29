@@ -53,7 +53,7 @@
 
         <!-- Suite XML path -->
         <suite.signin.parallel>src/test/resources/suites/SignIn-parallel-methods.xml</suite.signin.parallel>
-        <suite.signin.simple>src/test/resources/suites/ACHA.xml</suite.signin.simple>
+        <suite.signin.simple>src/test/resources/suites/AHCA.xml</suite.signin.simple>
         <suite.client.parallel>src/test/resources/suites/Clients-parallel.xml</suite.client.parallel>
         <suite.client.simple>src/test/resources/suites/Clients-simple.xml</suite.client.simple>
         <suite.feature>src/test/resources/suites/SuiteFeatureByTag.xml</suite.feature>
@@ -395,7 +395,7 @@
                 <configuration>
                     <suiteXmlFiles>
                         <!-- Call Suite name global set up above -->
-                        <suiteXmlFile>src/test/resources/suites/ACHA.xml</suiteXmlFile>
+                        <suiteXmlFile>src/test/resources/suites/AHCA.xml</suiteXmlFile>
                     </suiteXmlFiles>
 
                     <rerunFailingTestsCount>1</rerunFailingTestsCount>

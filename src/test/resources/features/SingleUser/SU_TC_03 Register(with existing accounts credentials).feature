@@ -1,5 +1,5 @@
  @SingleUser @fulltest
-   Feature: User Registration
+   Feature: SU_TC03_Register_with_existing_accounts_credentials
 
   @SU_TC03_Register_with_existing_accounts_credentials
   Scenario: TC_03 Register(with existing accounts credentials)

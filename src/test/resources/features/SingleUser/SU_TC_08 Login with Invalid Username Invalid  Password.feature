@@ -1,5 +1,5 @@
  @SingleUser @fulltest
-Feature: User Login
+Feature: SU_TC08_Login_with_InValid_Username_Invalid_Password
 
 @SU_TC08_Login_with_InValid_Username_Invalid_Password
 Scenario: TC_08 Login with Invalid Username Invalid  Password

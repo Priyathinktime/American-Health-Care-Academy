@@ -1,5 +1,5 @@
  @SingleUser @fulltest
-Feature: User Login
+Feature:SU_TC09_Navigate_to_Reset_password_page
 
 @SU_TC09_Navigate_to_Reset_password_page
 Scenario: TC_09 Navigate to Reset Password Page

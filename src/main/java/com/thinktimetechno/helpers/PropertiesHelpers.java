@@ -27,7 +27,8 @@ public class PropertiesHelpers {
         // Add tất cả file Properties vào đây theo mẫu
         files.add("src/test/resources/config/config.properties");
         files.add("src/test/resources/config/data.properties");
-        files.add("src/test/resources/objects/crm_locators.properties");
+        files.add("src/test/resources/config/Zeitblast.properties");
+        files.add("src/test/resources/config/Zeitblastlocators.properties");
 
         try {
             properties = new Properties();

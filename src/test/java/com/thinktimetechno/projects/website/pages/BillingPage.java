@@ -43,7 +43,54 @@ public class BillingPage {
 
 	public void click_submitbilling_button() throws InterruptedException {
 		WebUI.clickElementWithJs(By.xpath("//input[@id='payment_submit_button']"));
-//		Thread.sleep(10000);
+
+	}
+
+	public void verify_handsonkit_PageDisplays() {
+		WebElement billing = WebUI
+				.waitForElementVisible(By.xpath("//div[contains(text(),'//h2[contains(text(),'Do you need hands-on CPR training?')]"));
+		
+		//h2[contains(text(),'Do you need a Blended Hands-on Training?')]
+		String billingtext = billing.getText();
+		
+		Assert.assertEquals(billingtext, "Do you need hands-on CPR training?");
+	}
+	public void verify_handsonPageDisplays() {
+		Assert.assertTrue(WebUI.verifyPageTitleContains("Hands On | Register - American Health Care Academy"));
+	}
+	public void verify_ChampPageDisplays() {
+		Assert.assertTrue(WebUI.verifyPageTitleContains("Champ | Shop - American Health Care Academy"));
+	}
+	public void verify_handsonkits_PageDisplays() {
+		
+		WebElement billing = WebUI
+				.waitForElementVisible(By.xpath("//div[contains(text(),'//h2[contains(text(),'Do you need a Blended Hands-on Training?')]"));
+		
+		//h2[contains(text(),'Do you need a Blended Hands-on Training?')]
+		String billingtext = billing.getText();
+
+		Assert.assertEquals(billingtext, "Do you need a Blended Hands-on Training?");
+	}
+
+	public void selecttime() {
+
+		WebUI.selectOptionByIndex(By.xpath("//select[@id='champ_selected_time']"), 1);
+
+	}
+
+	public void click_PurchaseHandsonTraining_button() {
+		WebUI.clickElementWithJs(By.xpath("(//input[@id='purchase_champ_btn'])[1]"));
+
+	}
+
+	public void user_selects_date() {
+		WebUI.clickElement(By
+				.xpath("(//table[@class='ui-datepicker-calendar']//a[not(contains(@class,'ui-state-disabled'))])[1]"));
+
+	}
+
+	public void selectcardtype(String card) {
+
 	}
 
 }
